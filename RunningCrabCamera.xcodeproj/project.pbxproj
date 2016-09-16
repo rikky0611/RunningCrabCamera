@@ -14,6 +14,7 @@
 		9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */; };
 		9AD81C4E1D8BA149008534FA /* RunningCrabCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C4D1D8BA149008534FA /* RunningCrabCameraTests.swift */; };
 		9AD81C591D8BA149008534FA /* RunningCrabCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */; };
+		9AD81C671D8C2CBA008534FA /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C661D8C2CBA008534FA /* Run.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9AD81C541D8BA149008534FA /* RunningCrabCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunningCrabCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningCrabCameraUITests.swift; sourceTree = "<group>"; };
 		9AD81C5A1D8BA14A008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD81C661D8C2CBA008534FA /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				9AD81C381D8BA149008534FA /* AppDelegate.swift */,
+				9AD81C661D8C2CBA008534FA /* Run.swift */,
 				9AD81C3A1D8BA149008534FA /* ViewController.swift */,
 				9AD81C3C1D8BA149008534FA /* Main.storyboard */,
 				9AD81C3F1D8BA149008534FA /* Assets.xcassets */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */,
+				9AD81C671D8C2CBA008534FA /* Run.swift in Sources */,
 				9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +486,7 @@
 				9AD81C5F1D8BA14A008534FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AD81C601D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				9AD81C621D8BA14A008534FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AD81C631D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +504,7 @@
 				9AD81C651D8BA14A008534FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
