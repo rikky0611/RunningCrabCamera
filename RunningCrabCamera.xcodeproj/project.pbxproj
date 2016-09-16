@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C381D8BA149008534FA /* AppDelegate.swift */; };
+		9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C3A1D8BA149008534FA /* ViewController.swift */; };
+		9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3C1D8BA149008534FA /* Main.storyboard */; };
+		9AD81C401D8BA149008534FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3F1D8BA149008534FA /* Assets.xcassets */; };
+		9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */; };
+		9AD81C4E1D8BA149008534FA /* RunningCrabCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C4D1D8BA149008534FA /* RunningCrabCameraTests.swift */; };
+		9AD81C591D8BA149008534FA /* RunningCrabCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AD81C4A1D8BA149008534FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AD81C2D1D8BA149008534FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD81C341D8BA149008534FA;
+			remoteInfo = RunningCrabCamera;
+		};
+		9AD81C551D8BA149008534FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AD81C2D1D8BA149008534FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD81C341D8BA149008534FA;
+			remoteInfo = RunningCrabCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AD81C351D8BA149008534FA /* RunningCrabCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCrabCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD81C381D8BA149008534FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AD81C3A1D8BA149008534FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AD81C3D1D8BA149008534FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AD81C3F1D8BA149008534FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AD81C421D8BA149008534FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AD81C441D8BA149008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD81C491D8BA149008534FA /* RunningCrabCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunningCrabCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD81C4D1D8BA149008534FA /* RunningCrabCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningCrabCameraTests.swift; sourceTree = "<group>"; };
+		9AD81C4F1D8BA149008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD81C541D8BA149008534FA /* RunningCrabCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunningCrabCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningCrabCameraUITests.swift; sourceTree = "<group>"; };
+		9AD81C5A1D8BA14A008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AD81C321D8BA149008534FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C461D8BA149008534FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C511D8BA149008534FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AD81C2C1D8BA149008534FA = {
+			isa = PBXGroup;
+			children = (
+				9AD81C371D8BA149008534FA /* RunningCrabCamera */,
+				9AD81C4C1D8BA149008534FA /* RunningCrabCameraTests */,
+				9AD81C571D8BA149008534FA /* RunningCrabCameraUITests */,
+				9AD81C361D8BA149008534FA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AD81C361D8BA149008534FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C351D8BA149008534FA /* RunningCrabCamera.app */,
+				9AD81C491D8BA149008534FA /* RunningCrabCameraTests.xctest */,
+				9AD81C541D8BA149008534FA /* RunningCrabCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AD81C371D8BA149008534FA /* RunningCrabCamera */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C381D8BA149008534FA /* AppDelegate.swift */,
+				9AD81C3A1D8BA149008534FA /* ViewController.swift */,
+				9AD81C3C1D8BA149008534FA /* Main.storyboard */,
+				9AD81C3F1D8BA149008534FA /* Assets.xcassets */,
+				9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */,
+				9AD81C441D8BA149008534FA /* Info.plist */,
+			);
+			path = RunningCrabCamera;
+			sourceTree = "<group>";
+		};
+		9AD81C4C1D8BA149008534FA /* RunningCrabCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C4D1D8BA149008534FA /* RunningCrabCameraTests.swift */,
+				9AD81C4F1D8BA149008534FA /* Info.plist */,
+			);
+			path = RunningCrabCameraTests;
+			sourceTree = "<group>";
+		};
+		9AD81C571D8BA149008534FA /* RunningCrabCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */,
+				9AD81C5A1D8BA14A008534FA /* Info.plist */,
+			);
+			path = RunningCrabCameraUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AD81C341D8BA149008534FA /* RunningCrabCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD81C5D1D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCamera" */;
+			buildPhases = (
+				9AD81C311D8BA149008534FA /* Sources */,
+				9AD81C321D8BA149008534FA /* Frameworks */,
+				9AD81C331D8BA149008534FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunningCrabCamera;
+			productName = RunningCrabCamera;
+			productReference = 9AD81C351D8BA149008534FA /* RunningCrabCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AD81C481D8BA149008534FA /* RunningCrabCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD81C601D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraTests" */;
+			buildPhases = (
+				9AD81C451D8BA149008534FA /* Sources */,
+				9AD81C461D8BA149008534FA /* Frameworks */,
+				9AD81C471D8BA149008534FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AD81C4B1D8BA149008534FA /* PBXTargetDependency */,
+			);
+			name = RunningCrabCameraTests;
+			productName = RunningCrabCameraTests;
+			productReference = 9AD81C491D8BA149008534FA /* RunningCrabCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AD81C531D8BA149008534FA /* RunningCrabCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD81C631D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraUITests" */;
+			buildPhases = (
+				9AD81C501D8BA149008534FA /* Sources */,
+				9AD81C511D8BA149008534FA /* Frameworks */,
+				9AD81C521D8BA149008534FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AD81C561D8BA149008534FA /* PBXTargetDependency */,
+			);
+			name = RunningCrabCameraUITests;
+			productName = RunningCrabCameraUITests;
+			productReference = 9AD81C541D8BA149008534FA /* RunningCrabCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AD81C2D1D8BA149008534FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Riku Arakawa";
+				TargetAttributes = {
+					9AD81C341D8BA149008534FA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					9AD81C481D8BA149008534FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9AD81C341D8BA149008534FA;
+					};
+					9AD81C531D8BA149008534FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9AD81C341D8BA149008534FA;
+					};
+				};
+			};
+			buildConfigurationList = 9AD81C301D8BA149008534FA /* Build configuration list for PBXProject "RunningCrabCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AD81C2C1D8BA149008534FA;
+			productRefGroup = 9AD81C361D8BA149008534FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AD81C341D8BA149008534FA /* RunningCrabCamera */,
+				9AD81C481D8BA149008534FA /* RunningCrabCameraTests */,
+				9AD81C531D8BA149008534FA /* RunningCrabCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AD81C331D8BA149008534FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */,
+				9AD81C401D8BA149008534FA /* Assets.xcassets in Resources */,
+				9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C471D8BA149008534FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C521D8BA149008534FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AD81C311D8BA149008534FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */,
+				9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C451D8BA149008534FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD81C4E1D8BA149008534FA /* RunningCrabCameraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C501D8BA149008534FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD81C591D8BA149008534FA /* RunningCrabCameraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AD81C4B1D8BA149008534FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AD81C341D8BA149008534FA /* RunningCrabCamera */;
+			targetProxy = 9AD81C4A1D8BA149008534FA /* PBXContainerItemProxy */;
+		};
+		9AD81C561D8BA149008534FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AD81C341D8BA149008534FA /* RunningCrabCamera */;
+			targetProxy = 9AD81C551D8BA149008534FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AD81C3C1D8BA149008534FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AD81C3D1D8BA149008534FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AD81C421D8BA149008534FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AD81C5B1D8BA14A008534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AD81C5C1D8BA14A008534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AD81C5E1D8BA14A008534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RunningCrabCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AD81C5F1D8BA14A008534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RunningCrabCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9AD81C611D8BA14A008534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RunningCrabCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RunningCrabCamera.app/RunningCrabCamera";
+			};
+			name = Debug;
+		};
+		9AD81C621D8BA14A008534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RunningCrabCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RunningCrabCamera.app/RunningCrabCamera";
+			};
+			name = Release;
+		};
+		9AD81C641D8BA14A008534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RunningCrabCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RunningCrabCamera;
+			};
+			name = Debug;
+		};
+		9AD81C651D8BA14A008534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RunningCrabCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RunningCrabCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AD81C301D8BA149008534FA /* Build configuration list for PBXProject "RunningCrabCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD81C5B1D8BA14A008534FA /* Debug */,
+				9AD81C5C1D8BA14A008534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD81C5D1D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD81C5E1D8BA14A008534FA /* Debug */,
+				9AD81C5F1D8BA14A008534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AD81C601D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD81C611D8BA14A008534FA /* Debug */,
+				9AD81C621D8BA14A008534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9AD81C631D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD81C641D8BA14A008534FA /* Debug */,
+				9AD81C651D8BA14A008534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AD81C2D1D8BA149008534FA /* Project object */;
+}
