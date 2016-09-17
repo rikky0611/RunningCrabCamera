@@ -34,14 +34,27 @@
                                     <action selector="takeStillPicture" destination="BYZ-38-t0r" eventType="touchUpInside" id="9ZL-vX-xfg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWW-ba-gxI">
+                                <rect key="frame" x="158" y="460" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TmL-B4-OUX"/>
+                                    <constraint firstAttribute="width" constant="46" id="v6V-bQ-lcV"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="changeCameraPosition" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rwt-4w-GQe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="k4M-lR-TVh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="58d-ld-DNs"/>
                             <constraint firstItem="okB-Ay-3Vc" firstAttribute="top" secondItem="k4M-lR-TVh" secondAttribute="bottom" constant="40" id="6Bk-Ar-vrN"/>
                             <constraint firstItem="okB-Ay-3Vc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9hm-fJ-OMS"/>
+                            <constraint firstItem="zWW-ba-gxI" firstAttribute="top" secondItem="k4M-lR-TVh" secondAttribute="bottom" constant="40" id="u98-rH-eZu"/>
                             <constraint firstAttribute="trailing" secondItem="k4M-lR-TVh" secondAttribute="trailing" id="uTH-xg-pyx"/>
                             <constraint firstItem="k4M-lR-TVh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ud8-xs-500"/>
+                            <constraint firstItem="okB-Ay-3Vc" firstAttribute="leading" secondItem="zWW-ba-gxI" secondAttribute="trailing" constant="71" id="vwW-X6-1lO"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="camera" id="ZdR-au-SWE"/>

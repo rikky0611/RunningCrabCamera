@@ -11,10 +11,10 @@ import AVFoundation
 
 class CameraViewController: UIViewController {
     
-    var input:AVCaptureDeviceInput!
-    var output:AVCaptureStillImageOutput!
-    var session:AVCaptureSession!
-    var camera:AVCaptureDevice!
+    var input: AVCaptureDeviceInput!
+    var output: AVCaptureStillImageOutput!
+    var session: AVCaptureSession!
+    var camera: AVCaptureDevice!
     
     @IBOutlet var preView: UIView!
     
@@ -24,7 +24,7 @@ class CameraViewController: UIViewController {
     
     // メモリ管理のため
     override func viewWillAppear(animated: Bool) {
-        setupCamera()
+        setupCameraWithPosition(.Back)
     }
     
     // メモリ管理のため
@@ -40,18 +40,13 @@ class CameraViewController: UIViewController {
         camera = nil
     }
     
-    func setupCamera(){
+    func setupCameraWithPosition(position: AVCaptureDevicePosition) {
         session = AVCaptureSession()
-        
         for caputureDevice: AnyObject in AVCaptureDevice.devices() {
             // 背面カメラを取得
-            if caputureDevice.position == AVCaptureDevicePosition.Back {
+            if caputureDevice.position == position {
                 camera = caputureDevice as? AVCaptureDevice
             }
-            // 前面カメラを取得
-            //if caputureDevice.position == AVCaptureDevicePosition.Front {
-            //    camera = caputureDevice as? AVCaptureDevice
-            //}
         }
         
         do {
@@ -96,6 +91,15 @@ class CameraViewController: UIViewController {
                 UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
                 
             })
+        }
+    }
+    
+    @IBAction func changeCameraPosition() {
+        if camera.position == .Back {
+            setupCameraWithPosition(.Front)
+        }
+        else if camera.position == .Front {
+            setupCameraWithPosition(.Back)
         }
     }
     
