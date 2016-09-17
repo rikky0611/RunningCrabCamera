@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A0456BE1D8CE3820001D978 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0456BD1D8CE3820001D978 /* Health.swift */; };
+		9A0456C01D8CE4380001D978 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A0456BF1D8CE4380001D978 /* HealthKit.framework */; };
 		9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C381D8BA149008534FA /* AppDelegate.swift */; };
 		9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C3A1D8BA149008534FA /* ViewController.swift */; };
 		9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3C1D8BA149008534FA /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */; };
 		9AD81C4E1D8BA149008534FA /* RunningCrabCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C4D1D8BA149008534FA /* RunningCrabCameraTests.swift */; };
 		9AD81C591D8BA149008534FA /* RunningCrabCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */; };
+		9AD81C671D8C2CBA008534FA /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C661D8C2CBA008534FA /* Run.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A0456BD1D8CE3820001D978 /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		9A0456BF1D8CE4380001D978 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		9A0456C11D8CE4380001D978 /* RunningCrabCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RunningCrabCamera.entitlements; sourceTree = "<group>"; };
 		9AD81C351D8BA149008534FA /* RunningCrabCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCrabCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD81C381D8BA149008534FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD81C3A1D8BA149008534FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +53,7 @@
 		9AD81C541D8BA149008534FA /* RunningCrabCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunningCrabCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningCrabCameraUITests.swift; sourceTree = "<group>"; };
 		9AD81C5A1D8BA14A008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD81C661D8C2CBA008534FA /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A0456C01D8CE4380001D978 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,9 +82,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A0456C21D8CE4520001D978 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C661D8C2CBA008534FA /* Run.swift */,
+				9A0456BD1D8CE3820001D978 /* Health.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9A0456C31D8CE45F0001D978 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A0456C11D8CE4380001D978 /* RunningCrabCamera.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		9AD81C2C1D8BA149008534FA = {
 			isa = PBXGroup;
 			children = (
+				9A0456BF1D8CE4380001D978 /* HealthKit.framework */,
 				9AD81C371D8BA149008534FA /* RunningCrabCamera */,
 				9AD81C4C1D8BA149008534FA /* RunningCrabCameraTests */,
 				9AD81C571D8BA149008534FA /* RunningCrabCameraUITests */,
@@ -97,6 +123,8 @@
 		9AD81C371D8BA149008534FA /* RunningCrabCamera */ = {
 			isa = PBXGroup;
 			children = (
+				9A0456C31D8CE45F0001D978 /* Resources */,
+				9A0456C21D8CE4520001D978 /* Models */,
 				9AD81C381D8BA149008534FA /* AppDelegate.swift */,
 				9AD81C3A1D8BA149008534FA /* ViewController.swift */,
 				9AD81C3C1D8BA149008534FA /* Main.storyboard */,
@@ -193,6 +221,12 @@
 				TargetAttributes = {
 					9AD81C341D8BA149008534FA = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CWP9ZU9T8Z;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					9AD81C481D8BA149008534FA = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -257,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */,
+				9A0456BE1D8CE3820001D978 /* Health.swift in Sources */,
+				9AD81C671D8C2CBA008534FA /* Run.swift in Sources */,
 				9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +435,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RunningCrabCamera/RunningCrabCamera.entitlements;
 				INFOPLIST_FILE = RunningCrabCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCamera;
@@ -410,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RunningCrabCamera/RunningCrabCamera.entitlements;
 				INFOPLIST_FILE = RunningCrabCamera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCamera;
@@ -482,6 +520,7 @@
 				9AD81C5F1D8BA14A008534FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AD81C601D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +529,7 @@
 				9AD81C621D8BA14A008534FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9AD81C631D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +538,7 @@
 				9AD81C651D8BA14A008534FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
