@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class CameraViewController: UIViewController, UIGestureRecognizerDelegate {
+class CameraViewController: UIViewController {
     
     var input:AVCaptureDeviceInput!
     var output:AVCaptureStillImageOutput!
@@ -61,14 +61,14 @@ class CameraViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         
         // 入力をセッションに追加
-        if(session.canAddInput(input)) {
+        if (session.canAddInput(input)) {
             session.addInput(input)
         }
         
         // 静止画出力のインスタンス生成
         output = AVCaptureStillImageOutput()
         // 出力をセッションに追加
-        if(session.canAddOutput(output)) {
+        if (session.canAddOutput(output)) {
             session.addOutput(output)
         }
         
