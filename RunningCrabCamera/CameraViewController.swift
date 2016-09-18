@@ -15,6 +15,7 @@ class CameraViewController: UIViewController {
     var output: AVCaptureStillImageOutput!
     var session: AVCaptureSession!
     var camera: AVCaptureDevice!
+    var image: UIImage!
     
     @IBOutlet var preView: UIView!
     
@@ -56,14 +57,14 @@ class CameraViewController: UIViewController {
         }
         
         // 入力をセッションに追加
-        if (session.canAddInput(input)) {
+        if session.canAddInput(input) {
             session.addInput(input)
         }
         
         // 静止画出力のインスタンス生成
         output = AVCaptureStillImageOutput()
         // 出力をセッションに追加
-        if (session.canAddOutput(output)) {
+        if session.canAddOutput(output) {
             session.addOutput(output)
         }
         
@@ -78,7 +79,7 @@ class CameraViewController: UIViewController {
         
         // レイヤーをViewに設定
         // これを外すとプレビューが無くなる、けれど撮影はできる
-        self.view.layer.addSublayer(previewLayer)
+        view.layer.addSublayer(previewLayer)
         session.startRunning()
     }
     
@@ -86,10 +87,9 @@ class CameraViewController: UIViewController {
         if let connection:AVCaptureConnection? = output.connectionWithMediaType(AVMediaTypeVideo) {
             // ビデオ出力から画像を非同期で取得
             output.captureStillImageAsynchronouslyFromConnection(connection, completionHandler: { (imageDataBuffer, error) -> Void in
-                let imageData:NSData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
-                let image:UIImage = UIImage(data: imageData)!
-                UIImageWriteToSavedPhotosAlbum(image, self, nil, nil)
-                
+                let imageData: NSData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
+                self.image = UIImage(data: imageData)!
+                self.performSegueWithIdentifier("toNext", sender: nil)
             })
         }
     }
@@ -101,6 +101,12 @@ class CameraViewController: UIViewController {
         else if camera.position == .Front {
             setupCameraWithPosition(.Back)
         }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let stampViewController = segue.destinationViewController as! StampViewController
+        stampViewController.takenImage = image
+        print("success")
     }
     
     override func didReceiveMemoryWarning() {
