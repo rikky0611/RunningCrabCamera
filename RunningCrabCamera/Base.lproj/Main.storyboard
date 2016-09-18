@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Camera View Controller-->
@@ -42,8 +43,8 @@
                                     <action selector="changeCameraPosition" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGT-Um-ord"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k4M-lR-TVh">
-                                <rect key="frame" x="0.0" y="64" width="414" height="414"/>
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="k4M-lR-TVh">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="dTH-hM-nn4"/>
@@ -59,6 +60,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rOW-Hw-euK" firstAttribute="leading" secondItem="bWk-xk-OKh" secondAttribute="trailing" constant="30" id="0PB-6E-icH"/>
+                            <constraint firstItem="k4M-lR-TVh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="2uD-bW-NLh"/>
                             <constraint firstItem="k4M-lR-TVh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="58d-ld-DNs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rOW-Hw-euK" secondAttribute="bottom" constant="25" id="WPU-fJ-5mh"/>
                             <constraint firstItem="rOW-Hw-euK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kZM-ed-fjd"/>
@@ -69,6 +71,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="ud8-xs-500"/>
                                 <exclude reference="rnl-wE-Vwl"/>
                             </mask>
                         </variation>
