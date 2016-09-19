@@ -22,6 +22,8 @@ class CameraViewController: UIViewController {
         return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*1.0)
     }
     
+    var run: Run?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

@@ -9,15 +9,14 @@
 import UIKit
 
 class LockView: UIView {
-    
     @IBOutlet weak var lockLabel: UILabel!
-
-    /*
-    // Only override drawRect: if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func drawRect(rect: CGRect) {
-        // Drawing code
+    @IBOutlet weak var distanceBaseGage: UILabel!
+    @IBOutlet weak var distanceGage: UILabel!
+    @IBOutlet weak var distanceLabel: UILabel!
+    
+    func update(run: Run) {
+        distanceGage.frame.size.width = distanceBaseGage.bounds.width * CGFloat(run.soFarDistance! / run.distance!)
+        distanceLabel.text = "\(run.soFarDistance) / \(run.distance) [km]"
     }
-    */
 
 }
