@@ -106,9 +106,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="imageView" destination="WJ6-ab-A1g" id="6tk-EM-yNf"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSC-VZ-2lA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
