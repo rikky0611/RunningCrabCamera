@@ -13,6 +13,7 @@
 		9A768EE51D8D864D007964F9 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE41D8D864D007964F9 /* StampViewController.swift */; };
 		9A768EE71D8D873D007964F9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A768EE61D8D873D007964F9 /* logo.png */; };
 		9A768EE91D8D8A3B007964F9 /* ShareActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */; };
+		9AA6E3D91D8F90D50079F6EF /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */; };
 		9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C381D8BA149008534FA /* AppDelegate.swift */; };
 		9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C3A1D8BA149008534FA /* ViewController.swift */; };
 		9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3C1D8BA149008534FA /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		9A768EE41D8D864D007964F9 /* StampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampViewController.swift; sourceTree = "<group>"; };
 		9A768EE61D8D873D007964F9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareActivity.swift; sourceTree = "<group>"; };
+		9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
 		9AD81C351D8BA149008534FA /* RunningCrabCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCrabCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD81C381D8BA149008534FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD81C3A1D8BA149008534FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				9AD81C661D8C2CBA008534FA /* Run.swift */,
 				9A768EDB1D8CE946007964F9 /* Health.swift */,
 				9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */,
+				9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 			files = (
 				9A768EE51D8D864D007964F9 /* StampViewController.swift in Sources */,
 				9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */,
+				9AA6E3D91D8F90D50079F6EF /* ViewManager.swift in Sources */,
 				9A768EE91D8D8A3B007964F9 /* ShareActivity.swift in Sources */,
 				9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */,
 				9A768EDC1D8CE946007964F9 /* Health.swift in Sources */,

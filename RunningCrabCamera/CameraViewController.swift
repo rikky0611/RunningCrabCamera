@@ -17,6 +17,11 @@ class CameraViewController: UIViewController {
     var camera: AVCaptureDevice!
     var image: UIImage!
     
+    let screenWidth = UIScreen.mainScreen().bounds.width
+    var cameraFrame: CGRect {
+        return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*1.0)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -74,9 +79,7 @@ class CameraViewController: UIViewController {
         // セッションからプレビューを表示を設定
         // previewLayerのframeはコードで指定しないと一回目のイニシャライザで正しく表示されなかった。
         let previewLayer = AVCaptureVideoPreviewLayer(session: session)
-        let navigationBarHeight = navigationController?.navigationBar.frame.size.height
-        let screenWidth = UIScreen.mainScreen().bounds.width
-        previewLayer.frame = CGRectMake(0.0, navigationBarHeight!, screenWidth, screenWidth)
+        previewLayer.frame = cameraFrame
         previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         
         view.layer.addSublayer(previewLayer)
