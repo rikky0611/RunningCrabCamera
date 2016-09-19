@@ -29,6 +29,7 @@ class CameraViewController: UIViewController {
     // メモリ管理のため
     override func viewWillAppear(animated: Bool) {
         setupCameraWithPosition(.Back)
+        setupLockView()
     }
     // メモリ管理のため
     override func viewDidDisappear(animated: Bool) {
@@ -49,7 +50,7 @@ class CameraViewController: UIViewController {
         view.layer.sublayers!.removeLast()
     }
     
-    func setupCameraWithPosition(position: AVCaptureDevicePosition) {
+    private func setupCameraWithPosition(position: AVCaptureDevicePosition) {
         session = AVCaptureSession()
         for caputureDevice: AnyObject in AVCaptureDevice.devices() {
             // 背面or前面カメラを取得
@@ -84,6 +85,12 @@ class CameraViewController: UIViewController {
         
         view.layer.addSublayer(previewLayer)
         session.startRunning()
+    }
+    
+    private func setupLockView() {
+        let lockView =  UINib(nibName: "LockView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! LockView
+        lockView.frame = cameraFrame
+        view.addSubview(lockView)
     }
     
     @IBAction func takeStillPicture() {
