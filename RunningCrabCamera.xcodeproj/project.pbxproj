@@ -13,6 +13,9 @@
 		9A768EE51D8D864D007964F9 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE41D8D864D007964F9 /* StampViewController.swift */; };
 		9A768EE71D8D873D007964F9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A768EE61D8D873D007964F9 /* logo.png */; };
 		9A768EE91D8D8A3B007964F9 /* ShareActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */; };
+		9AA6E3D91D8F90D50079F6EF /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */; };
+		9AA6E3DF1D8F945E0079F6EF /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6E3DE1D8F945E0079F6EF /* LockView.swift */; };
+		9AA6E3E11D8F946B0079F6EF /* LockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E01D8F946B0079F6EF /* LockView.xib */; };
 		9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C381D8BA149008534FA /* AppDelegate.swift */; };
 		9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C3A1D8BA149008534FA /* ViewController.swift */; };
 		9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3C1D8BA149008534FA /* Main.storyboard */; };
@@ -48,6 +51,9 @@
 		9A768EE41D8D864D007964F9 /* StampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampViewController.swift; sourceTree = "<group>"; };
 		9A768EE61D8D873D007964F9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareActivity.swift; sourceTree = "<group>"; };
+		9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		9AA6E3DE1D8F945E0079F6EF /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		9AA6E3E01D8F946B0079F6EF /* LockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockView.xib; sourceTree = "<group>"; };
 		9AD81C351D8BA149008534FA /* RunningCrabCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCrabCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD81C381D8BA149008534FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD81C3A1D8BA149008534FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +102,7 @@
 				9AD81C661D8C2CBA008534FA /* Run.swift */,
 				9A768EDB1D8CE946007964F9 /* Health.swift */,
 				9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */,
+				9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -107,6 +114,25 @@
 				9A768EDE1D8CE960007964F9 /* RunningCrabCamera.entitlements */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		9AA6E3DC1D8F93E50079F6EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C3A1D8BA149008534FA /* ViewController.swift */,
+				9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */,
+				9A768EE41D8D864D007964F9 /* StampViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9AA6E3DD1D8F93F60079F6EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6E3DE1D8F945E0079F6EF /* LockView.swift */,
+				9AA6E3E01D8F946B0079F6EF /* LockView.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		9AD81C2C1D8BA149008534FA = {
@@ -132,12 +158,11 @@
 		9AD81C371D8BA149008534FA /* RunningCrabCamera */ = {
 			isa = PBXGroup;
 			children = (
-				9A768EE11D8CE966007964F9 /* Resources */,
-				9A768EDD1D8CE94E007964F9 /* Models */,
 				9AD81C381D8BA149008534FA /* AppDelegate.swift */,
-				9AD81C3A1D8BA149008534FA /* ViewController.swift */,
-				9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */,
-				9A768EE41D8D864D007964F9 /* StampViewController.swift */,
+				9A768EDD1D8CE94E007964F9 /* Models */,
+				9AA6E3DC1D8F93E50079F6EF /* Controllers */,
+				9AA6E3DD1D8F93F60079F6EF /* Views */,
+				9A768EE11D8CE966007964F9 /* Resources */,
 				9AD81C3C1D8BA149008534FA /* Main.storyboard */,
 				9AD81C3F1D8BA149008534FA /* Assets.xcassets */,
 				9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */,
@@ -278,6 +303,7 @@
 				9A768EE71D8D873D007964F9 /* logo.png in Resources */,
 				9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */,
 				9AD81C401D8BA149008534FA /* Assets.xcassets in Resources */,
+				9AA6E3E11D8F946B0079F6EF /* LockView.xib in Resources */,
 				9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,8 +331,10 @@
 			files = (
 				9A768EE51D8D864D007964F9 /* StampViewController.swift in Sources */,
 				9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */,
+				9AA6E3D91D8F90D50079F6EF /* ViewManager.swift in Sources */,
 				9A768EE91D8D8A3B007964F9 /* ShareActivity.swift in Sources */,
 				9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */,
+				9AA6E3DF1D8F945E0079F6EF /* LockView.swift in Sources */,
 				9A768EDC1D8CE946007964F9 /* Health.swift in Sources */,
 				9AD81C671D8C2CBA008534FA /* Run.swift in Sources */,
 				9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */,
