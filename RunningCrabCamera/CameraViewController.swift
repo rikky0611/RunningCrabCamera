@@ -17,8 +17,6 @@ class CameraViewController: UIViewController {
     var camera: AVCaptureDevice!
     var image: UIImage!
     
-    @IBOutlet var preView: UIView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -27,9 +25,12 @@ class CameraViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         setupCameraWithPosition(.Back)
     }
-    
     // メモリ管理のため
     override func viewDidDisappear(animated: Bool) {
+        initializeForMemory()
+    }
+    
+    private func initializeForMemory() {
         session.stopRunning()
         for output in session.outputs {
             session.removeOutput(output as? AVCaptureOutput)
@@ -39,12 +40,14 @@ class CameraViewController: UIViewController {
         }
         session = nil
         camera = nil
+        //previewレイヤーを削除
+        view.layer.sublayers!.removeLast()
     }
     
     func setupCameraWithPosition(position: AVCaptureDevicePosition) {
         session = AVCaptureSession()
         for caputureDevice: AnyObject in AVCaptureDevice.devices() {
-            // 背面カメラを取得
+            // 背面or前面カメラを取得
             if caputureDevice.position == position {
                 camera = caputureDevice as? AVCaptureDevice
             }
@@ -68,17 +71,14 @@ class CameraViewController: UIViewController {
             session.addOutput(output)
         }
         
-        // セッションからプレビューを表示を
+        // セッションからプレビューを表示を設定
+        // previewLayerのframeはコードで指定しないと一回目のイニシャライザで正しく表示されなかった。
         let previewLayer = AVCaptureVideoPreviewLayer(session: session)
-        
-        previewLayer.frame = preView.frame
-        
-        //        previewLayer.videoGravity = AVLayerVideoGravityResize
-        //        previewLayer.videoGravity = AVLayerVideoGravityResizeAspect
+        let navigationBarHeight = navigationController?.navigationBar.frame.size.height
+        let screenWidth = UIScreen.mainScreen().bounds.width
+        previewLayer.frame = CGRectMake(0.0, navigationBarHeight!, screenWidth, screenWidth)
         previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
         
-        // レイヤーをViewに設定
-        // これを外すとプレビューが無くなる、けれど撮影はできる
         view.layer.addSublayer(previewLayer)
         session.startRunning()
     }

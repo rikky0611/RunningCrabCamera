@@ -4,7 +4,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Camera View Controller-->
@@ -43,43 +42,18 @@
                                     <action selector="changeCameraPosition" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGT-Um-ord"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="k4M-lR-TVh">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="400" id="dTH-hM-nn4"/>
-                                    <constraint firstAttribute="width" secondItem="k4M-lR-TVh" secondAttribute="height" multiplier="1:1" id="kdh-wY-1sH"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="dTH-hM-nn4"/>
-                                    </mask>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rOW-Hw-euK" firstAttribute="leading" secondItem="bWk-xk-OKh" secondAttribute="trailing" constant="30" id="0PB-6E-icH"/>
-                            <constraint firstItem="k4M-lR-TVh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="2uD-bW-NLh"/>
-                            <constraint firstItem="k4M-lR-TVh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="58d-ld-DNs"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rOW-Hw-euK" secondAttribute="bottom" constant="25" id="WPU-fJ-5mh"/>
                             <constraint firstItem="rOW-Hw-euK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kZM-ed-fjd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bWk-xk-OKh" secondAttribute="bottom" constant="25" id="oZr-fZ-8Q1"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="k4M-lR-TVh" secondAttribute="bottom" id="rnl-wE-Vwl"/>
-                            <constraint firstAttribute="trailing" secondItem="k4M-lR-TVh" secondAttribute="trailing" id="uTH-xg-pyx"/>
-                            <constraint firstItem="k4M-lR-TVh" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ud8-xs-500"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="ud8-xs-500"/>
-                                <exclude reference="rnl-wE-Vwl"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="7dV-uR-Ffk"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="preView" destination="k4M-lR-TVh" id="cZa-dC-avG"/>
                         <segue destination="gf9-ek-Kcx" kind="show" identifier="toNext" id="g9L-0m-qd1"/>
                     </connections>
                 </viewController>
@@ -138,7 +112,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oSC-VZ-2lA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624" y="2717"/>
+            <point key="canvasLocation" x="624" y="2871"/>
         </scene>
         <!--Item-->
         <scene sceneID="Fjm-v5-sld">
@@ -169,13 +143,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="8Gq-4l-zxR" kind="relationship" relationship="viewControllers" id="ftt-yO-vu9"/>
                         <segue destination="jis-x8-3Fn" kind="relationship" relationship="viewControllers" id="gRV-8W-sIu"/>
+                        <segue destination="8Gq-4l-zxR" kind="relationship" relationship="viewControllers" id="ftt-yO-vu9"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3P1-0i-iOp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="994" y="291"/>
+            <point key="canvasLocation" x="946" y="241"/>
         </scene>
         <!--camera-->
         <scene sceneID="70a-Bu-tqR">
