@@ -16,10 +16,16 @@ struct Run {
         return soFarDistance >= distance
     }
     
-    init(distance: Double, soFarDistance: Double, startDate: NSDate) {
+    init(distance: Double, soFarDistance: Double = 0.0, startDate: NSDate = NSDate()) {
         self.distance = distance
         self.soFarDistance = soFarDistance
         self.startDate = startDate
     }
+    
+    func update() {
+        
+    }
+    
+    static var currentRun: Run!
     
 }

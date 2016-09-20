@@ -26,6 +26,8 @@ class CameraViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Run.currentRun = Run(distance: 10.0)
+        Health.readHealthData()
     }
     
     // メモリ管理のため
