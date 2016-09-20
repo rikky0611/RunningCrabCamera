@@ -14,7 +14,8 @@ class LockView: UIView {
     @IBOutlet weak var distanceGage: UILabel!
     @IBOutlet weak var distanceLabel: UILabel!
     
-    func update(run: Run) {
+    func update() {
+        let run = Run.currentRun
         distanceGage.frame.size.width = distanceBaseGage.bounds.width * CGFloat(run.soFarDistance! / run.distance!)
         distanceLabel.text = "\(run.soFarDistance) / \(run.distance) [km]"
     }

@@ -23,7 +23,7 @@ struct Run {
     }
     
     func update() {
-        
+        Health.readHealthData()
     }
     
     static var currentRun: Run!
