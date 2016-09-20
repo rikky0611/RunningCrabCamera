@@ -22,7 +22,7 @@ class CameraViewController: UIViewController {
         return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*1.0)
     }
     
-    var run: Run?
+    var lockView: LockView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,9 +90,15 @@ class CameraViewController: UIViewController {
     }
     
     private func setupLockView() {
-        let lockView =  UINib(nibName: "LockView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! LockView
+        lockView =  UINib(nibName: "LockView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! LockView
         lockView.frame = cameraFrame
         view.addSubview(lockView)
+    }
+    
+    private func updateRunAndLockView() {
+        guard Run.currentRun != nil else { return }
+        Run.currentRun.update()
+        lockView.update()
     }
     
     @IBAction func takeStillPicture() {

@@ -14,6 +14,7 @@ struct Health {
     static func readHealthData() {
         let type = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!
         let healthStore = HKHealthStore()
+        var distance: Double?
         
         // データ抽出クエリ
         let query = HKSampleQuery(sampleType: type, predicate: nil, limit: 0, sortDescriptors: nil) { (query, results, error) in
@@ -21,12 +22,14 @@ struct Health {
                 print(error)
             }
             
-            if let results = results as? [HKQuantitySample]{
-                dispatch_async(dispatch_get_main_queue()){
+            if let results = results as? [HKQuantitySample] {
+                dispatch_async(dispatch_get_main_queue()) {
                     print("データ読み出し")
-                    for result in results {
-                        print(result.quantity)
-                        print(result.startDate)
+                    if let result = results.last {
+                        let mUnit = HKUnit(fromString: "m")
+                        distance = result.quantity.doubleValueForUnit(mUnit)
+                        print("現在\(distance!)m")
+                        Run.currentRun.soFarDistance = distance
                     }
                 }
             }
