@@ -29,16 +29,23 @@
                                     <action selector="didTapStartButton" destination="ERJ-PW-7PP" eventType="touchUpInside" id="oRL-B7-sWB"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9YB-lJ-eZW">
+                                <rect key="frame" x="0.0" y="107" width="414" height="216"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="9YB-lJ-eZW" firstAttribute="leading" secondItem="U2l-jd-Z6O" secondAttribute="leading" id="2J8-EF-V8V"/>
+                            <constraint firstItem="U0D-6d-cp7" firstAttribute="top" secondItem="9YB-lJ-eZW" secondAttribute="bottom" constant="20" id="3JP-k8-5vK"/>
                             <constraint firstItem="U0D-6d-cp7" firstAttribute="centerY" secondItem="U2l-jd-Z6O" secondAttribute="centerY" id="CX8-tp-bW9"/>
                             <constraint firstItem="U0D-6d-cp7" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="h1G-re-a1C"/>
+                            <constraint firstAttribute="trailing" secondItem="9YB-lJ-eZW" secondAttribute="trailing" id="lcS-3F-7e3"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="f1A-iP-bKw"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="pickerView" destination="9YB-lJ-eZW" id="tkz-nm-jMi"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toCamera" id="AWs-5j-eUO"/>
                     </connections>
                 </viewController>
