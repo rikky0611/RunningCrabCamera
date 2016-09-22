@@ -20,7 +20,7 @@
 		9AA6E3E51D8F9DAC0079F6EF /* StampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E41D8F9DAC0079F6EF /* StampView.swift */; };
 		9AA6E3E71D8F9E8D0079F6EF /* club.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E61D8F9E8D0079F6EF /* club.png */; };
 		9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C381D8BA149008534FA /* AppDelegate.swift */; };
-		9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C3A1D8BA149008534FA /* ViewController.swift */; };
+		9AD81C3B1D8BA149008534FA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C3A1D8BA149008534FA /* StartViewController.swift */; };
 		9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3C1D8BA149008534FA /* Main.storyboard */; };
 		9AD81C401D8BA149008534FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3F1D8BA149008534FA /* Assets.xcassets */; };
 		9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */; };
@@ -62,7 +62,7 @@
 		9AA6E3E61D8F9E8D0079F6EF /* club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = club.png; sourceTree = "<group>"; };
 		9AD81C351D8BA149008534FA /* RunningCrabCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCrabCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD81C381D8BA149008534FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9AD81C3A1D8BA149008534FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9AD81C3A1D8BA149008534FA /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		9AD81C3D1D8BA149008534FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9AD81C3F1D8BA149008534FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AD81C421D8BA149008534FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		9AA6E3DC1D8F93E50079F6EF /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9AD81C3A1D8BA149008534FA /* ViewController.swift */,
+				9AD81C3A1D8BA149008534FA /* StartViewController.swift */,
 				9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */,
 				9A768EE41D8D864D007964F9 /* StampViewController.swift */,
 			);
@@ -341,7 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A768EE51D8D864D007964F9 /* StampViewController.swift in Sources */,
-				9AD81C3B1D8BA149008534FA /* ViewController.swift in Sources */,
+				9AD81C3B1D8BA149008534FA /* StartViewController.swift in Sources */,
 				9AA6E3D91D8F90D50079F6EF /* ViewManager.swift in Sources */,
 				9A768EE91D8D8A3B007964F9 /* ShareActivity.swift in Sources */,
 				9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */,
