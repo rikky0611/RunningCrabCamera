@@ -27,6 +27,7 @@
 		9AD81C4E1D8BA149008534FA /* RunningCrabCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C4D1D8BA149008534FA /* RunningCrabCameraTests.swift */; };
 		9AD81C591D8BA149008534FA /* RunningCrabCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */; };
 		9AD81C671D8C2CBA008534FA /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C661D8C2CBA008534FA /* Run.swift */; };
+		9AE79E581D940FA4007E5F0B /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE79E571D940FA4007E5F0B /* AlbumViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningCrabCameraUITests.swift; sourceTree = "<group>"; };
 		9AD81C5A1D8BA14A008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD81C661D8C2CBA008534FA /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		9AE79E571D940FA4007E5F0B /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				9AD81C3A1D8BA149008534FA /* StartViewController.swift */,
 				9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */,
 				9A768EE41D8D864D007964F9 /* StampViewController.swift */,
+				9AE79E571D940FA4007E5F0B /* AlbumViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				9AD81C671D8C2CBA008534FA /* Run.swift in Sources */,
 				9AA6E3E51D8F9DAC0079F6EF /* StampView.swift in Sources */,
 				9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */,
+				9AE79E581D940FA4007E5F0B /* AlbumViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
