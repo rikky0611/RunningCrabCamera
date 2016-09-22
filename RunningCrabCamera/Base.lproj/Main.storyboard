@@ -1,25 +1,203 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q01-WI-zLe">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Start View Controller-->
+        <scene sceneID="2kw-Hz-Frf">
+            <objects>
+                <viewController id="ERJ-PW-7PP" customClass="StartViewController" customModule="RunningCrabCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ihs-JS-NUx"/>
+                        <viewControllerLayoutGuide type="bottom" id="CYk-mR-bmJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U2l-jd-Z6O">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-6d-cp7">
+                                <rect key="frame" x="182" y="343" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7pz-oE-jmk"/>
+                                    <constraint firstAttribute="width" constant="50" id="SDH-lf-PwU"/>
+                                </constraints>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="didTapStartButton" destination="ERJ-PW-7PP" eventType="touchUpInside" id="oRL-B7-sWB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="U0D-6d-cp7" firstAttribute="centerY" secondItem="U2l-jd-Z6O" secondAttribute="centerY" id="CX8-tp-bW9"/>
+                            <constraint firstItem="U0D-6d-cp7" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="h1G-re-a1C"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="f1A-iP-bKw"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toCamera" id="AWs-5j-eUO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x0C-n4-Ups" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="956"/>
+        </scene>
+        <!--Camera View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CameraViewController" customModule="RunningCrabCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-Hw-euK">
+                                <rect key="frame" x="182" y="661" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="a9u-Hh-rsq"/>
+                                    <constraint firstAttribute="width" constant="50" id="tpL-tV-wAF"/>
+                                </constraints>
+                                <state key="normal" title="***"/>
+                                <connections>
+                                    <action selector="takeStillPicture" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVp-UB-5lX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWk-xk-OKh">
+                                <rect key="frame" x="87" y="681" width="65" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="WSj-Cn-73j"/>
+                                    <constraint firstAttribute="height" constant="30" id="yBf-rQ-cd1"/>
+                                </constraints>
+                                <state key="normal" title="インカメ"/>
+                                <connections>
+                                    <action selector="changeCameraPosition" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGT-Um-ord"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24C-B4-UEF">
+                                <rect key="frame" x="262" y="681" width="60" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="h5h-Ps-mJZ"/>
+                                    <constraint firstAttribute="width" constant="60" id="kwq-Go-xhl"/>
+                                </constraints>
+                                <state key="normal" title="アルバム"/>
+                                <connections>
+                                    <segue destination="NXb-IT-W0E" kind="show" id="cLE-5u-Cwq"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rOW-Hw-euK" firstAttribute="leading" secondItem="bWk-xk-OKh" secondAttribute="trailing" constant="30" id="0PB-6E-icH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rOW-Hw-euK" secondAttribute="bottom" constant="25" id="WPU-fJ-5mh"/>
+                            <constraint firstItem="24C-B4-UEF" firstAttribute="leading" secondItem="rOW-Hw-euK" secondAttribute="trailing" constant="30" id="k5L-xd-5K2"/>
+                            <constraint firstItem="rOW-Hw-euK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kZM-ed-fjd"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="24C-B4-UEF" secondAttribute="bottom" constant="25" id="nST-Lt-dzn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bWk-xk-OKh" secondAttribute="bottom" constant="25" id="oZr-fZ-8Q1"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7dV-uR-Ffk"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="gf9-ek-Kcx" kind="show" identifier="toNext" id="g9L-0m-qd1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="624" y="1901"/>
+        </scene>
+        <!--Stamp-->
+        <scene sceneID="OZK-de-dum">
+            <objects>
+                <viewController id="gf9-ek-Kcx" customClass="StampViewController" customModule="RunningCrabCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5WN-Jh-eIc"/>
+                        <viewControllerLayoutGuide type="bottom" id="oTX-g0-5mF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8wB-ZO-aZk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJ6-ab-A1g">
+                                <rect key="frame" x="0.0" y="64" width="414" height="414"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="ZL7-nu-HzU"/>
+                                    <constraint firstAttribute="width" secondItem="WJ6-ab-A1g" secondAttribute="height" multiplier="1:1" id="ebT-Mq-zXU"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZL7-nu-HzU"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WJ6-ab-A1g" secondAttribute="trailing" id="Aay-Jc-7uZ"/>
+                            <constraint firstItem="WJ6-ab-A1g" firstAttribute="leading" secondItem="8wB-ZO-aZk" secondAttribute="leading" id="OcS-SS-Ux4"/>
+                            <constraint firstItem="WJ6-ab-A1g" firstAttribute="top" secondItem="5WN-Jh-eIc" secondAttribute="bottom" id="lQ2-Wa-cVE"/>
+                            <constraint firstItem="oTX-g0-5mF" firstAttribute="top" secondItem="WJ6-ab-A1g" secondAttribute="bottom" id="pzB-qP-wdh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pzB-qP-wdh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Stamp" id="nDD-aP-O6S">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="B2U-xa-v2L">
+                            <connections>
+                                <action selector="didTapActionButton" destination="gf9-ek-Kcx" id="ksS-g5-lzd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSC-VZ-2lA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="624" y="2871"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="85l-33-FWP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Q01-WI-zLe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="FB9-u0-LZP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ERJ-PW-7PP" kind="relationship" relationship="rootViewController" id="D0E-bD-X8F"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B2h-lX-Shf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-146" y="956"/>
+        </scene>
+        <!--Album View Controller-->
+        <scene sceneID="0YJ-aO-diS">
+            <objects>
+                <viewController id="NXb-IT-W0E" customClass="AlbumViewController" customModule="RunningCrabCamera" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KhN-P3-hkM"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rqx-au-epr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e9B-FP-W5G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsH-dd-h1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1258" y="1901"/>
         </scene>
     </scenes>
 </document>
