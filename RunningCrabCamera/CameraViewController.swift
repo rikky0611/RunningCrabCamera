@@ -122,9 +122,11 @@ class CameraViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let stampViewController = segue.destinationViewController as! StampViewController
-        stampViewController.takenImage = image
-        print("success")
+        if segue.identifier == "toNext" {
+            let stampViewController = segue.destinationViewController as! StampViewController
+            stampViewController.takenImage = image
+            print("success")
+        }
     }
     
     override func didReceiveMemoryWarning() {
