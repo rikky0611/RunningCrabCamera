@@ -11,7 +11,7 @@ import HealthKit
 
 struct Health {
     
-    static func readHealthData() {
+    static func readHealthData(completion: Void -> Void) {
         let type = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!
         let healthStore = HKHealthStore()
         var distance: Double?
@@ -28,8 +28,8 @@ struct Health {
                     if let result = results.last {
                         let mUnit = HKUnit(fromString: "m")
                         distance = result.quantity.doubleValueForUnit(mUnit)
-                        print("現在\(distance!)m")
-                        Run.currentRun.soFarDistance = distance
+                        Run.currentRun.soFarDistance = distance! / 10000
+                        completion()
                     }
                 }
             }
