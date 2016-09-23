@@ -72,9 +72,6 @@
                                     <constraint firstAttribute="width" constant="50" id="tpL-tV-wAF"/>
                                 </constraints>
                                 <state key="normal" title="***"/>
-                                <connections>
-                                    <action selector="takeStillPicture" destination="BYZ-38-t0r" eventType="touchUpInside" id="jVp-UB-5lX"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWk-xk-OKh">
                                 <rect key="frame" x="87" y="681" width="65" height="30"/>
@@ -83,9 +80,6 @@
                                     <constraint firstAttribute="height" constant="30" id="yBf-rQ-cd1"/>
                                 </constraints>
                                 <state key="normal" title="インカメ"/>
-                                <connections>
-                                    <action selector="changeCameraPosition" destination="BYZ-38-t0r" eventType="touchUpInside" id="pGT-Um-ord"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24C-B4-UEF">
                                 <rect key="frame" x="262" y="681" width="60" height="30"/>

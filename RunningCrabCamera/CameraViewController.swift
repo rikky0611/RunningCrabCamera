@@ -28,8 +28,8 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var changeCameraPositionButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        cameraButton.addTarget(self,action: #selector(CameraViewController.didTapCameraButton), forControlEvents: .TouchUpInside)
-        changeCameraPositionButton.addTarget(self, action: #selector(CameraViewController.didTapChangeCameraPositionButton), forControlEvents: .TouchUpInside)
+        cameraButton.addTarget(self,action: #selector(didTapCameraButton(_:)), forControlEvents: .TouchUpInside)
+        changeCameraPositionButton.addTarget(self, action: #selector(didTapChangeCameraPositionButton(_:)), forControlEvents: .TouchUpInside)
         
         cameraButton.enabled = false
         changeCameraPositionButton.enabled = false
@@ -144,7 +144,7 @@ extension CameraViewController {
         session.startRunning()
     }
     
-    func didTapCameraButton() {
+    func didTapCameraButton(sender: UIButton) {
         if let connection:AVCaptureConnection? = output.connectionWithMediaType(AVMediaTypeVideo) {
             // ビデオ出力から画像を非同期で取得
             output.captureStillImageAsynchronouslyFromConnection(connection, completionHandler: { (imageDataBuffer, error) -> Void in
@@ -155,7 +155,7 @@ extension CameraViewController {
         }
     }
     
-    func didTapChangeCameraPositionButton() {
+    func didTapChangeCameraPositionButton(sender: UIButton) {
         if camera.position == .Back {
             setupCameraWithPosition(.Front)
         }
