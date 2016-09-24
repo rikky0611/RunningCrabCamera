@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import SCLAlertView
 
 class CameraViewController: UIViewController {
     
@@ -166,4 +167,18 @@ extension CameraViewController {
         }
     }
 
+}
+
+
+//MARK: リセット系Camera系メソッド
+
+
+extension CameraViewController {
+    @IBAction func didTapResetButton() {
+        let alertView = SCLAlertView()
+        alertView.addButton("ランを終了する") {
+            self.navigationController?.popToRootViewControllerAnimated(true)
+        }
+        alertView.showWarning("注意", subTitle: "ランを終了すると今回のランは記録されないｶﾆ。\n ランを終了するｶﾆ？", closeButtonTitle: "キャンセル")
+    }
 }
