@@ -1,10 +1,10 @@
 PODS:
-  - STZPopupView (1.1.0)
+  - STZPopupView (1.0.2)
 
 DEPENDENCIES:
-  - STZPopupView
+  - STZPopupView (~> 1.0.2)
 
 SPEC CHECKSUMS:
-  STZPopupView: 31be448e6c6acb292e8f882006ff8498b54050d3
+  STZPopupView: 4eb11a72c71d2942e23a4444d1bde40e563702e3
 
 COCOAPODS: 0.39.0

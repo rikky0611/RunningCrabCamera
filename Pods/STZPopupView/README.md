@@ -53,7 +53,7 @@ Customize option see [Source/STZPopupViewConfig.swift](https://github.com/STAR-Z
 
 ## Installation
 
-### CocoaPods
+### Cocoapods
 
 STZPopupView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:

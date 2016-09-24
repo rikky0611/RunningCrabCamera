@@ -6,8 +6,8 @@
 //  Copyright © 2016年 Riku Arakawa. All rights reserved.
 //
 
-import Foundation
 import UIKit
+import STZPopupView
 
 class AlbumViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!

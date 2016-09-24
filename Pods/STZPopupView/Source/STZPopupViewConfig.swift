@@ -12,55 +12,55 @@ import UIKit
 Show Animation type
 */
 public enum STZPopupShowAnimation {
-    case none
-    case fadeIn
-    case slideInFromTop
-    case slideInFromBottom
-    case slideInFromLeft
-    case slideInFromRight
-    case custom // Need implements 'showCustomAnimation'
+    case None
+    case FadeIn
+    case SlideInFromTop
+    case SlideInFromBottom
+    case SlideInFromLeft
+    case SlideInFromRight
+    case Custom // Need implements 'showCustomAnimation'
 }
 
 /**
 Dismiss Animation
 */
 public enum STZPopupDismissAnimation {
-    case none
-    case fadeOut
-    case slideOutToTop
-    case slideOutToBottom
-    case slideOutToLeft
-    case slideOutToRight
-    case custom // Need implements 'dismissCustomAnimation'
+    case None
+    case FadeOut
+    case SlideOutToTop
+    case SlideOutToBottom
+    case SlideOutToLeft
+    case SlideOutToRight
+    case Custom // Need implements 'dismissCustomAnimation'
 }
 
 /**
 *  Popup Config
 */
-open class STZPopupViewConfig {
+public class STZPopupViewConfig {
 
     /// Dismiss touch the Background if ture.
-    open var dismissTouchBackground = true
+    public var dismissTouchBackground = true
 
     /// Popup corner radius value.
-    open var cornerRadius: CGFloat = 0
+    public var cornerRadius: CGFloat = 0
 
     /// Background overlay color.
-    open var overlayColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+    public var overlayColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
 
     /// Show animation type.
-    open var showAnimation = STZPopupShowAnimation.fadeIn
+    public var showAnimation = STZPopupShowAnimation.FadeIn
 
     /// Dismiss animation type.
-    open var dismissAnimation = STZPopupDismissAnimation.fadeOut
+    public var dismissAnimation = STZPopupDismissAnimation.FadeOut
 
     /// Clouser show animation is completed.
     /// Pass the popup view to argument.
-    open var showCompletion: ((UIView) -> Void)? = nil
+    public var showCompletion: ((UIView) -> Void)? = nil
 
     /// Clouser disimss animation is completed.
     /// Pass the popup view to argument.
-    open var dismissCompletion: ((UIView) -> Void)? = nil
+    public var dismissCompletion: ((UIView) -> Void)? = nil
 
     /// Show custom animation of closure.
     ///
@@ -71,7 +71,7 @@ open class STZPopupViewConfig {
     /// - containerView: Enclosing a popup view. Added to the view of UIViewController.
     /// - popupView: A popup view is displayed.
     /// - completion: Be sure to call after animation completion.
-    open var showCustomAnimation: (UIView, UIView, @escaping (Void) -> Void) -> Void = { containerView, popupView, completion in }
+    public var showCustomAnimation: (UIView, UIView, (Void) -> Void) -> Void = { containerView, popupView, completion in }
 
     /// Dismiss custom animation of closure.
     ///
@@ -82,7 +82,7 @@ open class STZPopupViewConfig {
     /// - containerView: Enclosing a popup view. Added to the view of UIViewController.
     /// - popupView: A popup view is displayed.
     /// - completion: Be sure to call after animation completion.
-    open var dismissCustomAnimation: (UIView, UIView, @escaping (Void) -> Void) -> Void = { containerView, popupView, completion in }
+    public var dismissCustomAnimation: (UIView, UIView, (Void) -> Void) -> Void = { containerView, popupView, completion in }
 
     public init() {}
 }

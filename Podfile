@@ -4,7 +4,7 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'RunningCrabCamera' do
-pod 'STZPopupView'
+pod 'STZPopupView', '~> 1.0.2'
 end
 
 target 'RunningCrabCameraTests' do
