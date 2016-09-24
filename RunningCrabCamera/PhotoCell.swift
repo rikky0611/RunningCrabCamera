@@ -17,7 +17,7 @@ class PhotoCell: UICollectionViewCell {
     }
     
     func configure() {
-        imageView.backgroundColor = UIColor.redColor()
+        imageView.image = UIImage(named: "club.png")
     }
 
 }
