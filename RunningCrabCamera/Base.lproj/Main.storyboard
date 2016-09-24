@@ -103,11 +103,17 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bWk-xk-OKh" secondAttribute="bottom" constant="25" id="oZr-fZ-8Q1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="7dV-uR-Ffk"/>
+                    <navigationItem key="navigationItem" id="7dV-uR-Ffk">
+                        <barButtonItem key="leftBarButtonItem" title="✖️" id="Y4w-cD-WDJ">
+                            <connections>
+                                <action selector="didTapResetButton" destination="BYZ-38-t0r" id="rJJ-Zm-keT"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="cameraButton" destination="rOW-Hw-euK" id="pZu-Fz-BLk"/>
-                        <outlet property="changeCameraPositionButton" destination="bWk-xk-OKh" id="4Hl-XY-qhy"/>
+                        <outlet property="cameraButton" destination="rOW-Hw-euK" id="YKZ-NV-feH"/>
+                        <outlet property="changeCameraPositionButton" destination="bWk-xk-OKh" id="uvV-a6-ued"/>
                         <segue destination="gf9-ek-Kcx" kind="show" identifier="toNext" id="g9L-0m-qd1"/>
                     </connections>
                 </viewController>
