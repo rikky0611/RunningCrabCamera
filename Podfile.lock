@@ -4,15 +4,18 @@ PODS:
   - Realm/Headers (1.0.2)
   - RealmSwift (1.0.2):
     - Realm (= 1.0.2)
+  - SCLAlertView (0.6.0)
   - STZPopupView (1.0.2)
 
 DEPENDENCIES:
   - RealmSwift (~> 1.0.2)
+  - SCLAlertView
   - STZPopupView (~> 1.0.2)
 
 SPEC CHECKSUMS:
   Realm: 9d5c46a4d7d27958530a8dfc58f63a99e5c2cba3
   RealmSwift: 82f3ac5e24530143dddfde2033acc0d308f27d96
+  SCLAlertView: 0f6b3c23a48b4993564ff1dd3c065782e4b2b687
   STZPopupView: 4eb11a72c71d2942e23a4444d1bde40e563702e3
 
 COCOAPODS: 0.39.0

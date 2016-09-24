@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x0C-n4-Ups" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624" y="956"/>
+            <point key="canvasLocation" x="-132" y="1906"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -139,26 +139,13 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxQ-1L-I2d">
-                                <rect key="frame" x="184" y="596" width="46" height="46"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="46" id="0h4-5r-FjD"/>
-                                    <constraint firstAttribute="height" constant="46" id="GAe-d5-79h"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="savePhotoToAlbum" destination="gf9-ek-Kcx" eventType="touchUpInside" id="zBd-Wn-hep"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="WJ6-ab-A1g" secondAttribute="trailing" id="Aay-Jc-7uZ"/>
                             <constraint firstItem="WJ6-ab-A1g" firstAttribute="leading" secondItem="8wB-ZO-aZk" secondAttribute="leading" id="OcS-SS-Ux4"/>
                             <constraint firstItem="WJ6-ab-A1g" firstAttribute="top" secondItem="5WN-Jh-eIc" secondAttribute="bottom" id="lQ2-Wa-cVE"/>
-                            <constraint firstItem="hxQ-1L-I2d" firstAttribute="top" secondItem="WJ6-ab-A1g" secondAttribute="bottom" constant="118" id="mDK-fp-oca"/>
                             <constraint firstItem="oTX-g0-5mF" firstAttribute="top" secondItem="WJ6-ab-A1g" secondAttribute="bottom" id="pzB-qP-wdh"/>
-                            <constraint firstItem="hxQ-1L-I2d" firstAttribute="centerX" secondItem="8wB-ZO-aZk" secondAttribute="centerX" id="zy6-8b-L9g"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -167,6 +154,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Stamp" id="nDD-aP-O6S">
+                        <barButtonItem key="leftBarButtonItem" title="✖️" id="VXS-2E-0zd">
+                            <connections>
+                                <action selector="didTapFinishButton" destination="gf9-ek-Kcx" id="3pM-AI-bMQ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="B2U-xa-v2L">
                             <connections>
                                 <action selector="didTapActionButton" destination="gf9-ek-Kcx" id="ksS-g5-lzd"/>

@@ -86,10 +86,12 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-RunningCrabCamera/Realm.framework"
   install_framework "Pods-RunningCrabCamera/RealmSwift.framework"
+  install_framework "Pods-RunningCrabCamera/SCLAlertView.framework"
   install_framework "Pods-RunningCrabCamera/STZPopupView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-RunningCrabCamera/Realm.framework"
   install_framework "Pods-RunningCrabCamera/RealmSwift.framework"
+  install_framework "Pods-RunningCrabCamera/SCLAlertView.framework"
   install_framework "Pods-RunningCrabCamera/STZPopupView.framework"
 fi
