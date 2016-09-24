@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SCLAlertView
 
 class StampViewController: UIViewController {
     var takenImage: UIImage!
@@ -26,17 +27,11 @@ class StampViewController: UIViewController {
         stampView.frame = cameraFrame
         stampView.configure(takenImage)
         view.addSubview(stampView)
+        
+        savePhotoToAlbum()
     }
     
-    @IBAction func didTapActionButton() {
-        UIGraphicsBeginImageContext(stampView.bounds.size)
-        stampView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        self.presentViewController(ShareActivityController.create(image), animated: true, completion: nil)
-    }
-    
-    @IBAction func savePhotoToAlbum() {
+    private func savePhotoToAlbum() {
         guard let realm = try? Realm() else { return }
         
         UIGraphicsBeginImageContext(stampView.bounds.size)
@@ -59,4 +54,27 @@ class StampViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+}
+
+
+extension StampViewController {
+    @IBAction func didTapActionButton() {
+        UIGraphicsBeginImageContext(stampView.bounds.size)
+        stampView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        self.presentViewController(ShareActivityController.create(image), animated: true, completion: nil)
+    }
+    
+    @IBAction func didTapFinishButton() {
+        let appearance = SCLAlertView.SCLAppearance(
+            showCloseButton: false
+        )
+        let alertView = SCLAlertView(appearance: appearance)
+        alertView.addButton("Done") {
+            self.navigationController?.popToRootViewControllerAnimated(true)
+        }
+        alertView.showSuccess("Congrats!", subTitle: "ナイスランだったｶﾆ！また一緒に走るｶﾆ！")
+    }
+
 }
