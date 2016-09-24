@@ -19,6 +19,8 @@
 		9AA6E3E31D8F9D9E0079F6EF /* StampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E21D8F9D9E0079F6EF /* StampView.xib */; };
 		9AA6E3E51D8F9DAC0079F6EF /* StampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E41D8F9DAC0079F6EF /* StampView.swift */; };
 		9AA6E3E71D8F9E8D0079F6EF /* club.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E61D8F9E8D0079F6EF /* club.png */; };
+		9AD14B771D96447C00F76B90 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD14B751D96447C00F76B90 /* PhotoCell.swift */; };
+		9AD14B781D96447C00F76B90 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD14B761D96447C00F76B90 /* PhotoCell.xib */; };
 		9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C381D8BA149008534FA /* AppDelegate.swift */; };
 		9AD81C3B1D8BA149008534FA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C3A1D8BA149008534FA /* StartViewController.swift */; };
 		9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3C1D8BA149008534FA /* Main.storyboard */; };
@@ -61,6 +63,8 @@
 		9AA6E3E21D8F9D9E0079F6EF /* StampView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StampView.xib; sourceTree = "<group>"; };
 		9AA6E3E41D8F9DAC0079F6EF /* StampView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampView.swift; sourceTree = "<group>"; };
 		9AA6E3E61D8F9E8D0079F6EF /* club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = club.png; sourceTree = "<group>"; };
+		9AD14B751D96447C00F76B90 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		9AD14B761D96447C00F76B90 /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
 		9AD81C351D8BA149008534FA /* RunningCrabCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCrabCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD81C381D8BA149008534FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD81C3A1D8BA149008534FA /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +147,8 @@
 				9AA6E3E01D8F946B0079F6EF /* LockView.xib */,
 				9AA6E3E41D8F9DAC0079F6EF /* StampView.swift */,
 				9AA6E3E21D8F9D9E0079F6EF /* StampView.xib */,
+				9AD14B751D96447C00F76B90 /* PhotoCell.swift */,
+				9AD14B761D96447C00F76B90 /* PhotoCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -312,6 +318,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD14B781D96447C00F76B90 /* PhotoCell.xib in Resources */,
 				9AA6E3E31D8F9D9E0079F6EF /* StampView.xib in Resources */,
 				9A768EE71D8D873D007964F9 /* logo.png in Resources */,
 				9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */,
@@ -347,6 +354,7 @@
 				9AD81C3B1D8BA149008534FA /* StartViewController.swift in Sources */,
 				9AA6E3D91D8F90D50079F6EF /* ViewManager.swift in Sources */,
 				9A768EE91D8D8A3B007964F9 /* ShareActivity.swift in Sources */,
+				9AD14B771D96447C00F76B90 /* PhotoCell.swift in Sources */,
 				9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */,
 				9AA6E3DF1D8F945E0079F6EF /* LockView.swift in Sources */,
 				9A768EDC1D8CE946007964F9 /* Health.swift in Sources */,
