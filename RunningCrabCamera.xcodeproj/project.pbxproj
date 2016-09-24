@@ -1,1549 +1,699 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>060C5B84135A3CD463D80237</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5AC5AE24EA01B9CD7B040644</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0E538423C5F54941462C5851</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RunningCrabCamera/Pods-RunningCrabCamera-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>4343314A13456D94526BF826</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RunningCrabCamera.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RunningCrabCamera/Pods-RunningCrabCamera.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>45643D17D82929A765E34431</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-RunningCrabCamera.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-RunningCrabCamera/Pods-RunningCrabCamera.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5AC5AE24EA01B9CD7B040644</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_RunningCrabCamera.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>7465D3EB3486E71CBEF14EBA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5AC5AE24EA01B9CD7B040644</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7C1C80873FB90AFB414EEA37</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9A768EDB1D8CE946007964F9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Health.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A768EDC1D8CE946007964F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A768EDB1D8CE946007964F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A768EDD1D8CE94E007964F9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AD81C661D8C2CBA008534FA</string>
-				<string>9A768EDB1D8CE946007964F9</string>
-				<string>9A768EE81D8D8A3B007964F9</string>
-				<string>9AA6E3D81D8F90D50079F6EF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Models</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A768EDE1D8CE960007964F9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xml</string>
-			<key>path</key>
-			<string>RunningCrabCamera.entitlements</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A768EDF1D8CE961007964F9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>HealthKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/HealthKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>9A768EE01D8CE961007964F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A768EDF1D8CE961007964F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A768EE11D8CE966007964F9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AA6E3E61D8F9E8D0079F6EF</string>
-				<string>9A768EE61D8D873D007964F9</string>
-				<string>9A768EDE1D8CE960007964F9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A768EE21D8CEDC1007964F9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>CameraViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A768EE31D8CEDC1007964F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A768EE21D8CEDC1007964F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A768EE41D8D864D007964F9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StampViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A768EE51D8D864D007964F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A768EE41D8D864D007964F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A768EE61D8D873D007964F9</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>logo.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A768EE71D8D873D007964F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A768EE61D8D873D007964F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9A768EE81D8D8A3B007964F9</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ShareActivity.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9A768EE91D8D8A3B007964F9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9A768EE81D8D8A3B007964F9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AA6E3D81D8F90D50079F6EF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewManager.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AA6E3D91D8F90D50079F6EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AA6E3D81D8F90D50079F6EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AA6E3DC1D8F93E50079F6EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AD81C3A1D8BA149008534FA</string>
-				<string>9A768EE21D8CEDC1007964F9</string>
-				<string>9A768EE41D8D864D007964F9</string>
-				<string>9AE79E571D940FA4007E5F0B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AA6E3DD1D8F93F60079F6EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AA6E3DE1D8F945E0079F6EF</string>
-				<string>9AA6E3E01D8F946B0079F6EF</string>
-				<string>9AA6E3E41D8F9DAC0079F6EF</string>
-				<string>9AA6E3E21D8F9D9E0079F6EF</string>
-				<string>9AD14B751D96447C00F76B90</string>
-				<string>9AD14B761D96447C00F76B90</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AA6E3DE1D8F945E0079F6EF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>LockView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AA6E3DF1D8F945E0079F6EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AA6E3DE1D8F945E0079F6EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AA6E3E01D8F946B0079F6EF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>LockView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AA6E3E11D8F946B0079F6EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AA6E3E01D8F946B0079F6EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AA6E3E21D8F9D9E0079F6EF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>StampView.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AA6E3E31D8F9D9E0079F6EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AA6E3E21D8F9D9E0079F6EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AA6E3E41D8F9DAC0079F6EF</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StampView.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AA6E3E51D8F9DAC0079F6EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AA6E3E41D8F9DAC0079F6EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AA6E3E61D8F9E8D0079F6EF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>club.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AA6E3E71D8F9E8D0079F6EF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AA6E3E61D8F9E8D0079F6EF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AC516E19C96F5F6231C4F38</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-RunningCrabCamera/Pods-RunningCrabCamera-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>9AD14B751D96447C00F76B90</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>PhotoCell.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD14B761D96447C00F76B90</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>PhotoCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD14B771D96447C00F76B90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD14B751D96447C00F76B90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AD14B781D96447C00F76B90</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD14B761D96447C00F76B90</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AD81C2C1D8BA149008534FA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9A768EDF1D8CE961007964F9</string>
-				<string>9AD81C371D8BA149008534FA</string>
-				<string>9AD81C571D8BA149008534FA</string>
-				<string>9AD81C361D8BA149008534FA</string>
-				<string>BE805F4E6646462265B09D92</string>
-				<string>060C5B84135A3CD463D80237</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C2D1D8BA149008534FA</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0730</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Riku Arakawa</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>9AD81C341D8BA149008534FA</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>DevelopmentTeam</key>
-						<string>CWP9ZU9T8Z</string>
-						<key>SystemCapabilities</key>
-						<dict>
-							<key>com.apple.HealthKit</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-						</dict>
-					</dict>
-					<key>9AD81C481D8BA149008534FA</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>9AD81C341D8BA149008534FA</string>
-					</dict>
-					<key>9AD81C531D8BA149008534FA</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.3.1</string>
-						<key>TestTargetID</key>
-						<string>9AD81C341D8BA149008534FA</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>9AD81C301D8BA149008534FA</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>9AD81C2C1D8BA149008534FA</string>
-			<key>productRefGroup</key>
-			<string>9AD81C361D8BA149008534FA</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>9AD81C341D8BA149008534FA</string>
-				<string>9AD81C481D8BA149008534FA</string>
-				<string>9AD81C531D8BA149008534FA</string>
-			</array>
-		</dict>
-		<key>9AD81C301D8BA149008534FA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9AD81C5B1D8BA14A008534FA</string>
-				<string>9AD81C5C1D8BA14A008534FA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9AD81C311D8BA149008534FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9A768EE51D8D864D007964F9</string>
-				<string>9AD81C3B1D8BA149008534FA</string>
-				<string>9AA6E3D91D8F90D50079F6EF</string>
-				<string>9A768EE91D8D8A3B007964F9</string>
-				<string>9AD14B771D96447C00F76B90</string>
-				<string>9A768EE31D8CEDC1007964F9</string>
-				<string>9AA6E3DF1D8F945E0079F6EF</string>
-				<string>9A768EDC1D8CE946007964F9</string>
-				<string>9AD81C671D8C2CBA008534FA</string>
-				<string>9AA6E3E51D8F9DAC0079F6EF</string>
-				<string>9AD81C391D8BA149008534FA</string>
-				<string>9AE79E581D940FA4007E5F0B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9AD81C321D8BA149008534FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9A768EE01D8CE961007964F9</string>
-				<string>7465D3EB3486E71CBEF14EBA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9AD81C331D8BA149008534FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9AD14B781D96447C00F76B90</string>
-				<string>9AA6E3E31D8F9D9E0079F6EF</string>
-				<string>9A768EE71D8D873D007964F9</string>
-				<string>9AD81C431D8BA149008534FA</string>
-				<string>9AA6E3E71D8F9E8D0079F6EF</string>
-				<string>9AD81C401D8BA149008534FA</string>
-				<string>9AA6E3E11D8F946B0079F6EF</string>
-				<string>9AD81C3E1D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9AD81C341D8BA149008534FA</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9AD81C5D1D8BA14A008534FA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>7C1C80873FB90AFB414EEA37</string>
-				<string>9AD81C311D8BA149008534FA</string>
-				<string>9AD81C321D8BA149008534FA</string>
-				<string>9AD81C331D8BA149008534FA</string>
-				<string>0E538423C5F54941462C5851</string>
-				<string>9AC516E19C96F5F6231C4F38</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RunningCrabCamera</string>
-			<key>productName</key>
-			<string>RunningCrabCamera</string>
-			<key>productReference</key>
-			<string>9AD81C351D8BA149008534FA</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>9AD81C351D8BA149008534FA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RunningCrabCamera.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9AD81C361D8BA149008534FA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AD81C351D8BA149008534FA</string>
-				<string>9AD81C491D8BA149008534FA</string>
-				<string>9AD81C541D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C371D8BA149008534FA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AD81C381D8BA149008534FA</string>
-				<string>9A768EDD1D8CE94E007964F9</string>
-				<string>9AA6E3DC1D8F93E50079F6EF</string>
-				<string>9AA6E3DD1D8F93F60079F6EF</string>
-				<string>9A768EE11D8CE966007964F9</string>
-				<string>9AD81C3C1D8BA149008534FA</string>
-				<string>9AD81C3F1D8BA149008534FA</string>
-				<string>9AD81C411D8BA149008534FA</string>
-				<string>9AD81C441D8BA149008534FA</string>
-				<string>9AD81C4C1D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RunningCrabCamera</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C381D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C391D8BA149008534FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD81C381D8BA149008534FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AD81C3A1D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>StartViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C3B1D8BA149008534FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD81C3A1D8BA149008534FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AD81C3C1D8BA149008534FA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AD81C3D1D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C3D1D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C3E1D8BA149008534FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD81C3C1D8BA149008534FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AD81C3F1D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C401D8BA149008534FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD81C3F1D8BA149008534FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AD81C411D8BA149008534FA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AD81C421D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C421D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C431D8BA149008534FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD81C411D8BA149008534FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AD81C441D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C451D8BA149008534FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9AD81C4E1D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9AD81C461D8BA149008534FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9AD81C471D8BA149008534FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9AD81C481D8BA149008534FA</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9AD81C601D8BA14A008534FA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9AD81C451D8BA149008534FA</string>
-				<string>9AD81C461D8BA149008534FA</string>
-				<string>9AD81C471D8BA149008534FA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>9AD81C4B1D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RunningCrabCameraTests</string>
-			<key>productName</key>
-			<string>RunningCrabCameraTests</string>
-			<key>productReference</key>
-			<string>9AD81C491D8BA149008534FA</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>9AD81C491D8BA149008534FA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RunningCrabCameraTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9AD81C4A1D8BA149008534FA</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>9AD81C2D1D8BA149008534FA</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>9AD81C341D8BA149008534FA</string>
-			<key>remoteInfo</key>
-			<string>RunningCrabCamera</string>
-		</dict>
-		<key>9AD81C4B1D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>9AD81C341D8BA149008534FA</string>
-			<key>targetProxy</key>
-			<string>9AD81C4A1D8BA149008534FA</string>
-		</dict>
-		<key>9AD81C4C1D8BA149008534FA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AD81C4D1D8BA149008534FA</string>
-				<string>9AD81C4F1D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RunningCrabCameraTests</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-		<key>9AD81C4D1D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>RunningCrabCameraTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C4E1D8BA149008534FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD81C4D1D8BA149008534FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AD81C4F1D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C501D8BA149008534FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9AD81C591D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9AD81C511D8BA149008534FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9AD81C521D8BA149008534FA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>9AD81C531D8BA149008534FA</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9AD81C631D8BA14A008534FA</string>
-			<key>buildPhases</key>
-			<array>
-				<string>9AD81C501D8BA149008534FA</string>
-				<string>9AD81C511D8BA149008534FA</string>
-				<string>9AD81C521D8BA149008534FA</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>9AD81C561D8BA149008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RunningCrabCameraUITests</string>
-			<key>productName</key>
-			<string>RunningCrabCameraUITests</string>
-			<key>productReference</key>
-			<string>9AD81C541D8BA149008534FA</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>9AD81C541D8BA149008534FA</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RunningCrabCameraUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9AD81C551D8BA149008534FA</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>9AD81C2D1D8BA149008534FA</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>9AD81C341D8BA149008534FA</string>
-			<key>remoteInfo</key>
-			<string>RunningCrabCamera</string>
-		</dict>
-		<key>9AD81C561D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>9AD81C341D8BA149008534FA</string>
-			<key>targetProxy</key>
-			<string>9AD81C551D8BA149008534FA</string>
-		</dict>
-		<key>9AD81C571D8BA149008534FA</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9AD81C581D8BA149008534FA</string>
-				<string>9AD81C5A1D8BA14A008534FA</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RunningCrabCameraUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C581D8BA149008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>RunningCrabCameraUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C591D8BA149008534FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD81C581D8BA149008534FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AD81C5A1D8BA14A008534FA</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C5B1D8BA14A008534FA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9AD81C5C1D8BA14A008534FA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.3</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9AD81C5D1D8BA14A008534FA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9AD81C5E1D8BA14A008534FA</string>
-				<string>9AD81C5F1D8BA14A008534FA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9AD81C5E1D8BA14A008534FA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4343314A13456D94526BF826</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>RunningCrabCamera/RunningCrabCamera.entitlements</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RunningCrabCamera/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>rikky0611.RunningCrabCamera</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9AD81C5F1D8BA14A008534FA</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>45643D17D82929A765E34431</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_ENTITLEMENTS</key>
-				<string>RunningCrabCamera/RunningCrabCamera.entitlements</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RunningCrabCamera/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>rikky0611.RunningCrabCamera</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9AD81C601D8BA14A008534FA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9AD81C611D8BA14A008534FA</string>
-				<string>9AD81C621D8BA14A008534FA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9AD81C611D8BA14A008534FA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RunningCrabCameraTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>rikky0611.RunningCrabCameraTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/RunningCrabCamera.app/RunningCrabCamera</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9AD81C621D8BA14A008534FA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RunningCrabCameraTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>rikky0611.RunningCrabCameraTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/RunningCrabCamera.app/RunningCrabCamera</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9AD81C631D8BA14A008534FA</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>9AD81C641D8BA14A008534FA</string>
-				<string>9AD81C651D8BA14A008534FA</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9AD81C641D8BA14A008534FA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>RunningCrabCameraUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>rikky0611.RunningCrabCameraUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>RunningCrabCamera</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>9AD81C651D8BA14A008534FA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>RunningCrabCameraUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>rikky0611.RunningCrabCameraUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>RunningCrabCamera</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9AD81C661D8C2CBA008534FA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Run.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AD81C671D8C2CBA008534FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AD81C661D8C2CBA008534FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>9AE79E571D940FA4007E5F0B</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AlbumViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9AE79E581D940FA4007E5F0B</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9AE79E571D940FA4007E5F0B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BE805F4E6646462265B09D92</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4343314A13456D94526BF826</string>
-				<string>45643D17D82929A765E34431</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>9AD81C2D1D8BA149008534FA</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7465D3EB3486E71CBEF14EBA /* Pods_RunningCrabCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC5AE24EA01B9CD7B040644 /* Pods_RunningCrabCamera.framework */; };
+		9A768EDC1D8CE946007964F9 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EDB1D8CE946007964F9 /* Health.swift */; };
+		9A768EE01D8CE961007964F9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A768EDF1D8CE961007964F9 /* HealthKit.framework */; };
+		9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */; };
+		9A768EE51D8D864D007964F9 /* StampViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE41D8D864D007964F9 /* StampViewController.swift */; };
+		9A768EE71D8D873D007964F9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A768EE61D8D873D007964F9 /* logo.png */; };
+		9A768EE91D8D8A3B007964F9 /* ShareActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */; };
+		9AA6E3D91D8F90D50079F6EF /* ViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */; };
+		9AA6E3DF1D8F945E0079F6EF /* LockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6E3DE1D8F945E0079F6EF /* LockView.swift */; };
+		9AA6E3E11D8F946B0079F6EF /* LockView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E01D8F946B0079F6EF /* LockView.xib */; };
+		9AA6E3E31D8F9D9E0079F6EF /* StampView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E21D8F9D9E0079F6EF /* StampView.xib */; };
+		9AA6E3E51D8F9DAC0079F6EF /* StampView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E41D8F9DAC0079F6EF /* StampView.swift */; };
+		9AA6E3E71D8F9E8D0079F6EF /* club.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AA6E3E61D8F9E8D0079F6EF /* club.png */; };
+		9AD14B771D96447C00F76B90 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD14B751D96447C00F76B90 /* PhotoCell.swift */; };
+		9AD14B781D96447C00F76B90 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD14B761D96447C00F76B90 /* PhotoCell.xib */; };
+		9AD14B7A1D964C2700F76B90 /* PopUpPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD14B791D964C2700F76B90 /* PopUpPhotoView.swift */; };
+		9AD14B7C1D964C4300F76B90 /* PopUpPhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD14B7B1D964C4300F76B90 /* PopUpPhotoView.xib */; };
+		9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C381D8BA149008534FA /* AppDelegate.swift */; };
+		9AD81C3B1D8BA149008534FA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C3A1D8BA149008534FA /* StartViewController.swift */; };
+		9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3C1D8BA149008534FA /* Main.storyboard */; };
+		9AD81C401D8BA149008534FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3F1D8BA149008534FA /* Assets.xcassets */; };
+		9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */; };
+		9AD81C4E1D8BA149008534FA /* RunningCrabCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C4D1D8BA149008534FA /* RunningCrabCameraTests.swift */; };
+		9AD81C591D8BA149008534FA /* RunningCrabCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */; };
+		9AD81C671D8C2CBA008534FA /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C661D8C2CBA008534FA /* Run.swift */; };
+		9AE79E581D940FA4007E5F0B /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE79E571D940FA4007E5F0B /* AlbumViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AD81C4A1D8BA149008534FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AD81C2D1D8BA149008534FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD81C341D8BA149008534FA;
+			remoteInfo = RunningCrabCamera;
+		};
+		9AD81C551D8BA149008534FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AD81C2D1D8BA149008534FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD81C341D8BA149008534FA;
+			remoteInfo = RunningCrabCamera;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4343314A13456D94526BF826 /* Pods-RunningCrabCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningCrabCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RunningCrabCamera/Pods-RunningCrabCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		45643D17D82929A765E34431 /* Pods-RunningCrabCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningCrabCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunningCrabCamera/Pods-RunningCrabCamera.release.xcconfig"; sourceTree = "<group>"; };
+		5AC5AE24EA01B9CD7B040644 /* Pods_RunningCrabCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunningCrabCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A768EDB1D8CE946007964F9 /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
+		9A768EDE1D8CE960007964F9 /* RunningCrabCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RunningCrabCamera.entitlements; sourceTree = "<group>"; };
+		9A768EDF1D8CE961007964F9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		9A768EE41D8D864D007964F9 /* StampViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampViewController.swift; sourceTree = "<group>"; };
+		9A768EE61D8D873D007964F9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareActivity.swift; sourceTree = "<group>"; };
+		9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewManager.swift; sourceTree = "<group>"; };
+		9AA6E3DE1D8F945E0079F6EF /* LockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockView.swift; sourceTree = "<group>"; };
+		9AA6E3E01D8F946B0079F6EF /* LockView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LockView.xib; sourceTree = "<group>"; };
+		9AA6E3E21D8F9D9E0079F6EF /* StampView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StampView.xib; sourceTree = "<group>"; };
+		9AA6E3E41D8F9DAC0079F6EF /* StampView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StampView.swift; sourceTree = "<group>"; };
+		9AA6E3E61D8F9E8D0079F6EF /* club.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = club.png; sourceTree = "<group>"; };
+		9AD14B751D96447C00F76B90 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		9AD14B761D96447C00F76B90 /* PhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		9AD14B791D964C2700F76B90 /* PopUpPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpPhotoView.swift; sourceTree = "<group>"; };
+		9AD14B7B1D964C4300F76B90 /* PopUpPhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpPhotoView.xib; sourceTree = "<group>"; };
+		9AD81C351D8BA149008534FA /* RunningCrabCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCrabCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD81C381D8BA149008534FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9AD81C3A1D8BA149008534FA /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		9AD81C3D1D8BA149008534FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9AD81C3F1D8BA149008534FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AD81C421D8BA149008534FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AD81C441D8BA149008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD81C491D8BA149008534FA /* RunningCrabCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunningCrabCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD81C4D1D8BA149008534FA /* RunningCrabCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningCrabCameraTests.swift; sourceTree = "<group>"; };
+		9AD81C4F1D8BA149008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD81C541D8BA149008534FA /* RunningCrabCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunningCrabCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningCrabCameraUITests.swift; sourceTree = "<group>"; };
+		9AD81C5A1D8BA14A008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AD81C661D8C2CBA008534FA /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		9AE79E571D940FA4007E5F0B /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AD81C321D8BA149008534FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A768EE01D8CE961007964F9 /* HealthKit.framework in Frameworks */,
+				7465D3EB3486E71CBEF14EBA /* Pods_RunningCrabCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C461D8BA149008534FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C511D8BA149008534FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		060C5B84135A3CD463D80237 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5AC5AE24EA01B9CD7B040644 /* Pods_RunningCrabCamera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A768EDD1D8CE94E007964F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C661D8C2CBA008534FA /* Run.swift */,
+				9A768EDB1D8CE946007964F9 /* Health.swift */,
+				9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */,
+				9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9A768EE11D8CE966007964F9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6E3E61D8F9E8D0079F6EF /* club.png */,
+				9A768EE61D8D873D007964F9 /* logo.png */,
+				9A768EDE1D8CE960007964F9 /* RunningCrabCamera.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9AA6E3DC1D8F93E50079F6EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C3A1D8BA149008534FA /* StartViewController.swift */,
+				9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */,
+				9A768EE41D8D864D007964F9 /* StampViewController.swift */,
+				9AE79E571D940FA4007E5F0B /* AlbumViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9AA6E3DD1D8F93F60079F6EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AA6E3DE1D8F945E0079F6EF /* LockView.swift */,
+				9AA6E3E01D8F946B0079F6EF /* LockView.xib */,
+				9AA6E3E41D8F9DAC0079F6EF /* StampView.swift */,
+				9AA6E3E21D8F9D9E0079F6EF /* StampView.xib */,
+				9AD14B751D96447C00F76B90 /* PhotoCell.swift */,
+				9AD14B761D96447C00F76B90 /* PhotoCell.xib */,
+				9AD14B791D964C2700F76B90 /* PopUpPhotoView.swift */,
+				9AD14B7B1D964C4300F76B90 /* PopUpPhotoView.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9AD81C2C1D8BA149008534FA = {
+			isa = PBXGroup;
+			children = (
+				9A768EDF1D8CE961007964F9 /* HealthKit.framework */,
+				9AD81C371D8BA149008534FA /* RunningCrabCamera */,
+				9AD81C571D8BA149008534FA /* RunningCrabCameraUITests */,
+				9AD81C361D8BA149008534FA /* Products */,
+				BE805F4E6646462265B09D92 /* Pods */,
+				060C5B84135A3CD463D80237 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9AD81C361D8BA149008534FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C351D8BA149008534FA /* RunningCrabCamera.app */,
+				9AD81C491D8BA149008534FA /* RunningCrabCameraTests.xctest */,
+				9AD81C541D8BA149008534FA /* RunningCrabCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AD81C371D8BA149008534FA /* RunningCrabCamera */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C381D8BA149008534FA /* AppDelegate.swift */,
+				9A768EDD1D8CE94E007964F9 /* Models */,
+				9AA6E3DC1D8F93E50079F6EF /* Controllers */,
+				9AA6E3DD1D8F93F60079F6EF /* Views */,
+				9A768EE11D8CE966007964F9 /* Resources */,
+				9AD81C3C1D8BA149008534FA /* Main.storyboard */,
+				9AD81C3F1D8BA149008534FA /* Assets.xcassets */,
+				9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */,
+				9AD81C441D8BA149008534FA /* Info.plist */,
+				9AD81C4C1D8BA149008534FA /* RunningCrabCameraTests */,
+			);
+			path = RunningCrabCamera;
+			sourceTree = "<group>";
+		};
+		9AD81C4C1D8BA149008534FA /* RunningCrabCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C4D1D8BA149008534FA /* RunningCrabCameraTests.swift */,
+				9AD81C4F1D8BA149008534FA /* Info.plist */,
+			);
+			path = RunningCrabCameraTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		9AD81C571D8BA149008534FA /* RunningCrabCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */,
+				9AD81C5A1D8BA14A008534FA /* Info.plist */,
+			);
+			path = RunningCrabCameraUITests;
+			sourceTree = "<group>";
+		};
+		BE805F4E6646462265B09D92 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4343314A13456D94526BF826 /* Pods-RunningCrabCamera.debug.xcconfig */,
+				45643D17D82929A765E34431 /* Pods-RunningCrabCamera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AD81C341D8BA149008534FA /* RunningCrabCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD81C5D1D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCamera" */;
+			buildPhases = (
+				7C1C80873FB90AFB414EEA37 /* Check Pods Manifest.lock */,
+				9AD81C311D8BA149008534FA /* Sources */,
+				9AD81C321D8BA149008534FA /* Frameworks */,
+				9AD81C331D8BA149008534FA /* Resources */,
+				0E538423C5F54941462C5851 /* Embed Pods Frameworks */,
+				9AC516E19C96F5F6231C4F38 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RunningCrabCamera;
+			productName = RunningCrabCamera;
+			productReference = 9AD81C351D8BA149008534FA /* RunningCrabCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AD81C481D8BA149008534FA /* RunningCrabCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD81C601D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraTests" */;
+			buildPhases = (
+				9AD81C451D8BA149008534FA /* Sources */,
+				9AD81C461D8BA149008534FA /* Frameworks */,
+				9AD81C471D8BA149008534FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AD81C4B1D8BA149008534FA /* PBXTargetDependency */,
+			);
+			name = RunningCrabCameraTests;
+			productName = RunningCrabCameraTests;
+			productReference = 9AD81C491D8BA149008534FA /* RunningCrabCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AD81C531D8BA149008534FA /* RunningCrabCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AD81C631D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraUITests" */;
+			buildPhases = (
+				9AD81C501D8BA149008534FA /* Sources */,
+				9AD81C511D8BA149008534FA /* Frameworks */,
+				9AD81C521D8BA149008534FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AD81C561D8BA149008534FA /* PBXTargetDependency */,
+			);
+			name = RunningCrabCameraUITests;
+			productName = RunningCrabCameraUITests;
+			productReference = 9AD81C541D8BA149008534FA /* RunningCrabCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AD81C2D1D8BA149008534FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Riku Arakawa";
+				TargetAttributes = {
+					9AD81C341D8BA149008534FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = CWP9ZU9T8Z;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					9AD81C481D8BA149008534FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9AD81C341D8BA149008534FA;
+					};
+					9AD81C531D8BA149008534FA = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 9AD81C341D8BA149008534FA;
+					};
+				};
+			};
+			buildConfigurationList = 9AD81C301D8BA149008534FA /* Build configuration list for PBXProject "RunningCrabCamera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AD81C2C1D8BA149008534FA;
+			productRefGroup = 9AD81C361D8BA149008534FA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AD81C341D8BA149008534FA /* RunningCrabCamera */,
+				9AD81C481D8BA149008534FA /* RunningCrabCameraTests */,
+				9AD81C531D8BA149008534FA /* RunningCrabCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AD81C331D8BA149008534FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD14B781D96447C00F76B90 /* PhotoCell.xib in Resources */,
+				9AA6E3E31D8F9D9E0079F6EF /* StampView.xib in Resources */,
+				9A768EE71D8D873D007964F9 /* logo.png in Resources */,
+				9AD14B7C1D964C4300F76B90 /* PopUpPhotoView.xib in Resources */,
+				9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */,
+				9AA6E3E71D8F9E8D0079F6EF /* club.png in Resources */,
+				9AD81C401D8BA149008534FA /* Assets.xcassets in Resources */,
+				9AA6E3E11D8F946B0079F6EF /* LockView.xib in Resources */,
+				9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C471D8BA149008534FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C521D8BA149008534FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E538423C5F54941462C5851 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunningCrabCamera/Pods-RunningCrabCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1C80873FB90AFB414EEA37 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AC516E19C96F5F6231C4F38 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RunningCrabCamera/Pods-RunningCrabCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AD81C311D8BA149008534FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A768EE51D8D864D007964F9 /* StampViewController.swift in Sources */,
+				9AD81C3B1D8BA149008534FA /* StartViewController.swift in Sources */,
+				9AA6E3D91D8F90D50079F6EF /* ViewManager.swift in Sources */,
+				9A768EE91D8D8A3B007964F9 /* ShareActivity.swift in Sources */,
+				9AD14B771D96447C00F76B90 /* PhotoCell.swift in Sources */,
+				9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */,
+				9AA6E3DF1D8F945E0079F6EF /* LockView.swift in Sources */,
+				9A768EDC1D8CE946007964F9 /* Health.swift in Sources */,
+				9AD81C671D8C2CBA008534FA /* Run.swift in Sources */,
+				9AA6E3E51D8F9DAC0079F6EF /* StampView.swift in Sources */,
+				9AD14B7A1D964C2700F76B90 /* PopUpPhotoView.swift in Sources */,
+				9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */,
+				9AE79E581D940FA4007E5F0B /* AlbumViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C451D8BA149008534FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD81C4E1D8BA149008534FA /* RunningCrabCameraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AD81C501D8BA149008534FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AD81C591D8BA149008534FA /* RunningCrabCameraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AD81C4B1D8BA149008534FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AD81C341D8BA149008534FA /* RunningCrabCamera */;
+			targetProxy = 9AD81C4A1D8BA149008534FA /* PBXContainerItemProxy */;
+		};
+		9AD81C561D8BA149008534FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AD81C341D8BA149008534FA /* RunningCrabCamera */;
+			targetProxy = 9AD81C551D8BA149008534FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AD81C3C1D8BA149008534FA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AD81C3D1D8BA149008534FA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9AD81C411D8BA149008534FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AD81C421D8BA149008534FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AD81C5B1D8BA14A008534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9AD81C5C1D8BA14A008534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AD81C5E1D8BA14A008534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4343314A13456D94526BF826 /* Pods-RunningCrabCamera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RunningCrabCamera/RunningCrabCamera.entitlements;
+				INFOPLIST_FILE = RunningCrabCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AD81C5F1D8BA14A008534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45643D17D82929A765E34431 /* Pods-RunningCrabCamera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RunningCrabCamera/RunningCrabCamera.entitlements;
+				INFOPLIST_FILE = RunningCrabCamera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9AD81C611D8BA14A008534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RunningCrabCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RunningCrabCamera.app/RunningCrabCamera";
+			};
+			name = Debug;
+		};
+		9AD81C621D8BA14A008534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RunningCrabCameraTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCameraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RunningCrabCamera.app/RunningCrabCamera";
+			};
+			name = Release;
+		};
+		9AD81C641D8BA14A008534FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RunningCrabCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RunningCrabCamera;
+			};
+			name = Debug;
+		};
+		9AD81C651D8BA14A008534FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RunningCrabCameraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = rikky0611.RunningCrabCameraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RunningCrabCamera;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AD81C301D8BA149008534FA /* Build configuration list for PBXProject "RunningCrabCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD81C5B1D8BA14A008534FA /* Debug */,
+				9AD81C5C1D8BA14A008534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD81C5D1D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD81C5E1D8BA14A008534FA /* Debug */,
+				9AD81C5F1D8BA14A008534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD81C601D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD81C611D8BA14A008534FA /* Debug */,
+				9AD81C621D8BA14A008534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AD81C631D8BA14A008534FA /* Build configuration list for PBXNativeTarget "RunningCrabCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AD81C641D8BA14A008534FA /* Debug */,
+				9AD81C651D8BA14A008534FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AD81C2D1D8BA149008534FA /* Project object */;
+}

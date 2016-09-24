@@ -11,6 +11,7 @@ import STZPopupView
 
 class AlbumViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var popupView: PopUpPhotoView!
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView.delegate = self
@@ -37,7 +38,9 @@ extension AlbumViewController: UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print("tapped")
+        popupView =  UINib(nibName: "PopUpPhotoView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! PopUpPhotoView
+        popupView.configure(UIImage(named: "club.png")!)
+        presentPopupView(popupView)
     }
 
 }
