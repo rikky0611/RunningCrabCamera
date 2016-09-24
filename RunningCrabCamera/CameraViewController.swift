@@ -26,6 +26,7 @@ class CameraViewController: UIViewController {
     
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var changeCameraPositionButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cameraButton.addTarget(self,action: #selector(didTapCameraButton(_:)), forControlEvents: .TouchUpInside)
@@ -49,6 +50,7 @@ class CameraViewController: UIViewController {
         if segue.identifier == "toNext" {
             let stampViewController = segue.destinationViewController as! StampViewController
             stampViewController.takenImage = image
+            stampViewController.timeStamp = NSDate()
             print("success")
         }
     }
