@@ -16,8 +16,8 @@ class PhotoCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func configure() {
-        imageView.image = UIImage(named: "club.png")
+    func configure(image: UIImage) {
+        imageView.image = image
     }
 
 }

@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'RunningCrabCamera' do
 pod 'STZPopupView', '~> 1.0.2'
+pod 'RealmSwift', '~> 1.0.2'
 end
 
 target 'RunningCrabCameraTests' do
