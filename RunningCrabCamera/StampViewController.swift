@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class StampViewController: UIViewController {
     var takenImage: UIImage!
+    var timeStamp: NSDate!
     let screenWidth = UIScreen.mainScreen().bounds.width
     var stampView: StampView!
     
@@ -32,6 +34,25 @@ class StampViewController: UIViewController {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         self.presentViewController(ShareActivityController.create(image), animated: true, completion: nil)
+    }
+    
+    @IBAction func savePhotoToAlbum() {
+        guard let realm = try? Realm() else { return }
+        
+        UIGraphicsBeginImageContext(stampView.bounds.size)
+        stampView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        let object = PhotoObject(distance: Run.currentRun.distance!,
+                                 image: image,
+                                 timeStamp: timeStamp)
+        do {
+            try realm.write {
+                realm.add(object, update: false)
+                print("データベースに保存")
+            }
+        } catch {}
     }
     
     override func didReceiveMemoryWarning() {
