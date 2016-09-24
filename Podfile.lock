@@ -1,0 +1,10 @@
+PODS:
+  - STZPopupView (1.0.2)
+
+DEPENDENCIES:
+  - STZPopupView (~> 1.0.2)
+
+SPEC CHECKSUMS:
+  STZPopupView: 4eb11a72c71d2942e23a4444d1bde40e563702e3
+
+COCOAPODS: 0.39.0

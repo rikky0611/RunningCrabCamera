@@ -194,9 +194,51 @@
                     <view key="view" contentMode="scaleToFill" id="e9B-FP-W5G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXs-lS-8J0" customClass="PopUpPhotoView" customModule="RunningCrabCamera" customModuleProvider="target">
+                                <rect key="frame" x="87" y="248" width="240" height="240"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="URN-TK-eqk"/>
+                                    <constraint firstAttribute="width" secondItem="VXs-lS-8J0" secondAttribute="height" multiplier="1:1" id="jDs-8A-rvm"/>
+                                </constraints>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Rp-PD-lrV">
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j5Y-gA-tpg">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6si-QX-wBh">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rqx-au-epr" firstAttribute="top" secondItem="0Rp-PD-lrV" secondAttribute="bottom" id="3KN-Hz-RDW"/>
+                            <constraint firstItem="VXs-lS-8J0" firstAttribute="centerY" secondItem="e9B-FP-W5G" secondAttribute="centerY" id="HuW-en-KWt"/>
+                            <constraint firstItem="0Rp-PD-lrV" firstAttribute="top" secondItem="KhN-P3-hkM" secondAttribute="bottom" id="JWD-cM-yeY"/>
+                            <constraint firstAttribute="trailing" secondItem="0Rp-PD-lrV" secondAttribute="trailing" id="OnA-8Q-Oso"/>
+                            <constraint firstItem="VXs-lS-8J0" firstAttribute="centerX" secondItem="e9B-FP-W5G" secondAttribute="centerX" id="Yiy-P5-GGn"/>
+                            <constraint firstItem="0Rp-PD-lrV" firstAttribute="leading" secondItem="e9B-FP-W5G" secondAttribute="leading" id="cp6-SO-bvb"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="collectionView" destination="0Rp-PD-lrV" id="e5O-eI-ywW"/>
+                        <outlet property="popupView" destination="VXs-lS-8J0" id="YIX-L1-0Yo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jsH-dd-h1D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
