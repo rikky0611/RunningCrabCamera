@@ -24,20 +24,75 @@ class CameraViewController: UIViewController {
     
     var lockView: LockView!
     
+    @IBOutlet weak var cameraButton: UIButton!
+    @IBOutlet weak var changeCameraPositionButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        cameraButton.addTarget(self,action: #selector(didTapCameraButton(_:)), forControlEvents: .TouchUpInside)
+        changeCameraPositionButton.addTarget(self, action: #selector(didTapChangeCameraPositionButton(_:)), forControlEvents: .TouchUpInside)
+        
+        cameraButton.enabled = false
+        changeCameraPositionButton.enabled = false
     }
     
-    // メモリ管理のため
     override func viewWillAppear(animated: Bool) {
         setupCameraWithPosition(.Back)
         setupLockView()
+        updateRunAndLockView()
     }
-    // メモリ管理のため
+    
     override func viewDidDisappear(animated: Bool) {
         initializeForMemory()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "toNext" {
+            let stampViewController = segue.destinationViewController as! StampViewController
+            stampViewController.takenImage = image
+            print("success")
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+}
+
+
+//MARK: LockView系メソッド
+
+
+extension CameraViewController {
+    private func setupLockView() {
+        lockView =  UINib(nibName: "LockView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! LockView
+        lockView.frame = cameraFrame
+        view.addSubview(lockView)
+    }
+    
+    private func updateRunAndLockView() {
+        guard Run.currentRun != nil else { return }
+        Run.currentRun.update() {
+            self.lockView.update()
+            if Run.currentRun.isFinished {
+                self.removeLockViewAndEnableCameraButton()
+            }
+        }
+    }
+    
+    private func removeLockViewAndEnableCameraButton() {
+        lockView.removeFromSuperview()
+        cameraButton.enabled = true
+        changeCameraPositionButton.enabled = true
+    }
+
+}
+
+
+//MARK: Camera系メソッド
+
+
+extension CameraViewController {
     private func initializeForMemory() {
         session.stopRunning()
         for output in session.outputs {
@@ -89,19 +144,7 @@ class CameraViewController: UIViewController {
         session.startRunning()
     }
     
-    private func setupLockView() {
-        lockView =  UINib(nibName: "LockView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! LockView
-        lockView.frame = cameraFrame
-        view.addSubview(lockView)
-    }
-    
-    private func updateRunAndLockView() {
-        guard Run.currentRun != nil else { return }
-        Run.currentRun.update()
-        lockView.update()
-    }
-    
-    @IBAction func takeStillPicture() {
+    func didTapCameraButton(sender: UIButton) {
         if let connection:AVCaptureConnection? = output.connectionWithMediaType(AVMediaTypeVideo) {
             // ビデオ出力から画像を非同期で取得
             output.captureStillImageAsynchronouslyFromConnection(connection, completionHandler: { (imageDataBuffer, error) -> Void in
@@ -112,7 +155,7 @@ class CameraViewController: UIViewController {
         }
     }
     
-    @IBAction func changeCameraPosition() {
+    func didTapChangeCameraPositionButton(sender: UIButton) {
         if camera.position == .Back {
             setupCameraWithPosition(.Front)
         }
@@ -120,17 +163,5 @@ class CameraViewController: UIViewController {
             setupCameraWithPosition(.Back)
         }
     }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if segue.identifier == "toNext" {
-            let stampViewController = segue.destinationViewController as! StampViewController
-            stampViewController.takenImage = image
-            print("success")
-        }
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+
 }

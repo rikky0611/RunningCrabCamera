@@ -10,7 +10,12 @@ import Foundation
 
 struct Run {
     var distance: Double?
-    var soFarDistance: Double?
+    var soFarDistance: Double? {
+        didSet(value){
+            print("newValue=\(value)")
+        }
+    }
+
     var startDate: NSDate?
     var isFinished: Bool {
         return soFarDistance >= distance
@@ -22,8 +27,8 @@ struct Run {
         self.startDate = startDate
     }
     
-    func update() {
-        Health.readHealthData()
+    func update(completion: Void -> Void) {
+        Health.readHealthData(completion)
     }
     
     static var currentRun: Run!
