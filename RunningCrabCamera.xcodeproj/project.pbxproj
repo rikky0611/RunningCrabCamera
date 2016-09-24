@@ -26,6 +26,7 @@
 		9AD14B7C1D964C4300F76B90 /* PopUpPhotoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AD14B7B1D964C4300F76B90 /* PopUpPhotoView.xib */; };
 		9AD14B7E1D96587600F76B90 /* PhotoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD14B7D1D96587600F76B90 /* PhotoObject.swift */; };
 		9AD14B811D965A4700F76B90 /* RealmMigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD14B801D965A4700F76B90 /* RealmMigration.swift */; };
+		9AD14B841D96766E00F76B90 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD14B831D96766E00F76B90 /* DateUtils.swift */; };
 		9AD81C391D8BA149008534FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C381D8BA149008534FA /* AppDelegate.swift */; };
 		9AD81C3B1D8BA149008534FA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C3A1D8BA149008534FA /* StartViewController.swift */; };
 		9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AD81C3C1D8BA149008534FA /* Main.storyboard */; };
@@ -77,6 +78,7 @@
 		9AD14B7B1D964C4300F76B90 /* PopUpPhotoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopUpPhotoView.xib; sourceTree = "<group>"; };
 		9AD14B7D1D96587600F76B90 /* PhotoObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoObject.swift; sourceTree = "<group>"; };
 		9AD14B801D965A4700F76B90 /* RealmMigration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmMigration.swift; sourceTree = "<group>"; };
+		9AD14B831D96766E00F76B90 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		9AD81C351D8BA149008534FA /* RunningCrabCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunningCrabCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AD81C381D8BA149008534FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9AD81C3A1D8BA149008534FA /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -135,8 +137,6 @@
 				9AD14B7F1D96587D00F76B90 /* Realm */,
 				9AD81C661D8C2CBA008534FA /* Run.swift */,
 				9A768EDB1D8CE946007964F9 /* Health.swift */,
-				9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */,
-				9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -186,6 +186,16 @@
 			name = Realm;
 			sourceTree = "<group>";
 		};
+		9AD14B821D96764B00F76B90 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9A768EE81D8D8A3B007964F9 /* ShareActivity.swift */,
+				9AA6E3D81D8F90D50079F6EF /* ViewManager.swift */,
+				9AD14B831D96766E00F76B90 /* DateUtils.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
 		9AD81C2C1D8BA149008534FA = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				9AD81C381D8BA149008534FA /* AppDelegate.swift */,
+				9AD14B821D96764B00F76B90 /* Utils */,
 				9A768EDD1D8CE94E007964F9 /* Models */,
 				9AA6E3DC1D8F93E50079F6EF /* Controllers */,
 				9AA6E3DD1D8F93F60079F6EF /* Views */,
@@ -455,6 +466,7 @@
 				9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */,
 				9AA6E3DF1D8F945E0079F6EF /* LockView.swift in Sources */,
 				9AD14B7E1D96587600F76B90 /* PhotoObject.swift in Sources */,
+				9AD14B841D96766E00F76B90 /* DateUtils.swift in Sources */,
 				9A768EDC1D8CE946007964F9 /* Health.swift in Sources */,
 				9AD81C671D8C2CBA008534FA /* Run.swift in Sources */,
 				9AA6E3E51D8F9DAC0079F6EF /* StampView.swift in Sources */,

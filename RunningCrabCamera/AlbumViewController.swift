@@ -43,7 +43,7 @@ extension AlbumViewController: UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         popupView =  UINib(nibName: "PopUpPhotoView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! PopUpPhotoView
-        popupView.configure(photoObjectArray[indexPath.row].image!)
+        popupView.configure(photoObjectArray[indexPath.row])
         presentPopupView(popupView)
     }
 
