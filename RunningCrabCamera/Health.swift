@@ -28,7 +28,7 @@ struct Health {
                     if let result = results.last {
                         let mUnit = HKUnit(fromString: "m")
                         distance = result.quantity.doubleValueForUnit(mUnit)
-                        Run.currentRun.soFarDistance = distance! / 10000
+                        Run.currentRun.soFarDistance = distance! / 1000
                         completion()
                     }
                 }

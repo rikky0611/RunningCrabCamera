@@ -170,7 +170,7 @@ extension CameraViewController {
 }
 
 
-//MARK: リセット系Camera系メソッド
+//MARK: リセット系メソッド
 
 
 extension CameraViewController {
