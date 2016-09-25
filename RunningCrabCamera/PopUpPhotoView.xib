@@ -20,15 +20,29 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWK-4q-2op">
+                    <rect key="frame" x="255" y="255" width="45" height="45"/>
+                    <color key="backgroundColor" red="0.34940642222376073" green="0.95123800591248753" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="OnY-wH-fUz"/>
+                        <constraint firstAttribute="width" constant="45" id="ctX-aT-mF6"/>
+                    </constraints>
+                    <state key="normal" title="→"/>
+                    <connections>
+                        <action selector="didTapActionButton" destination="iN0-l3-epB" eventType="touchUpInside" id="Hm2-u7-Fsk"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstAttribute="bottom" secondItem="zWK-4q-2op" secondAttribute="bottom" id="4LE-ll-Guh"/>
                 <constraint firstAttribute="bottom" secondItem="hwu-qY-hT1" secondAttribute="bottom" id="Fzy-7x-RlB"/>
                 <constraint firstAttribute="trailing" secondItem="EEs-hk-ECI" secondAttribute="trailing" constant="20" id="HZP-Dq-d9y"/>
                 <constraint firstItem="EEs-hk-ECI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="P8N-wk-dxD"/>
                 <constraint firstAttribute="bottom" secondItem="EEs-hk-ECI" secondAttribute="bottom" constant="20" id="Wqi-YH-YPy"/>
                 <constraint firstAttribute="trailing" secondItem="hwu-qY-hT1" secondAttribute="trailing" constant="20" id="X5h-AJ-gP7"/>
                 <constraint firstItem="EEs-hk-ECI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="c0M-2I-FMu"/>
+                <constraint firstAttribute="trailing" secondItem="zWK-4q-2op" secondAttribute="trailing" id="hcI-wx-Pe7"/>
                 <constraint firstItem="hwu-qY-hT1" firstAttribute="top" secondItem="EEs-hk-ECI" secondAttribute="bottom" id="ub4-d8-vpv"/>
                 <constraint firstItem="hwu-qY-hT1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="uby-xn-A3y"/>
             </constraints>

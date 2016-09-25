@@ -43,6 +43,7 @@ extension AlbumViewController: UICollectionViewDataSource, UICollectionViewDeleg
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         popupView =  UINib(nibName: "PopUpPhotoView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! PopUpPhotoView
+        popupView.delegate = self
         popupView.configure(photoObjectArray[indexPath.row])
         presentPopupView(popupView)
     }
@@ -53,5 +54,11 @@ extension AlbumViewController {
     private func loadPhoto() {
         guard let realm = try? Realm() else { return }
         photoObjectArray = realm.objects(PhotoObject).sorted("timeStamp").reverse()
+    }
+}
+
+extension AlbumViewController: PopUpPhotoViewDelegate {
+    func didTapActionButton(object: PhotoObject) {
+        self.presentViewController(ShareActivityController.create(object.image!), animated: true, completion: nil)
     }
 }
