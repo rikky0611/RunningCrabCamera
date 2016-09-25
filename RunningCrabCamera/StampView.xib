@@ -27,12 +27,30 @@
                         <constraint firstAttribute="height" constant="100" id="psg-uC-U6l"/>
                     </constraints>
                 </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tkA-X1-mlq">
+                    <rect key="frame" x="60" y="530" width="430" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="L0f-rn-87J"/>
+                        <constraint firstAttribute="height" constant="40" id="Yur-DW-yuN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="L0f-rn-87J"/>
+                        </mask>
+                    </variation>
+                </label>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="7Ix-Nl-clx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7jI-O0-Ynz"/>
+                <constraint firstItem="tkA-X1-mlq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="8aC-TQ-R8i"/>
                 <constraint firstAttribute="trailing" secondItem="zWi-OS-fVm" secondAttribute="trailing" constant="50" id="CMP-Tl-9rQ"/>
                 <constraint firstAttribute="bottom" secondItem="nN6-As-EXY" secondAttribute="bottom" id="Clw-l6-YBh"/>
+                <constraint firstAttribute="bottom" secondItem="tkA-X1-mlq" secondAttribute="bottom" constant="30" id="HfT-mS-Fal"/>
+                <constraint firstItem="nN6-As-EXY" firstAttribute="leading" secondItem="tkA-X1-mlq" secondAttribute="trailing" constant="10" id="MCh-c3-QGC"/>
                 <constraint firstAttribute="bottom" secondItem="7Ix-Nl-clx" secondAttribute="bottom" id="R1g-m8-XHb"/>
                 <constraint firstAttribute="trailing" secondItem="7Ix-Nl-clx" secondAttribute="trailing" id="TUY-dI-nVe"/>
                 <constraint firstItem="zWi-OS-fVm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="100" id="UQH-5y-CcR"/>
@@ -42,6 +60,7 @@
             </constraints>
             <connections>
                 <outlet property="imageViewForTakenImage" destination="7Ix-Nl-clx" id="h7A-gN-j6i"/>
+                <outlet property="labelForComment" destination="tkA-X1-mlq" id="eT4-4g-nPS"/>
             </connections>
         </view>
     </objects>
