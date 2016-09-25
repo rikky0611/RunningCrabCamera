@@ -25,7 +25,7 @@ class StampViewController: UIViewController {
         
         stampView =  UINib(nibName: "StampView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! StampView
         stampView.frame = cameraFrame
-        stampView.configure(takenImage)
+        stampView.configure(takenImage, distance: Run.currentRun.distance!)
         view.addSubview(stampView)
         
         savePhotoToAlbum()

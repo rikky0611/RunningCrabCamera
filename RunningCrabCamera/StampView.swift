@@ -10,9 +10,11 @@ import UIKit
 
 class StampView: UIView {
     @IBOutlet weak var imageViewForTakenImage: UIImageView!
+    @IBOutlet weak var labelForComment: UILabel!
     
-    func configure(image: UIImage) {
+    func configure(image: UIImage, distance: Double) {
         imageViewForTakenImage.image = image
+        labelForComment.text = "\(distance)km完走だｶﾆ！"
     }    
 
     /*
