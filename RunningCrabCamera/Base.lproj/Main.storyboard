@@ -19,30 +19,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikei.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-jT-hFt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikei2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-jT-hFt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-6d-cp7">
-                                <rect key="frame" x="147.5" y="491.5" width="120" height="120"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="7pz-oE-jmk"/>
-                                    <constraint firstAttribute="width" constant="120" id="SDH-lf-PwU"/>
-                                    <constraint firstAttribute="width" secondItem="U0D-6d-cp7" secondAttribute="height" multiplier="1:1" id="yBm-QA-oPm"/>
-                                </constraints>
-                                <state key="normal" image="startBtn.png">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="7pz-oE-jmk"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="didTapStartButton" destination="ERJ-PW-7PP" eventType="touchUpInside" id="oRL-B7-sWB"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sz-Jt-hsL">
-                                <rect key="frame" x="182" y="328" width="50" height="25"/>
+                                <rect key="frame" x="182" y="329" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="7nd-vV-nBa"/>
                                     <constraint firstAttribute="width" constant="50" id="fk3-4H-dV0"/>
@@ -52,7 +33,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSq-wc-o4o">
-                                <rect key="frame" x="257" y="396" width="50" height="25"/>
+                                <rect key="frame" x="257" y="397" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="F3I-hS-zTX"/>
                                     <constraint firstAttribute="height" constant="25" id="H7g-jS-xKT"/>
@@ -61,15 +42,15 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crabs.png" translatesAutoresizingMaskIntoConstraints="NO" id="ocD-K8-uMx">
-                                <rect key="frame" x="132" y="258" width="150" height="40"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crabs2.png" translatesAutoresizingMaskIntoConstraints="NO" id="ocD-K8-uMx">
+                                <rect key="frame" x="132" y="259" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="gQv-sz-G7C"/>
                                     <constraint firstAttribute="width" constant="150" id="p5X-HR-mDg"/>
                                 </constraints>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um5-sr-a3v">
-                                <rect key="frame" x="157" y="361" width="100" height="100"/>
+                                <rect key="frame" x="157" y="362" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="cz7-NF-S1W"/>
                                     <constraint firstAttribute="height" constant="100" id="lCJ-IS-cHR"/>
@@ -82,6 +63,25 @@
                                     <constraint firstAttribute="height" constant="60" id="Yvp-VB-41K"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-6d-cp7">
+                                <rect key="frame" x="147" y="492" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7pz-oE-jmk"/>
+                                    <constraint firstAttribute="width" constant="120" id="SDH-lf-PwU"/>
+                                    <constraint firstAttribute="width" secondItem="U0D-6d-cp7" secondAttribute="height" multiplier="1:1" id="yBm-QA-oPm"/>
+                                </constraints>
+                                <state key="normal" image="startBtn2.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7pz-oE-jmk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="didTapStartButton" destination="ERJ-PW-7PP" eventType="touchUpInside" id="oRL-B7-sWB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="sSq-wc-o4o" secondAttribute="trailing" constant="20" id="1zQ-GW-soG"/>
@@ -150,7 +150,7 @@
                                     <constraint firstAttribute="height" constant="50" id="a9u-Hh-rsq"/>
                                     <constraint firstAttribute="width" constant="70" id="tpL-tV-wAF"/>
                                 </constraints>
-                                <state key="normal" image="shutterBtn.png"/>
+                                <state key="normal" image="shutterBtn2.png"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="a9u-Hh-rsq"/>
@@ -164,7 +164,7 @@
                                     <constraint firstAttribute="width" secondItem="24C-B4-UEF" secondAttribute="height" multiplier="1:1" id="hoz-VX-faG"/>
                                     <constraint firstAttribute="width" constant="40" id="kwq-Go-xhl"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="hand.png"/>
+                                <state key="normal" backgroundImage="hand2.png"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="h5h-Ps-mJZ"/>
@@ -189,7 +189,7 @@
                                 <action selector="didTapResetButton" destination="BYZ-38-t0r" id="rJJ-Zm-keT"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="changeCamera.png" style="plain" id="2HE-rh-Dpu">
+                        <barButtonItem key="rightBarButtonItem" image="changeCamera2.png" style="plain" id="2HE-rh-Dpu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bWk-xk-OKh">
                                 <rect key="frame" x="364" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -197,7 +197,7 @@
                                     <constraint firstAttribute="width" constant="30" id="WSj-Cn-73j"/>
                                     <constraint firstAttribute="height" constant="30" id="yBf-rQ-cd1"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="changeCamera.png"/>
+                                <state key="normal" backgroundImage="changeCamera2.png"/>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -348,12 +348,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="changeCamera.png" width="1024" height="1024"/>
-        <image name="crabs.png" width="1013" height="231"/>
-        <image name="haikei.jpg" width="1600" height="1066"/>
-        <image name="hand.png" width="1024" height="1024"/>
+        <image name="changeCamera2.png" width="1024" height="1024"/>
+        <image name="crabs2.png" width="1013" height="231"/>
+        <image name="haikei2.jpg" width="1600" height="1066"/>
+        <image name="hand2.png" width="1024" height="1024"/>
         <image name="logo.png" width="291" height="135"/>
-        <image name="shutterBtn.png" width="1024" height="1024"/>
-        <image name="startBtn.png" width="1024" height="1024"/>
+        <image name="shutterBtn2.png" width="1024" height="1024"/>
+        <image name="startBtn2.png" width="1024" height="1024"/>
     </resources>
 </document>

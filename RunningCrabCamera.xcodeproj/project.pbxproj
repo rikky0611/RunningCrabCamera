@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		7465D3EB3486E71CBEF14EBA /* Pods_RunningCrabCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AC5AE24EA01B9CD7B040644 /* Pods_RunningCrabCamera.framework */; };
 		9A4D8D481D991D8A0023FB9F /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D8D471D991D8A0023FB9F /* ColorManager.swift */; };
+		9A4D8D671D9969150023FB9F /* changeCamera2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D601D9969150023FB9F /* changeCamera2.png */; };
+		9A4D8D681D9969150023FB9F /* crab2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D611D9969150023FB9F /* crab2.png */; };
+		9A4D8D691D9969150023FB9F /* crabs2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D621D9969150023FB9F /* crabs2.png */; };
+		9A4D8D6A1D9969150023FB9F /* haikei2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D631D9969150023FB9F /* haikei2.jpg */; };
+		9A4D8D6B1D9969150023FB9F /* hand2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D641D9969150023FB9F /* hand2.png */; };
+		9A4D8D6C1D9969150023FB9F /* shutterBtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D651D9969150023FB9F /* shutterBtn2.png */; };
+		9A4D8D6D1D9969150023FB9F /* startBtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D661D9969150023FB9F /* startBtn2.png */; };
+		9A4D8D6F1D9969320023FB9F /* share2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D6E1D9969320023FB9F /* share2.png */; };
 		9A768EDC1D8CE946007964F9 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EDB1D8CE946007964F9 /* Health.swift */; };
 		9A768EE01D8CE961007964F9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A768EDF1D8CE961007964F9 /* HealthKit.framework */; };
 		9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */; };
@@ -61,6 +69,14 @@
 		45643D17D82929A765E34431 /* Pods-RunningCrabCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RunningCrabCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-RunningCrabCamera/Pods-RunningCrabCamera.release.xcconfig"; sourceTree = "<group>"; };
 		5AC5AE24EA01B9CD7B040644 /* Pods_RunningCrabCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RunningCrabCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4D8D471D991D8A0023FB9F /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		9A4D8D601D9969150023FB9F /* changeCamera2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = changeCamera2.png; sourceTree = "<group>"; };
+		9A4D8D611D9969150023FB9F /* crab2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crab2.png; sourceTree = "<group>"; };
+		9A4D8D621D9969150023FB9F /* crabs2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crabs2.png; sourceTree = "<group>"; };
+		9A4D8D631D9969150023FB9F /* haikei2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haikei2.jpg; sourceTree = "<group>"; };
+		9A4D8D641D9969150023FB9F /* hand2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand2.png; sourceTree = "<group>"; };
+		9A4D8D651D9969150023FB9F /* shutterBtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shutterBtn2.png; sourceTree = "<group>"; };
+		9A4D8D661D9969150023FB9F /* startBtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startBtn2.png; sourceTree = "<group>"; };
+		9A4D8D6E1D9969320023FB9F /* share2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share2.png; sourceTree = "<group>"; };
 		9A768EDB1D8CE946007964F9 /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
 		9A768EDE1D8CE960007964F9 /* RunningCrabCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RunningCrabCamera.entitlements; sourceTree = "<group>"; };
 		9A768EDF1D8CE961007964F9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -146,6 +162,14 @@
 		9A768EE11D8CE966007964F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9A4D8D601D9969150023FB9F /* changeCamera2.png */,
+				9A4D8D611D9969150023FB9F /* crab2.png */,
+				9A4D8D621D9969150023FB9F /* crabs2.png */,
+				9A4D8D631D9969150023FB9F /* haikei2.jpg */,
+				9A4D8D641D9969150023FB9F /* hand2.png */,
+				9A4D8D651D9969150023FB9F /* shutterBtn2.png */,
+				9A4D8D661D9969150023FB9F /* startBtn2.png */,
+				9A4D8D6E1D9969320023FB9F /* share2.png */,
 				9AA6E3E61D8F9E8D0079F6EF /* club.png */,
 				9A768EE61D8D873D007964F9 /* logo.png */,
 				9A768EDE1D8CE960007964F9 /* RunningCrabCamera.entitlements */,
@@ -380,14 +404,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AD14B781D96447C00F76B90 /* PhotoCell.xib in Resources */,
+				9A4D8D6B1D9969150023FB9F /* hand2.png in Resources */,
 				9AA6E3E31D8F9D9E0079F6EF /* StampView.xib in Resources */,
+				9A4D8D691D9969150023FB9F /* crabs2.png in Resources */,
+				9A4D8D6D1D9969150023FB9F /* startBtn2.png in Resources */,
 				9A768EE71D8D873D007964F9 /* logo.png in Resources */,
 				9AD14B7C1D964C4300F76B90 /* PopUpPhotoView.xib in Resources */,
 				9AD81C431D8BA149008534FA /* LaunchScreen.storyboard in Resources */,
 				9AA6E3E71D8F9E8D0079F6EF /* club.png in Resources */,
+				9A4D8D6A1D9969150023FB9F /* haikei2.jpg in Resources */,
+				9A4D8D681D9969150023FB9F /* crab2.png in Resources */,
 				9AD81C401D8BA149008534FA /* Assets.xcassets in Resources */,
+				9A4D8D6F1D9969320023FB9F /* share2.png in Resources */,
+				9A4D8D6C1D9969150023FB9F /* shutterBtn2.png in Resources */,
 				9AA6E3E11D8F946B0079F6EF /* LockView.xib in Resources */,
 				9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */,
+				9A4D8D671D9969150023FB9F /* changeCamera2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

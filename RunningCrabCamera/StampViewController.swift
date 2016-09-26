@@ -60,10 +60,6 @@ class StampViewController: UIViewController {
 
 extension StampViewController {
     @IBAction func didTapActionButton() {
-        UIGraphicsBeginImageContext(stampView.bounds.size)
-        stampView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
         self.presentViewController(ShareActivityController.create(object), animated: true, completion: nil)
     }
     
@@ -76,7 +72,7 @@ extension StampViewController {
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
         alertView.iconTintColor = UIColor.whiteColor()
-        alertView.showCustom("Congrats!", subTitle: "ナイスランだったｶﾆ！また一緒に走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab.png")!)
+        alertView.showCustom("Congrats!", subTitle: "ナイスランだったｶﾆ！また一緒に走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!)
     }
 
 }

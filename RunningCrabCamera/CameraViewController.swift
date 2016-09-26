@@ -206,7 +206,7 @@ extension CameraViewController {
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
         alertView.iconTintColor = UIColor.whiteColor()
-        alertView.showCustom("注意", subTitle: "ランを終了すると今回のランは記録されないｶﾆ。\n ランを終了するｶﾆ？", color: UIColor.crabRed(), icon: UIImage(named: "crab.png")!, closeButtonTitle: "キャンセル")
+        alertView.showCustom("注意", subTitle: "ランを終了すると今回のランは記録されないｶﾆ。\n ランを終了するｶﾆ？", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!, closeButtonTitle: "キャンセル")
 
     }
 }

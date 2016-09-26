@@ -25,7 +25,7 @@ class PopUpPhotoView: UIView {
         let timeStamp = DateUtils.stringFromDate(object.timeStamp, format: "yyyy/MM/dd HH:mm")
         label.text = timeStamp
         
-        let shareImage = UIImage(named: "share.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        let shareImage = UIImage(named: "share2.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         actionButton.setImage(shareImage, forState: .Normal)
         actionButton.tintColor = UIColor.crabBlue()
     }

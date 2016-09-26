@@ -28,12 +28,12 @@ class StartViewController: UIViewController {
         if distance < 1.0 {
             let alertView = SCLAlertView()
             alertView.iconTintColor = UIColor.whiteColor()
-            alertView.showCustom("Ooops", subTitle: "短すぎるｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab.png")!,closeButtonTitle: "OK")
+            alertView.showCustom("Ooops", subTitle: "短すぎるｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!,closeButtonTitle: "OK")
         }
         else if distance > 42.195 {
             let alertView = SCLAlertView()
             alertView.iconTintColor = UIColor.whiteColor()
-            alertView.showCustom("Ooops", subTitle: "フルマラソンより長いｶﾆ！危険だｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab.png")!, closeButtonTitle: "OK")
+            alertView.showCustom("Ooops", subTitle: "フルマラソンより長いｶﾆ！危険だｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!, closeButtonTitle: "OK")
         } else {
             Run.currentRun = Run(distance: distance)
             let appearance = SCLAlertView.SCLAppearance(
@@ -44,7 +44,7 @@ class StartViewController: UIViewController {
                 self.performSegueWithIdentifier("toCamera", sender: self)
             }
             alertView.iconTintColor = UIColor.whiteColor()
-            alertView.showCustom("Start!", subTitle: "がんばって走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab.png")!)
+            alertView.showCustom("Start!", subTitle: "がんばって走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!)
             print("目標distance=\(distance)kmに設定")
         }
     }
