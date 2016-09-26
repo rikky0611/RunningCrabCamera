@@ -65,13 +65,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRz-KV-IyJ">
+                                <rect key="frame" x="180" y="659" width="54" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="54" id="MC5-hA-OE4"/>
+                                    <constraint firstAttribute="height" constant="54" id="jad-RN-9mF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="keyPath">
+                                        <color key="value" red="0.51372549020000002" green="0.78039215689999997" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-Hw-euK">
                                 <rect key="frame" x="182" y="661" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.51372549019607838" green="0.7803921568627451" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="a9u-Hh-rsq"/>
                                     <constraint firstAttribute="width" constant="50" id="tpL-tV-wAF"/>
                                 </constraints>
-                                <state key="normal" title="***"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWk-xk-OKh">
                                 <rect key="frame" x="87" y="681" width="65" height="30"/>
@@ -96,12 +122,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="rOW-Hw-euK" firstAttribute="leading" secondItem="bWk-xk-OKh" secondAttribute="trailing" constant="30" id="0PB-6E-icH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FRz-KV-IyJ" secondAttribute="bottom" constant="23" id="8x0-M5-Fit"/>
+                            <constraint firstItem="rOW-Hw-euK" firstAttribute="top" secondItem="FRz-KV-IyJ" secondAttribute="bottom" constant="25" id="DZq-B2-C5d"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rOW-Hw-euK" secondAttribute="bottom" constant="25" id="WPU-fJ-5mh"/>
+                            <constraint firstItem="FRz-KV-IyJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Wdj-aa-qxE"/>
                             <constraint firstItem="24C-B4-UEF" firstAttribute="leading" secondItem="rOW-Hw-euK" secondAttribute="trailing" constant="30" id="k5L-xd-5K2"/>
                             <constraint firstItem="rOW-Hw-euK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kZM-ed-fjd"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="24C-B4-UEF" secondAttribute="bottom" constant="25" id="nST-Lt-dzn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="bWk-xk-OKh" secondAttribute="bottom" constant="25" id="oZr-fZ-8Q1"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DZq-B2-C5d"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="7dV-uR-Ffk">
                         <barButtonItem key="leftBarButtonItem" title="✖️" id="Y4w-cD-WDJ">
@@ -134,10 +168,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WJ6-ab-A1g">
-                                <rect key="frame" x="0.0" y="64" width="414" height="414"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="552"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="400" id="ZL7-nu-HzU"/>
-                                    <constraint firstAttribute="width" secondItem="WJ6-ab-A1g" secondAttribute="height" multiplier="1:1" id="ebT-Mq-zXU"/>
+                                    <constraint firstAttribute="width" secondItem="WJ6-ab-A1g" secondAttribute="height" multiplier="3:4" id="ebT-Mq-zXU"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">

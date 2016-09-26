@@ -20,7 +20,7 @@ class CameraViewController: UIViewController {
     
     let screenWidth = UIScreen.mainScreen().bounds.width
     var cameraFrame: CGRect {
-        return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*1.0)
+        return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*4/3)
     }
     
     var lockView: LockView!
