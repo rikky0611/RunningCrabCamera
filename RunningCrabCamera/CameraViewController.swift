@@ -29,7 +29,7 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var changeCameraPositionButton: UIButton!
     
     var timer: NSTimer?
-    var didRemoveLockViewAndSendNotification: Bool = false
+    var didSendNotification: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,10 +86,12 @@ extension CameraViewController {
         guard Run.currentRun != nil else { return }
         Run.currentRun.update() {
             self.lockView.update()
-            if Run.currentRun.isFinished && !self.didRemoveLockViewAndSendNotification {
+            if Run.currentRun.isFinished {
                 self.removeLockViewAndEnableCameraButton()
-                self.sendNotification()
-                self.didRemoveLockViewAndSendNotification = true
+                if !self.didSendNotification {
+                    self.sendNotification()
+                    self.didSendNotification = true
+                }
             }
         }
     }
