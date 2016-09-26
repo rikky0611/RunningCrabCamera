@@ -15,6 +15,7 @@ protocol PopUpPhotoViewDelegate: class {
 class PopUpPhotoView: UIView {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var actionButton: UIButton!
     var currentObject: PhotoObject?
     var delegate: PopUpPhotoViewDelegate?
     
@@ -23,6 +24,10 @@ class PopUpPhotoView: UIView {
         imageView.image = object.image
         let timeStamp = DateUtils.stringFromDate(object.timeStamp, format: "yyyy/MM/dd HH:mm")
         label.text = timeStamp
+        
+        let shareImage = UIImage(named: "share.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        actionButton.setImage(shareImage, forState: .Normal)
+        actionButton.tintColor = UIColor.crabBlue()
     }
     
     @IBAction func didTapActionButton() {
