@@ -20,7 +20,7 @@ class CameraViewController: UIViewController {
     
     let screenWidth = UIScreen.mainScreen().bounds.width
     var cameraFrame: CGRect {
-        return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*1.0)
+        return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*4/3)
     }
     
     var lockView: LockView!
@@ -29,15 +29,18 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var changeCameraPositionButton: UIButton!
     
     var timer: NSTimer?
-    var didRemoveLockViewAndSendNotification: Bool = false
+    var didSendNotification: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.hidden = false
+        
         cameraButton.addTarget(self,action: #selector(didTapCameraButton(_:)), forControlEvents: .TouchUpInside)
         changeCameraPositionButton.addTarget(self, action: #selector(didTapChangeCameraPositionButton(_:)), forControlEvents: .TouchUpInside)
         
         cameraButton.enabled = false
-        changeCameraPositionButton.enabled = false
+        changeCameraPositionButton.hidden = true
     }
     
     func updateHealthData(timer : NSTimer) {
@@ -86,10 +89,12 @@ extension CameraViewController {
         guard Run.currentRun != nil else { return }
         Run.currentRun.update() {
             self.lockView.update()
-            if Run.currentRun.isFinished && !self.didRemoveLockViewAndSendNotification {
+            if Run.currentRun.isFinished {
                 self.removeLockViewAndEnableCameraButton()
-                self.sendNotification()
-                self.didRemoveLockViewAndSendNotification = true
+                if !self.didSendNotification {
+                    self.sendNotification()
+                    self.didSendNotification = true
+                }
             }
         }
     }
@@ -97,7 +102,7 @@ extension CameraViewController {
     private func removeLockViewAndEnableCameraButton() {
         lockView.removeFromSuperview()
         cameraButton.enabled = true
-        changeCameraPositionButton.enabled = true
+        changeCameraPositionButton.hidden = false
     }
     
     private func sendNotification() {
@@ -200,6 +205,8 @@ extension CameraViewController {
         alertView.addButton("ランを終了する") {
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
-        alertView.showWarning("注意", subTitle: "ランを終了すると今回のランは記録されないｶﾆ。\n ランを終了するｶﾆ？", closeButtonTitle: "キャンセル")
+        alertView.iconTintColor = UIColor.whiteColor()
+        alertView.showCustom("注意", subTitle: "ランを終了すると今回のランは記録されないｶﾆ。\n ランを終了するｶﾆ？", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!, closeButtonTitle: "キャンセル")
+
     }
 }

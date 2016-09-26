@@ -59,6 +59,6 @@ extension AlbumViewController {
 
 extension AlbumViewController: PopUpPhotoViewDelegate {
     func didTapActionButton(object: PhotoObject) {
-        self.presentViewController(ShareActivityController.create(object.image!), animated: true, completion: nil)
+        self.presentViewController(ShareActivityController.create(object), animated: true, completion: nil)
     }
 }
