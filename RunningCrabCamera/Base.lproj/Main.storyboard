@@ -19,46 +19,96 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikei.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-jT-hFt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-6d-cp7">
-                                <rect key="frame" x="182" y="416" width="50" height="50"/>
+                                <rect key="frame" x="182" y="527" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7pz-oE-jmk"/>
                                     <constraint firstAttribute="width" constant="50" id="SDH-lf-PwU"/>
                                 </constraints>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="didTapStartButton" destination="ERJ-PW-7PP" eventType="touchUpInside" id="oRL-B7-sWB"/>
                                 </connections>
                             </button>
-                            <pickerView contentMode="scaleToFill" showsSelectionIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YB-lJ-eZW">
-                                <rect key="frame" x="0.0" y="180" width="414" height="216"/>
-                            </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sz-Jt-hsL">
-                                <rect key="frame" x="182" y="125.5" width="50" height="25"/>
+                                <rect key="frame" x="182" y="364" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="7nd-vV-nBa"/>
                                     <constraint firstAttribute="width" constant="50" id="fk3-4H-dV0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSq-wc-o4o">
+                                <rect key="frame" x="257" y="432" width="50" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="F3I-hS-zTX"/>
+                                    <constraint firstAttribute="height" constant="25" id="H7g-jS-xKT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crabs.png" translatesAutoresizingMaskIntoConstraints="NO" id="ocD-K8-uMx">
+                                <rect key="frame" x="132" y="314" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="gQv-sz-G7C"/>
+                                    <constraint firstAttribute="width" constant="150" id="p5X-HR-mDg"/>
+                                </constraints>
+                            </imageView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um5-sr-a3v">
+                                <rect key="frame" x="157" y="397" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="cz7-NF-S1W"/>
+                                    <constraint firstAttribute="height" constant="100" id="lCJ-IS-cHR"/>
+                                </constraints>
+                            </pickerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.93333333330000001" green="0.37254901959999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="9YB-lJ-eZW" firstAttribute="leading" secondItem="U2l-jd-Z6O" secondAttribute="leading" id="2J8-EF-V8V"/>
-                            <constraint firstItem="U0D-6d-cp7" firstAttribute="top" secondItem="9YB-lJ-eZW" secondAttribute="bottom" constant="20" id="3JP-k8-5vK"/>
-                            <constraint firstItem="U0D-6d-cp7" firstAttribute="centerY" secondItem="U2l-jd-Z6O" secondAttribute="centerY" multiplier="1.2" id="CX8-tp-bW9"/>
-                            <constraint firstItem="9YB-lJ-eZW" firstAttribute="top" secondItem="7sz-Jt-hsL" secondAttribute="bottom" constant="30" id="J0J-Wx-JBw"/>
+                            <constraint firstAttribute="trailing" secondItem="sSq-wc-o4o" secondAttribute="trailing" constant="20" id="1zQ-GW-soG"/>
+                            <constraint firstItem="7sz-Jt-hsL" firstAttribute="top" secondItem="ocD-K8-uMx" secondAttribute="bottom" constant="10" id="2n2-RP-FnE"/>
+                            <constraint firstItem="7jH-jT-hFt" firstAttribute="leading" secondItem="U2l-jd-Z6O" secondAttribute="leading" id="ASj-oD-FWb"/>
+                            <constraint firstItem="U0D-6d-cp7" firstAttribute="centerY" secondItem="U2l-jd-Z6O" secondAttribute="centerY" multiplier="1.5" id="CX8-tp-bW9"/>
+                            <constraint firstItem="ocD-K8-uMx" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="IIq-bD-f5o"/>
+                            <constraint firstItem="sSq-wc-o4o" firstAttribute="top" secondItem="um5-sr-a3v" secondAttribute="bottom" constant="8" id="IOT-4n-xgY"/>
+                            <constraint firstItem="um5-sr-a3v" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="IhJ-NK-B6A"/>
                             <constraint firstItem="7sz-Jt-hsL" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="KXt-9d-U2H"/>
+                            <constraint firstItem="um5-sr-a3v" firstAttribute="leading" secondItem="U2l-jd-Z6O" secondAttribute="leading" constant="100" id="NGL-uv-H7Q"/>
+                            <constraint firstItem="um5-sr-a3v" firstAttribute="top" secondItem="7sz-Jt-hsL" secondAttribute="bottom" constant="8" id="OFF-Ij-IPc"/>
+                            <constraint firstItem="U0D-6d-cp7" firstAttribute="top" secondItem="um5-sr-a3v" secondAttribute="bottom" constant="30" id="REQ-eE-snt"/>
+                            <constraint firstAttribute="trailing" secondItem="7jH-jT-hFt" secondAttribute="trailing" id="WNv-nc-LRK"/>
+                            <constraint firstItem="um5-sr-a3v" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="YWp-x8-emG"/>
+                            <constraint firstItem="sSq-wc-o4o" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="bg5-wH-bkk"/>
+                            <constraint firstAttribute="trailing" secondItem="um5-sr-a3v" secondAttribute="trailing" constant="20" id="gWG-4u-wfh"/>
                             <constraint firstItem="U0D-6d-cp7" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="h1G-re-a1C"/>
-                            <constraint firstAttribute="trailing" secondItem="9YB-lJ-eZW" secondAttribute="trailing" id="lcS-3F-7e3"/>
+                            <constraint firstItem="7jH-jT-hFt" firstAttribute="top" secondItem="U2l-jd-Z6O" secondAttribute="top" id="jrv-hz-QwD"/>
+                            <constraint firstItem="CYk-mR-bmJ" firstAttribute="top" secondItem="7jH-jT-hFt" secondAttribute="bottom" id="kp8-mx-JA4"/>
+                            <constraint firstItem="U0D-6d-cp7" firstAttribute="top" secondItem="sSq-wc-o4o" secondAttribute="bottom" constant="70" id="p0Y-l0-cvm"/>
+                            <constraint firstItem="7jH-jT-hFt" firstAttribute="top" secondItem="ihs-JS-NUx" secondAttribute="bottom" id="sVF-0U-dMz"/>
+                            <constraint firstItem="sSq-wc-o4o" firstAttribute="leading" secondItem="um5-sr-a3v" secondAttribute="trailing" id="zVs-Wr-Pid"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="sVF-0U-dMz"/>
+                                <exclude reference="IhJ-NK-B6A"/>
+                                <exclude reference="NGL-uv-H7Q"/>
+                                <exclude reference="gWG-4u-wfh"/>
+                                <exclude reference="1zQ-GW-soG"/>
+                                <exclude reference="IOT-4n-xgY"/>
+                                <exclude reference="bg5-wH-bkk"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="f1A-iP-bKw"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="pickerView" destination="9YB-lJ-eZW" id="tkz-nm-jMi"/>
+                        <outlet property="pickerView" destination="um5-sr-a3v" id="9Hr-cm-H40"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toCamera" id="AWs-5j-eUO"/>
                     </connections>
                 </viewController>
@@ -275,4 +325,8 @@
             <point key="canvasLocation" x="1258" y="1901"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="crabs.png" width="1013" height="231"/>
+        <image name="haikei.jpg" width="1600" height="1066"/>
+    </resources>
 </document>
