@@ -285,7 +285,7 @@
             </objects>
             <point key="canvasLocation" x="-132" y="1070"/>
         </scene>
-        <!--Album View Controller-->
+        <!--Album-->
         <scene sceneID="0YJ-aO-diS">
             <objects>
                 <viewController id="NXb-IT-W0E" customClass="AlbumViewController" customModule="RunningCrabCamera" customModuleProvider="target" sceneMemberID="viewController">
@@ -336,6 +336,7 @@
                             <constraint firstItem="0Rp-PD-lrV" firstAttribute="leading" secondItem="e9B-FP-W5G" secondAttribute="leading" id="cp6-SO-bvb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Album" id="SWX-j0-0yB"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="collectionView" destination="0Rp-PD-lrV" id="e5O-eI-ywW"/>

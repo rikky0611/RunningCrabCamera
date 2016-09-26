@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import SCLAlertView
+import GoogleMobileAds
 
 class StampViewController: UIViewController {
     var takenImage: UIImage!
@@ -16,6 +17,7 @@ class StampViewController: UIViewController {
     let screenWidth = UIScreen.mainScreen().bounds.width
     var stampView: StampView!
     var object: PhotoObject!
+    var bannerView: GADBannerView = GADBannerView()
     
     var cameraFrame: CGRect {
         return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*4/3)
@@ -75,4 +77,23 @@ extension StampViewController {
         alertView.showCustom("Congrats!", subTitle: "ナイスランだったｶﾆ！また一緒に走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!)
     }
 
+}
+
+extension StampViewController: GADBannerViewDelegate {
+    
+    private func setAdMob() {
+        // AdMob広告設定
+        bannerView = GADBannerView(adSize:kGADAdSizeBanner)
+        bannerView.frame.origin = CGPointMake(0, 0)
+        bannerView.frame.size = CGSizeMake(self.view.frame.width, bannerView.frame.height)
+        // AdMobで発行された広告ユニットIDを設定
+        bannerView.adUnitID = "ca-app-pub-1375408112188399/4443197462"
+        bannerView.delegate = self
+        bannerView.rootViewController = self
+        let gadRequest:GADRequest = GADRequest()
+        // テスト用の広告を表示する時のみ使用（申請時に削除）
+        gadRequest.testDevices = ["1efa22abf589e3833e993b2e56010302"]
+        bannerView.loadRequest(gadRequest)
+        self.view.addSubview(bannerView)
+    }
 }
