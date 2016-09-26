@@ -75,7 +75,7 @@ extension StampViewController {
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
         alertView.iconTintColor = UIColor.whiteColor()
-        alertView.showCustom("Congrats!", subTitle: "ナイスランだったｶﾆ！また一緒に走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "club.png")!)
+        alertView.showCustom("Congrats!", subTitle: "ナイスランだったｶﾆ！また一緒に走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab.png")!)
     }
 
 }
