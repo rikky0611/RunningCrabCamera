@@ -28,6 +28,8 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var changeCameraPositionButton: UIButton!
     
+    var timer: NSTimer!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         cameraButton.addTarget(self,action: #selector(didTapCameraButton(_:)), forControlEvents: .TouchUpInside)
@@ -35,6 +37,12 @@ class CameraViewController: UIViewController {
         
         cameraButton.enabled = false
         changeCameraPositionButton.enabled = false
+        
+        timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(updateHealthData(_:)), userInfo: nil, repeats: true)
+    }
+    
+    func updateHealthData(timer : NSTimer) {
+        updateRunAndLockView()
     }
     
     override func viewWillAppear(animated: Bool) {

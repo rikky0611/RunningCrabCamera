@@ -22,7 +22,7 @@ class StartViewController: UIViewController {
     
     @IBAction func didTapStartButton() {
         Run.currentRun = Run(distance: distance)
-        print("distance=\(distance)に設定")
+        print("目標distance=\(distance)kmに設定")
         performSegueWithIdentifier("toCamera", sender: self)
     }
     

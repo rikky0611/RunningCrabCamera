@@ -15,7 +15,7 @@ struct Health {
         let type = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!
         let healthStore = HKHealthStore()
         var distance: Double?
-        
+
         // データ抽出クエリ
         let query = HKSampleQuery(sampleType: type, predicate: nil, limit: 0, sortDescriptors: nil) { (query, results, error) in
             if let error = error {
@@ -24,13 +24,15 @@ struct Health {
             
             if let results = results as? [HKQuantitySample] {
                 dispatch_async(dispatch_get_main_queue()) {
-                    print("データ読み出し")
-                    if let result = results.last {
+                    var totalDistanceSoFar = 0.0
+                    for result in results where Run.currentRun.startDate?.compare(result.startDate)  == NSComparisonResult.OrderedAscending  {
+                        print(result)
                         let mUnit = HKUnit(fromString: "m")
                         distance = result.quantity.doubleValueForUnit(mUnit)
-                        Run.currentRun.soFarDistance = distance! / 1000
-                        completion()
+                        totalDistanceSoFar += distance! / 1000
                     }
+                    Run.currentRun.soFarDistance = totalDistanceSoFar
+                    completion()
                 }
             }
         }

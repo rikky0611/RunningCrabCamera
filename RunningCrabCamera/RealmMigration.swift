@@ -35,7 +35,7 @@ final class RealmMigration {
         // 自動的にマイグレーションが実行されます
         do {
             let _ = try Realm()
-            print("Realm migration completed.")
+            print("Realm migration completed.\n---------------------")
         } catch {
             print("Realm migration failed.")
         }

@@ -12,7 +12,7 @@ struct Run {
     var distance: Double?
     var soFarDistance: Double? {
         didSet(value){
-            print("newValue=\(value)")
+            print("現在のところ=\(value!)km")
         }
     }
 
