@@ -29,6 +29,7 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var changeCameraPositionButton: UIButton!
     
     var timer: NSTimer?
+    var didRemoveLockViewAndSendNotification: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,7 +62,6 @@ class CameraViewController: UIViewController {
             let stampViewController = segue.destinationViewController as! StampViewController
             stampViewController.takenImage = image
             stampViewController.timeStamp = NSDate()
-            print("success")
         }
     }
     
@@ -86,8 +86,10 @@ extension CameraViewController {
         guard Run.currentRun != nil else { return }
         Run.currentRun.update() {
             self.lockView.update()
-            if Run.currentRun.isFinished {
+            if Run.currentRun.isFinished && !self.didRemoveLockViewAndSendNotification {
                 self.removeLockViewAndEnableCameraButton()
+                self.sendNotification()
+                self.didRemoveLockViewAndSendNotification = true
             }
         }
     }
@@ -96,6 +98,16 @@ extension CameraViewController {
         lockView.removeFromSuperview()
         cameraButton.enabled = true
         changeCameraPositionButton.enabled = true
+    }
+    
+    private func sendNotification() {
+        let notif = UILocalNotification()
+        notif.fireDate = NSDate()
+        notif.timeZone = NSTimeZone.defaultTimeZone()
+        notif.alertBody = "目標距離達成ｶﾆ~\n写真を撮るｶﾆ！"
+        notif.alertAction = "OK"
+        notif.soundName = UILocalNotificationDefaultSoundName
+        UIApplication.sharedApplication().scheduleLocalNotification(notif)
     }
 
 }
