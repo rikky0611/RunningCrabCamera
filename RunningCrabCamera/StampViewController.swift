@@ -31,6 +31,7 @@ class StampViewController: UIViewController {
         stampView.configure(takenImage, distance: Run.currentRun.distance!)
         view.addSubview(stampView)
         
+        setAdMob()
         savePhotoToAlbum()
     }
     
@@ -84,7 +85,7 @@ extension StampViewController: GADBannerViewDelegate {
     private func setAdMob() {
         // AdMob広告設定
         bannerView = GADBannerView(adSize:kGADAdSizeBanner)
-        bannerView.frame.origin = CGPointMake(0, 0)
+        bannerView.frame.origin = CGPointMake(0, self.view.frame.height - bannerView.frame.height)
         bannerView.frame.size = CGSizeMake(self.view.frame.width, bannerView.frame.height)
         // AdMobで発行された広告ユニットIDを設定
         bannerView.adUnitID = "ca-app-pub-1375408112188399/4443197462"
