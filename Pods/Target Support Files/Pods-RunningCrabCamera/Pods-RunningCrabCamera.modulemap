@@ -1,0 +1,6 @@
+framework module Pods_RunningCrabCamera {
+  umbrella header "Pods-RunningCrabCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}
