@@ -15,6 +15,7 @@ class StampViewController: UIViewController {
     var timeStamp: NSDate!
     let screenWidth = UIScreen.mainScreen().bounds.width
     var stampView: StampView!
+    var object: PhotoObject!
     
     var cameraFrame: CGRect {
         return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*4/3)
@@ -39,7 +40,7 @@ class StampViewController: UIViewController {
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        let object = PhotoObject(distance: Run.currentRun.distance!,
+        object = PhotoObject(distance: Run.currentRun.distance!,
                                  image: image,
                                  timeStamp: timeStamp)
         do {
@@ -63,7 +64,7 @@ extension StampViewController {
         stampView.layer.renderInContext(UIGraphicsGetCurrentContext()!)
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        self.presentViewController(ShareActivityController.create(image), animated: true, completion: nil)
+        self.presentViewController(ShareActivityController.create(object), animated: true, completion: nil)
     }
     
     @IBAction func didTapFinishButton() {

@@ -44,7 +44,7 @@ class StartViewController: UIViewController {
                 self.performSegueWithIdentifier("toCamera", sender: self)
             }
             alertView.iconTintColor = UIColor.whiteColor()
-            alertView.showCustom("Good!", subTitle: "がんばって走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab.png")!)
+            alertView.showCustom("Start!", subTitle: "がんばって走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab.png")!)
             print("目標distance=\(distance)kmに設定")
         }
     }
