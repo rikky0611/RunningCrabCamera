@@ -11,7 +11,7 @@ import SCLAlertView
 
 class StartViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
-    var distance: Double! = 0.0
+    var distance: Double! = 1.0
 
     override func viewDidLoad() {
         super.viewDidLoad()

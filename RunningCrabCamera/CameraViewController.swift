@@ -40,7 +40,7 @@ class CameraViewController: UIViewController {
         changeCameraPositionButton.addTarget(self, action: #selector(didTapChangeCameraPositionButton(_:)), forControlEvents: .TouchUpInside)
         
         cameraButton.enabled = false
-        changeCameraPositionButton.enabled = false
+        changeCameraPositionButton.hidden = true
     }
     
     func updateHealthData(timer : NSTimer) {
@@ -102,7 +102,7 @@ extension CameraViewController {
     private func removeLockViewAndEnableCameraButton() {
         lockView.removeFromSuperview()
         cameraButton.enabled = true
-        changeCameraPositionButton.enabled = true
+        changeCameraPositionButton.hidden = false
     }
     
     private func sendNotification() {

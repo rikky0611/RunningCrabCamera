@@ -22,21 +22,27 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikei.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-jT-hFt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-6d-cp7">
-                                <rect key="frame" x="182" y="527" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0D-6d-cp7">
+                                <rect key="frame" x="147.5" y="491.5" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7pz-oE-jmk"/>
-                                    <constraint firstAttribute="width" constant="50" id="SDH-lf-PwU"/>
+                                    <constraint firstAttribute="width" constant="120" id="SDH-lf-PwU"/>
+                                    <constraint firstAttribute="width" secondItem="U0D-6d-cp7" secondAttribute="height" multiplier="1:1" id="yBm-QA-oPm"/>
                                 </constraints>
-                                <state key="normal" title="Start">
+                                <state key="normal" image="startBtn.png">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="7pz-oE-jmk"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="didTapStartButton" destination="ERJ-PW-7PP" eventType="touchUpInside" id="oRL-B7-sWB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sz-Jt-hsL">
-                                <rect key="frame" x="182" y="364" width="50" height="25"/>
+                                <rect key="frame" x="182" y="328" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="7nd-vV-nBa"/>
                                     <constraint firstAttribute="width" constant="50" id="fk3-4H-dV0"/>
@@ -46,7 +52,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="km" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sSq-wc-o4o">
-                                <rect key="frame" x="257" y="432" width="50" height="25"/>
+                                <rect key="frame" x="257" y="396" width="50" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="F3I-hS-zTX"/>
                                     <constraint firstAttribute="height" constant="25" id="H7g-jS-xKT"/>
@@ -56,23 +62,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="crabs.png" translatesAutoresizingMaskIntoConstraints="NO" id="ocD-K8-uMx">
-                                <rect key="frame" x="132" y="314" width="150" height="40"/>
+                                <rect key="frame" x="132" y="258" width="150" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="gQv-sz-G7C"/>
                                     <constraint firstAttribute="width" constant="150" id="p5X-HR-mDg"/>
                                 </constraints>
                             </imageView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="um5-sr-a3v">
-                                <rect key="frame" x="157" y="397" width="100" height="100"/>
+                                <rect key="frame" x="157" y="361" width="100" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="cz7-NF-S1W"/>
                                     <constraint firstAttribute="height" constant="100" id="lCJ-IS-cHR"/>
                                 </constraints>
                             </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="JhG-Vk-it4">
+                                <rect key="frame" x="87" y="72" width="240" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="1FO-mg-Tvm"/>
+                                    <constraint firstAttribute="height" constant="60" id="Yvp-VB-41K"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="sSq-wc-o4o" secondAttribute="trailing" constant="20" id="1zQ-GW-soG"/>
-                            <constraint firstItem="7sz-Jt-hsL" firstAttribute="top" secondItem="ocD-K8-uMx" secondAttribute="bottom" constant="10" id="2n2-RP-FnE"/>
+                            <constraint firstItem="7sz-Jt-hsL" firstAttribute="top" secondItem="ocD-K8-uMx" secondAttribute="bottom" constant="30" id="2n2-RP-FnE"/>
+                            <constraint firstItem="JhG-Vk-it4" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="8Cu-B9-2in"/>
                             <constraint firstItem="7jH-jT-hFt" firstAttribute="leading" secondItem="U2l-jd-Z6O" secondAttribute="leading" id="ASj-oD-FWb"/>
                             <constraint firstItem="U0D-6d-cp7" firstAttribute="centerY" secondItem="U2l-jd-Z6O" secondAttribute="centerY" multiplier="1.5" id="CX8-tp-bW9"/>
                             <constraint firstItem="ocD-K8-uMx" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="IIq-bD-f5o"/>
@@ -85,6 +99,7 @@
                             <constraint firstAttribute="trailing" secondItem="7jH-jT-hFt" secondAttribute="trailing" id="WNv-nc-LRK"/>
                             <constraint firstItem="um5-sr-a3v" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="YWp-x8-emG"/>
                             <constraint firstItem="sSq-wc-o4o" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="bg5-wH-bkk"/>
+                            <constraint firstItem="JhG-Vk-it4" firstAttribute="top" secondItem="ihs-JS-NUx" secondAttribute="bottom" constant="8" id="c4e-ON-3US"/>
                             <constraint firstAttribute="trailing" secondItem="um5-sr-a3v" secondAttribute="trailing" constant="20" id="gWG-4u-wfh"/>
                             <constraint firstItem="U0D-6d-cp7" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="h1G-re-a1C"/>
                             <constraint firstItem="7jH-jT-hFt" firstAttribute="top" secondItem="U2l-jd-Z6O" secondAttribute="top" id="jrv-hz-QwD"/>
@@ -128,26 +143,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-Hw-euK">
-                                <rect key="frame" x="182" y="661" width="50" height="50"/>
-                                <color key="backgroundColor" red="0.51372549019607838" green="0.7803921568627451" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-Hw-euK">
+                                <rect key="frame" x="172" y="651" width="70" height="70"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="rOW-Hw-euK" secondAttribute="height" multiplier="1:1" id="XLM-on-uMA"/>
                                     <constraint firstAttribute="height" constant="50" id="a9u-Hh-rsq"/>
-                                    <constraint firstAttribute="width" constant="50" id="tpL-tV-wAF"/>
+                                    <constraint firstAttribute="width" constant="70" id="tpL-tV-wAF"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <state key="normal" image="shutterBtn.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="a9u-Hh-rsq"/>
+                                    </mask>
+                                </variation>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24C-B4-UEF">
-                                <rect key="frame" x="122" y="681" width="30" height="30"/>
-                                <color key="backgroundColor" red="0.51372549020000002" green="0.78039215689999997" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="102" y="671" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="h5h-Ps-mJZ"/>
-                                    <constraint firstAttribute="width" constant="30" id="kwq-Go-xhl"/>
+                                    <constraint firstAttribute="height" constant="40" id="h5h-Ps-mJZ"/>
+                                    <constraint firstAttribute="width" secondItem="24C-B4-UEF" secondAttribute="height" multiplier="1:1" id="hoz-VX-faG"/>
+                                    <constraint firstAttribute="width" constant="40" id="kwq-Go-xhl"/>
                                 </constraints>
+                                <state key="normal" backgroundImage="hand.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="h5h-Ps-mJZ"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <segue destination="NXb-IT-W0E" kind="show" id="cLE-5u-Cwq"/>
                                 </connections>
@@ -157,7 +179,7 @@
                         <constraints>
                             <constraint firstItem="rOW-Hw-euK" firstAttribute="leading" secondItem="24C-B4-UEF" secondAttribute="trailing" constant="30" id="Env-v2-7gm"/>
                             <constraint firstItem="rOW-Hw-euK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KWM-rP-ScM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rOW-Hw-euK" secondAttribute="bottom" constant="25" id="WPU-fJ-5mh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rOW-Hw-euK" secondAttribute="bottom" constant="15" id="WPU-fJ-5mh"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="24C-B4-UEF" secondAttribute="bottom" constant="25" id="nST-Lt-dzn"/>
                         </constraints>
                     </view>
@@ -167,15 +189,15 @@
                                 <action selector="didTapResetButton" destination="BYZ-38-t0r" id="rJJ-Zm-keT"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="2HE-rh-Dpu">
+                        <barButtonItem key="rightBarButtonItem" image="changeCamera.png" style="plain" id="2HE-rh-Dpu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bWk-xk-OKh">
-                                <rect key="frame" x="329" y="7" width="65" height="30"/>
+                                <rect key="frame" x="364" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="65" id="WSj-Cn-73j"/>
+                                    <constraint firstAttribute="width" constant="30" id="WSj-Cn-73j"/>
                                     <constraint firstAttribute="height" constant="30" id="yBf-rQ-cd1"/>
                                 </constraints>
-                                <state key="normal" title="インカメ"/>
+                                <state key="normal" backgroundImage="changeCamera.png"/>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -190,7 +212,7 @@
             </objects>
             <point key="canvasLocation" x="624" y="1901"/>
         </scene>
-        <!--Stamp-->
+        <!--Photo-->
         <scene sceneID="OZK-de-dum">
             <objects>
                 <viewController id="gf9-ek-Kcx" customClass="StampViewController" customModule="RunningCrabCamera" customModuleProvider="target" sceneMemberID="viewController">
@@ -228,7 +250,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Stamp" id="nDD-aP-O6S">
+                    <navigationItem key="navigationItem" title="Photo" id="nDD-aP-O6S">
                         <barButtonItem key="leftBarButtonItem" title="✖️" id="VXS-2E-0zd">
                             <connections>
                                 <action selector="didTapFinishButton" destination="gf9-ek-Kcx" id="3pM-AI-bMQ"/>
@@ -326,7 +348,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="changeCamera.png" width="1024" height="1024"/>
         <image name="crabs.png" width="1013" height="231"/>
         <image name="haikei.jpg" width="1600" height="1066"/>
+        <image name="hand.png" width="1024" height="1024"/>
+        <image name="logo.png" width="291" height="135"/>
+        <image name="shutterBtn.png" width="1024" height="1024"/>
+        <image name="startBtn.png" width="1024" height="1024"/>
     </resources>
 </document>
