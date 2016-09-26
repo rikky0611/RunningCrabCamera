@@ -202,6 +202,8 @@ extension CameraViewController {
         alertView.addButton("ランを終了する") {
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
-        alertView.showWarning("注意", subTitle: "ランを終了すると今回のランは記録されないｶﾆ。\n ランを終了するｶﾆ？", closeButtonTitle: "キャンセル")
+        alertView.iconTintColor = UIColor.whiteColor()
+        alertView.showCustom("注意", subTitle: "ランを終了すると今回のランは記録されないｶﾆ。\n ランを終了するｶﾆ？", color: UIColor.crabRed(), icon: UIImage(named: "club.png")!, closeButtonTitle: "キャンセル")
+
     }
 }

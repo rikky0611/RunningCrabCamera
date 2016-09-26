@@ -71,10 +71,11 @@ extension StampViewController {
             showCloseButton: false
         )
         let alertView = SCLAlertView(appearance: appearance)
-        alertView.addButton("Done") {
+        alertView.addButton("OK!") {
             self.navigationController?.popToRootViewControllerAnimated(true)
         }
-        alertView.showSuccess("Congrats!", subTitle: "ナイスランだったｶﾆ！また一緒に走るｶﾆ！")
+        alertView.iconTintColor = UIColor.whiteColor()
+        alertView.showCustom("Congrats!", subTitle: "ナイスランだったｶﾆ！また一緒に走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "club.png")!)
     }
 
 }
