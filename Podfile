@@ -8,6 +8,7 @@ pod 'STZPopupView', '~> 1.0.2'
 pod 'RealmSwift', '~> 1.0.2'
 pod 'SCLAlertView'
 pod 'Google-Mobile-Ads-SDK'
+pod "SABlurImageView", '~> 2.1.0' 
 end
 
 target 'RunningCrabCameraTests' do

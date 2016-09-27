@@ -8,6 +8,7 @@
 
 import UIKit
 import SCLAlertView
+import SABlurImageView
 
 class StartViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
@@ -19,8 +20,15 @@ class StartViewController: UIViewController {
         pickerView.delegate = self
         pickerView.dataSource = self
         
+        let bgImageView = SABlurImageView(image: UIImage(named: "bg.jpg"))
+        bgImageView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+        bgImageView.addBlurEffect(10)
+        bgImageView.contentMode = .ScaleAspectFill
+        bgImageView.alpha = 0.6
+        view.addSubview(bgImageView)
+        view.sendSubviewToBack(bgImageView)
+        
         let ud = NSUserDefaults.standardUserDefaults()
-        ud.setBool(true, forKey: "firstLaunch")
         if ud.boolForKey("firstLaunch") {
             let appearance = SCLAlertView.SCLAppearance(
                 showCloseButton: false
@@ -59,7 +67,7 @@ class StartViewController: UIViewController {
                 self.performSegueWithIdentifier("toCamera", sender: self)
             }
             alertView.iconTintColor = UIColor.whiteColor()
-            alertView.showCustom("Start!", subTitle: "がんばって走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!)
+            alertView.showCustom("START!", subTitle: "がんばって走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!)
             print("目標distance=\(distance)kmに設定")
         }
     }
