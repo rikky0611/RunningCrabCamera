@@ -14,7 +14,12 @@ class StampView: UIView {
     
     func configure(image: UIImage, distance: Double) {
         imageViewForTakenImage.image = image
-        labelForComment.text = "\(distance)km完走だｶﾆ！"
+        if distance == 0.0 {
+            //すなわちチュートリアル
+            labelForComment.text = "チュートリアル終了だｶﾆ！"
+        } else {
+            labelForComment.text = "\(distance)km完走だｶﾆ！"
+        }
     }    
 
     /*

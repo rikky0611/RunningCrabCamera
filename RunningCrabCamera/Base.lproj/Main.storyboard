@@ -203,8 +203,10 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="albumButton" destination="24C-B4-UEF" id="cKh-6t-mV0"/>
                         <outlet property="cameraButton" destination="rOW-Hw-euK" id="YKZ-NV-feH"/>
                         <outlet property="changeCameraPositionButton" destination="bWk-xk-OKh" id="uvV-a6-ued"/>
+                        <outlet property="resetButton" destination="Y4w-cD-WDJ" id="OmL-QD-4c2"/>
                         <segue destination="gf9-ek-Kcx" kind="show" identifier="toNext" id="g9L-0m-qd1"/>
                     </connections>
                 </viewController>

@@ -30,10 +30,8 @@ class StartViewController: UIViewController {
                 self.performSegueWithIdentifier("toCamera", sender: self)
             }
             alertView.iconTintColor = UIColor.whiteColor()
-            alertView.showCustom("ようこそ", subTitle: "\nRunningCameraにようこそｶﾆ！\nぼくはマスコットのクラブ！みんなのランをサポートするｶﾆ！\n\nこのアプリは最初に決めた目標距離ランニングをして、想い出に残る写真を撮るアプリだｶﾆ！走りきったあとの達成感溢れる一瞬をぜひこのアプリで写真におさめるｶﾆ。ぼくもみんなの写真の中にお邪魔するｶﾆ！\n\nそれでは張り切ってランをするｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!,closeButtonTitle: "OK")
-            ud.setBool(false, forKey: "firstLaunch")
+            alertView.showCustom("ようこそ", subTitle: "\nRunningCameraにようこそｶﾆ！\nぼくはマスコットのクラブ！みんなのランをサポートするｶﾆ！\n\nこのアプリは最初に決めた目標距離ランニングをして、想い出に残る写真を撮るアプリだｶﾆ！走りきったあとの達成感溢れる一瞬をぜひこのアプリで写真におさめるｶﾆ。ぼくもみんなの写真の中にお邪魔するｶﾆ！\n\nそれでは次に進むｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!,closeButtonTitle: "OK")
             Run.currentRun = Run(distance: 0.0)
-            performSegueWithIdentifier("toCamera", sender: self)
         }
     }
     
