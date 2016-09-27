@@ -181,10 +181,15 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7dV-uR-Ffk">
-                        <barButtonItem key="leftBarButtonItem" title="✖️" id="Y4w-cD-WDJ">
-                            <connections>
-                                <action selector="didTapResetButton" destination="BYZ-38-t0r" id="rJJ-Zm-keT"/>
-                            </connections>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="SvK-HN-VvO">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PGe-eT-WEq">
+                                <rect key="frame" x="20" y="8" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="QuitRun"/>
+                                <connections>
+                                    <action selector="didTapResetButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="wf1-Ni-Fiv"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="changeCamera2.png" style="done" id="2HE-rh-Dpu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bWk-xk-OKh">
@@ -203,7 +208,7 @@
                         <outlet property="albumButton" destination="24C-B4-UEF" id="cKh-6t-mV0"/>
                         <outlet property="cameraButton" destination="rOW-Hw-euK" id="YKZ-NV-feH"/>
                         <outlet property="changeCameraPositionButton" destination="bWk-xk-OKh" id="uvV-a6-ued"/>
-                        <outlet property="resetButton" destination="Y4w-cD-WDJ" id="OmL-QD-4c2"/>
+                        <outlet property="resetButton" destination="SvK-HN-VvO" id="8Mt-Cr-8Mo"/>
                         <segue destination="gf9-ek-Kcx" kind="show" identifier="toNext" id="g9L-0m-qd1"/>
                     </connections>
                 </viewController>
@@ -349,6 +354,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="QuitRun" width="254" height="254"/>
         <image name="changeCamera2.png" width="1024" height="1024"/>
         <image name="crabs2.png" width="1013" height="231"/>
         <image name="hand2.png" width="1024" height="1024"/>
