@@ -31,10 +31,11 @@ class StampViewController: UIViewController {
             let alertView = SCLAlertView()
             alertView.iconTintColor = UIColor.whiteColor()
             alertView.showCustom("写真", subTitle: "ここが最後の画面で撮った写真を確認できるｶﾆ！\n\nうんうん、いい写真、イイシャだｶﾆ~！僕も写ってるｶﾆよ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!,closeButtonTitle: "OK")
-        }        
+        }
+        
         stampView =  UINib(nibName: "StampView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! StampView
         stampView.frame = cameraFrame
-        stampView.configure(takenImage, distance: Run.currentRun.distance!)
+        stampView.configure(takenImage, distance: Run.currentRun.distance!, date: Run.currentRun.startDate!)
         view.addSubview(stampView)
         
         setAdMob()
