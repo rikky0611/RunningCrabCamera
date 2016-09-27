@@ -18,6 +18,23 @@ class StartViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         pickerView.delegate = self
         pickerView.dataSource = self
+        
+        let ud = NSUserDefaults.standardUserDefaults()
+        ud.setBool(true, forKey: "firstLaunch")
+        if ud.boolForKey("firstLaunch") {
+            let appearance = SCLAlertView.SCLAppearance(
+                showCloseButton: false
+            )
+            let alertView = SCLAlertView(appearance: appearance)
+            alertView.addButton("OK!") {
+                self.performSegueWithIdentifier("toCamera", sender: self)
+            }
+            alertView.iconTintColor = UIColor.whiteColor()
+            alertView.showCustom("ようこそ", subTitle: "\nRunningCameraにようこそｶﾆ！\nぼくはマスコットのクラブ！みんなのランをサポートするｶﾆ！\n\nこのアプリは最初に決めた目標距離ランニングをして、想い出に残る写真を撮るアプリだｶﾆ！走りきったあとの達成感溢れる一瞬をぜひこのアプリで写真におさめるｶﾆ。ぼくもみんなの写真の中にお邪魔するｶﾆ！\n\nそれでは張り切ってランをするｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!,closeButtonTitle: "OK")
+            ud.setBool(false, forKey: "firstLaunch")
+            Run.currentRun = Run(distance: 0.0)
+            performSegueWithIdentifier("toCamera", sender: self)
+        }
     }
     
     override func viewWillAppear(animated: Bool) {

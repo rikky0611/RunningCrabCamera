@@ -18,6 +18,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
+        //チュートリアル用フラグ
+        let ud = NSUserDefaults.standardUserDefaults()
+        ud.registerDefaults(["firstLaunch": true])
+        
         RealmMigration.migration()
         
         //現在のnotificationを全て削除
