@@ -27,6 +27,8 @@ class CameraViewController: UIViewController {
     
     @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var changeCameraPositionButton: UIButton!
+    @IBOutlet weak var albumButton: UIButton!
+    @IBOutlet weak var resetButton: UIBarButtonItem!
     
     var timer: NSTimer?
     var didSendNotification: Bool = false
@@ -41,6 +43,18 @@ class CameraViewController: UIViewController {
         
         cameraButton.enabled = false
         changeCameraPositionButton.hidden = true
+        resetButton.enabled = true
+        albumButton.enabled = true
+        
+        let ud = NSUserDefaults.standardUserDefaults()
+        if ud.boolForKey("firstLaunch") {
+            resetButton.enabled = false
+            albumButton.enabled = false
+            
+            let alertView = SCLAlertView()
+            alertView.iconTintColor = UIColor.whiteColor()
+            alertView.showCustom("カメラ", subTitle: "目標距離走ったらここで写真を撮るｶﾆ！\n今回は最初だから実際に走らなくて大丈夫だｶﾆ", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!,closeButtonTitle: "OK")
+        }
     }
     
     func updateHealthData(timer : NSTimer) {

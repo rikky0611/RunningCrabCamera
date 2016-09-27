@@ -24,6 +24,7 @@ class PopUpPhotoView: UIView {
         imageView.image = object.image
         let timeStamp = DateUtils.stringFromDate(object.timeStamp, format: "yyyy/MM/dd HH:mm")
         label.text = timeStamp
+        label.font = UIFont(name: "Code-Bold", size: 16)
         
         let shareImage = UIImage(named: "share2.png")?.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
         actionButton.setImage(shareImage, forState: .Normal)

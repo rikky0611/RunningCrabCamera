@@ -8,6 +8,7 @@
 
 import UIKit
 import SCLAlertView
+import SABlurImageView
 
 class StartViewController: UIViewController {
     @IBOutlet weak var pickerView: UIPickerView!
@@ -18,6 +19,29 @@ class StartViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         pickerView.delegate = self
         pickerView.dataSource = self
+        
+        let bgImageView = SABlurImageView(image: UIImage(named: "bg.jpg"))
+        bgImageView.frame = CGRectMake(0, 0, UIScreen.mainScreen().bounds.width, UIScreen.mainScreen().bounds.height)
+        bgImageView.addBlurEffect(10)
+        bgImageView.contentMode = .ScaleAspectFill
+        bgImageView.alpha = 0.6
+        view.addSubview(bgImageView)
+        view.sendSubviewToBack(bgImageView)
+        
+        let ud = NSUserDefaults.standardUserDefaults()
+        ud.setBool(true, forKey: "firstLaunch")
+        if ud.boolForKey("firstLaunch") {
+            let appearance = SCLAlertView.SCLAppearance(
+                showCloseButton: false
+            )
+            let alertView = SCLAlertView(appearance: appearance)
+            alertView.addButton("OK!") {
+                self.performSegueWithIdentifier("toCamera", sender: self)
+            }
+            alertView.iconTintColor = UIColor.whiteColor()
+            alertView.showCustom("ようこそ", subTitle: "\nRunningCameraにようこそｶﾆ！\nぼくはマスコットのクラブ！みんなのランをサポートするｶﾆ！\n\nこのアプリは最初に決めた目標距離ランニングをして、想い出に残る写真を撮るアプリだｶﾆ！走りきったあとの達成感溢れる一瞬をぜひこのアプリで写真におさめるｶﾆ。ぼくもみんなの写真の中にお邪魔するｶﾆ！\n\nそれでは次に進むｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!,closeButtonTitle: "OK")
+            Run.currentRun = Run(distance: 0.0)
+        }
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -44,7 +68,7 @@ class StartViewController: UIViewController {
                 self.performSegueWithIdentifier("toCamera", sender: self)
             }
             alertView.iconTintColor = UIColor.whiteColor()
-            alertView.showCustom("Start!", subTitle: "がんばって走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!)
+            alertView.showCustom("START!", subTitle: "がんばって走るｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!)
             print("目標distance=\(distance)kmに設定")
         }
     }

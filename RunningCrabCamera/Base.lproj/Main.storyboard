@@ -6,6 +6,12 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="CODE_Bold.otf">
+            <string>Code-Bold</string>
+            <string>Code-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Start View Controller-->
         <scene sceneID="2kw-Hz-Frf">
@@ -19,16 +25,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikei2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="7jH-jT-hFt">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sz-Jt-hsL">
-                                <rect key="frame" x="182" y="329" width="50" height="25"/>
+                                <rect key="frame" x="167" y="329" width="80" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="7nd-vV-nBa"/>
-                                    <constraint firstAttribute="width" constant="50" id="fk3-4H-dV0"/>
+                                    <constraint firstAttribute="width" constant="80" id="fk3-4H-dV0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Code-Bold" family="Code Bold" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,7 +41,7 @@
                                     <constraint firstAttribute="width" constant="50" id="F3I-hS-zTX"/>
                                     <constraint firstAttribute="height" constant="25" id="H7g-jS-xKT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Code-Bold" family="Code Bold" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -87,7 +90,6 @@
                             <constraint firstAttribute="trailing" secondItem="sSq-wc-o4o" secondAttribute="trailing" constant="20" id="1zQ-GW-soG"/>
                             <constraint firstItem="7sz-Jt-hsL" firstAttribute="top" secondItem="ocD-K8-uMx" secondAttribute="bottom" constant="30" id="2n2-RP-FnE"/>
                             <constraint firstItem="JhG-Vk-it4" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="8Cu-B9-2in"/>
-                            <constraint firstItem="7jH-jT-hFt" firstAttribute="leading" secondItem="U2l-jd-Z6O" secondAttribute="leading" id="ASj-oD-FWb"/>
                             <constraint firstItem="U0D-6d-cp7" firstAttribute="centerY" secondItem="U2l-jd-Z6O" secondAttribute="centerY" multiplier="1.5" id="CX8-tp-bW9"/>
                             <constraint firstItem="ocD-K8-uMx" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="IIq-bD-f5o"/>
                             <constraint firstItem="sSq-wc-o4o" firstAttribute="top" secondItem="um5-sr-a3v" secondAttribute="bottom" constant="8" id="IOT-4n-xgY"/>
@@ -96,21 +98,16 @@
                             <constraint firstItem="um5-sr-a3v" firstAttribute="leading" secondItem="U2l-jd-Z6O" secondAttribute="leading" constant="100" id="NGL-uv-H7Q"/>
                             <constraint firstItem="um5-sr-a3v" firstAttribute="top" secondItem="7sz-Jt-hsL" secondAttribute="bottom" constant="8" id="OFF-Ij-IPc"/>
                             <constraint firstItem="U0D-6d-cp7" firstAttribute="top" secondItem="um5-sr-a3v" secondAttribute="bottom" constant="30" id="REQ-eE-snt"/>
-                            <constraint firstAttribute="trailing" secondItem="7jH-jT-hFt" secondAttribute="trailing" id="WNv-nc-LRK"/>
                             <constraint firstItem="um5-sr-a3v" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="YWp-x8-emG"/>
                             <constraint firstItem="sSq-wc-o4o" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="bg5-wH-bkk"/>
                             <constraint firstItem="JhG-Vk-it4" firstAttribute="top" secondItem="ihs-JS-NUx" secondAttribute="bottom" constant="8" id="c4e-ON-3US"/>
                             <constraint firstAttribute="trailing" secondItem="um5-sr-a3v" secondAttribute="trailing" constant="20" id="gWG-4u-wfh"/>
                             <constraint firstItem="U0D-6d-cp7" firstAttribute="centerX" secondItem="U2l-jd-Z6O" secondAttribute="centerX" id="h1G-re-a1C"/>
-                            <constraint firstItem="7jH-jT-hFt" firstAttribute="top" secondItem="U2l-jd-Z6O" secondAttribute="top" id="jrv-hz-QwD"/>
-                            <constraint firstItem="CYk-mR-bmJ" firstAttribute="top" secondItem="7jH-jT-hFt" secondAttribute="bottom" id="kp8-mx-JA4"/>
                             <constraint firstItem="U0D-6d-cp7" firstAttribute="top" secondItem="sSq-wc-o4o" secondAttribute="bottom" constant="70" id="p0Y-l0-cvm"/>
-                            <constraint firstItem="7jH-jT-hFt" firstAttribute="top" secondItem="ihs-JS-NUx" secondAttribute="bottom" id="sVF-0U-dMz"/>
                             <constraint firstItem="sSq-wc-o4o" firstAttribute="leading" secondItem="um5-sr-a3v" secondAttribute="trailing" id="zVs-Wr-Pid"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="sVF-0U-dMz"/>
                                 <exclude reference="IhJ-NK-B6A"/>
                                 <exclude reference="NGL-uv-H7Q"/>
                                 <exclude reference="gWG-4u-wfh"/>
@@ -184,12 +181,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7dV-uR-Ffk">
-                        <barButtonItem key="leftBarButtonItem" title="✖️" id="Y4w-cD-WDJ">
-                            <connections>
-                                <action selector="didTapResetButton" destination="BYZ-38-t0r" id="rJJ-Zm-keT"/>
-                            </connections>
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="SvK-HN-VvO">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PGe-eT-WEq">
+                                <rect key="frame" x="20" y="8" width="27" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="QuitRun"/>
+                                <connections>
+                                    <action selector="didTapResetButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="wf1-Ni-Fiv"/>
+                                </connections>
+                            </button>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="changeCamera2.png" style="plain" id="2HE-rh-Dpu">
+                        <barButtonItem key="rightBarButtonItem" image="changeCamera2.png" style="done" id="2HE-rh-Dpu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bWk-xk-OKh">
                                 <rect key="frame" x="364" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -203,8 +205,10 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="albumButton" destination="24C-B4-UEF" id="cKh-6t-mV0"/>
                         <outlet property="cameraButton" destination="rOW-Hw-euK" id="YKZ-NV-feH"/>
                         <outlet property="changeCameraPositionButton" destination="bWk-xk-OKh" id="uvV-a6-ued"/>
+                        <outlet property="resetButton" destination="SvK-HN-VvO" id="8Mt-Cr-8Mo"/>
                         <segue destination="gf9-ek-Kcx" kind="show" identifier="toNext" id="g9L-0m-qd1"/>
                     </connections>
                 </viewController>
@@ -251,7 +255,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Photo" id="nDD-aP-O6S">
-                        <barButtonItem key="leftBarButtonItem" title="✖️" id="VXS-2E-0zd">
+                        <barButtonItem key="leftBarButtonItem" title="✖️" style="done" id="VXS-2E-0zd">
                             <connections>
                                 <action selector="didTapFinishButton" destination="gf9-ek-Kcx" id="3pM-AI-bMQ"/>
                             </connections>
@@ -307,6 +311,7 @@
                             </view>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Rp-PD-lrV">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <color key="backgroundColor" red="0.51372549020000002" green="0.78039215689999997" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j5Y-gA-tpg">
                                     <size key="itemSize" width="100" height="100"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -349,9 +354,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="QuitRun" width="254" height="254"/>
         <image name="changeCamera2.png" width="1024" height="1024"/>
         <image name="crabs2.png" width="1013" height="231"/>
-        <image name="haikei2.jpg" width="1600" height="1066"/>
         <image name="hand2.png" width="1024" height="1024"/>
         <image name="logo.png" width="291" height="135"/>
         <image name="shutterBtn2.png" width="1024" height="1024"/>
