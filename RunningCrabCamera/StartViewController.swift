@@ -29,7 +29,6 @@ class StartViewController: UIViewController {
         view.sendSubviewToBack(bgImageView)
         
         let ud = NSUserDefaults.standardUserDefaults()
-        ud.setBool(true, forKey: "firstLaunch")
         if ud.boolForKey("firstLaunch") {
             let appearance = SCLAlertView.SCLAppearance(
                 showCloseButton: false
