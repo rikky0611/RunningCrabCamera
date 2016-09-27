@@ -195,6 +195,15 @@
 			path = Icons;
 			sourceTree = "<group>";
 		};
+		9A4D8E021D9A46EA0023FB9F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9A4D8DE51D9A3AAB0023FB9F /* 03SmartFontUI.ttf */,
+				9A4D8DE31D9A37710023FB9F /* CODE_Bold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		9A768EDD1D8CE94E007964F9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,9 +217,8 @@
 		9A768EE11D8CE966007964F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9A4D8E021D9A46EA0023FB9F /* Fonts */,
 				9A4D8DEB1D9A40530023FB9F /* Icons */,
-				9A4D8DE51D9A3AAB0023FB9F /* 03SmartFontUI.ttf */,
-				9A4D8DE31D9A37710023FB9F /* CODE_Bold.otf */,
 				9A4D8D601D9969150023FB9F /* changeCamera2.png */,
 				9A4D8DE91D9A3B7D0023FB9F /* bg.jpg */,
 				9A4D8D611D9969150023FB9F /* crab2.png */,
