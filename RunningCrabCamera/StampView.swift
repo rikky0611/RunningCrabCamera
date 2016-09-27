@@ -17,8 +17,10 @@ class StampView: UIView {
         if distance == 0.0 {
             //すなわちチュートリアル
             labelForComment.text = "チュートリアル終了だｶﾆ！"
+            labelForComment.font = UIFont(name: "03スマートフォントUI", size: 20)
         } else {
             labelForComment.text = "\(distance)km完走だｶﾆ！"
+            labelForComment.font = UIFont(name: "03スマートフォントUI", size: 20)
         }
     }    
 

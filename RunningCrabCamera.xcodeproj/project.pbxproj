@@ -67,6 +67,8 @@
 		9A4D8DDE1D996FDF0023FB9F /* Icon-44@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8DAC1D996FDF0023FB9F /* Icon-44@2x.png */; };
 		9A4D8DDF1D996FDF0023FB9F /* Icon-86@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8DAD1D996FDF0023FB9F /* Icon-86@2x.png */; };
 		9A4D8DE01D996FDF0023FB9F /* Icon-98@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8DAE1D996FDF0023FB9F /* Icon-98@2x.png */; };
+		9A4D8DE21D9A36140023FB9F /* 03スマートフォントUI.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8DE11D9A36140023FB9F /* 03スマートフォントUI.otf */; };
+		9A4D8DE41D9A37710023FB9F /* CODE_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8DE31D9A37710023FB9F /* CODE_Bold.otf */; };
 		9A768EDC1D8CE946007964F9 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EDB1D8CE946007964F9 /* Health.swift */; };
 		9A768EE01D8CE961007964F9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A768EDF1D8CE961007964F9 /* HealthKit.framework */; };
 		9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */; };
@@ -177,6 +179,8 @@
 		9A4D8DAC1D996FDF0023FB9F /* Icon-44@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-44@2x.png"; sourceTree = "<group>"; };
 		9A4D8DAD1D996FDF0023FB9F /* Icon-86@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-86@2x.png"; sourceTree = "<group>"; };
 		9A4D8DAE1D996FDF0023FB9F /* Icon-98@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-98@2x.png"; sourceTree = "<group>"; };
+		9A4D8DE11D9A36140023FB9F /* 03スマートフォントUI.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "03スマートフォントUI.otf"; sourceTree = "<group>"; };
+		9A4D8DE31D9A37710023FB9F /* CODE_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CODE_Bold.otf; sourceTree = "<group>"; };
 		9A768EDB1D8CE946007964F9 /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
 		9A768EDE1D8CE960007964F9 /* RunningCrabCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RunningCrabCamera.entitlements; sourceTree = "<group>"; };
 		9A768EDF1D8CE961007964F9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -415,6 +419,8 @@
 		9A768EE11D8CE966007964F9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9A4D8DE11D9A36140023FB9F /* 03スマートフォントUI.otf */,
+				9A4D8DE31D9A37710023FB9F /* CODE_Bold.otf */,
 				9A4D8D701D996FDF0023FB9F /* Icon */,
 				9A4D8D601D9969150023FB9F /* changeCamera2.png */,
 				9A4D8D611D9969150023FB9F /* crab2.png */,
@@ -672,6 +678,7 @@
 				9A4D8D6B1D9969150023FB9F /* hand2.png in Resources */,
 				9A4D8DD31D996FDF0023FB9F /* Icon-App-83.5x83.5@2x.png in Resources */,
 				9A4D8DD81D996FDF0023FB9F /* Contents.json in Resources */,
+				9A4D8DE21D9A36140023FB9F /* 03スマートフォントUI.otf in Resources */,
 				9A4D8DCD1D996FDF0023FB9F /* Icon-App-60x60@1x.png in Resources */,
 				9A4D8DCE1D996FDF0023FB9F /* Icon-App-60x60@2x.png in Resources */,
 				9A4D8DD61D996FDF0023FB9F /* iTunesArtwork@3x.png in Resources */,
@@ -679,6 +686,7 @@
 				9A4D8DC71D996FDF0023FB9F /* Icon-App-29x29@2x.png in Resources */,
 				9AA6E3E31D8F9D9E0079F6EF /* StampView.xib in Resources */,
 				9A4D8DBC1D996FDF0023FB9F /* icon-messages-app-iPhone-60x45@2x.png in Resources */,
+				9A4D8DE41D9A37710023FB9F /* CODE_Bold.otf in Resources */,
 				9A4D8D691D9969150023FB9F /* crabs2.png in Resources */,
 				9A4D8DB01D996FDF0023FB9F /* ic_launcher.png in Resources */,
 				9A4D8DB51D996FDF0023FB9F /* playstore-icon.png in Resources */,

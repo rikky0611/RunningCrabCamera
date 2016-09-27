@@ -6,6 +6,12 @@
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="CODE_Bold.otf">
+            <string>Code-Bold</string>
+            <string>Code-Bold</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--Start View Controller-->
         <scene sceneID="2kw-Hz-Frf">
@@ -23,12 +29,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GOAL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sz-Jt-hsL">
-                                <rect key="frame" x="182" y="329" width="50" height="25"/>
+                                <rect key="frame" x="167" y="329" width="80" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="7nd-vV-nBa"/>
-                                    <constraint firstAttribute="width" constant="50" id="fk3-4H-dV0"/>
+                                    <constraint firstAttribute="width" constant="80" id="fk3-4H-dV0"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Code-Bold" family="Code Bold" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -38,7 +44,7 @@
                                     <constraint firstAttribute="width" constant="50" id="F3I-hS-zTX"/>
                                     <constraint firstAttribute="height" constant="25" id="H7g-jS-xKT"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Code-Bold" family="Code Bold" pointSize="20"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -189,7 +195,7 @@
                                 <action selector="didTapResetButton" destination="BYZ-38-t0r" id="rJJ-Zm-keT"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="changeCamera2.png" style="plain" id="2HE-rh-Dpu">
+                        <barButtonItem key="rightBarButtonItem" image="changeCamera2.png" style="done" id="2HE-rh-Dpu">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bWk-xk-OKh">
                                 <rect key="frame" x="364" y="7" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -253,7 +259,7 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Photo" id="nDD-aP-O6S">
-                        <barButtonItem key="leftBarButtonItem" title="✖️" id="VXS-2E-0zd">
+                        <barButtonItem key="leftBarButtonItem" title="✖️" style="done" id="VXS-2E-0zd">
                             <connections>
                                 <action selector="didTapFinishButton" destination="gf9-ek-Kcx" id="3pM-AI-bMQ"/>
                             </connections>
