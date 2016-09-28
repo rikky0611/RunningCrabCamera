@@ -16,12 +16,17 @@ class AlbumViewController: UIViewController {
     var photoObjectArray: [PhotoObject] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         let nib = UINib(nibName: "PhotoCell", bundle: nil)
         self.collectionView.registerNib(nib, forCellWithReuseIdentifier: "PhotoCell")
         
         loadPhoto()
+    }
+    
+    @IBAction func didTapBackButton() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

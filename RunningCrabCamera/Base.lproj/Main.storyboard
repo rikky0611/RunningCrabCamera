@@ -168,7 +168,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <segue destination="NXb-IT-W0E" kind="show" id="cLE-5u-Cwq"/>
+                                    <segue destination="NXb-IT-W0E" kind="presentation" id="cLE-5u-Cwq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -289,7 +289,7 @@
             </objects>
             <point key="canvasLocation" x="-132" y="1070"/>
         </scene>
-        <!--Album-->
+        <!--Title-->
         <scene sceneID="0YJ-aO-diS">
             <objects>
                 <viewController id="NXb-IT-W0E" customClass="AlbumViewController" customModule="RunningCrabCamera" customModuleProvider="target" sceneMemberID="viewController">
@@ -309,6 +309,21 @@
                                     <constraint firstAttribute="width" secondItem="VXs-lS-8J0" secondAttribute="height" multiplier="1:1" id="jDs-8A-rvm"/>
                                 </constraints>
                             </view>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Se2-1B-AlZ">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="SlX-Py-8AC"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Album" id="pNZ-lJ-14t">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="camera" id="EOU-TJ-HUf">
+                                            <connections>
+                                                <action selector="didTapBackButton" destination="NXb-IT-W0E" id="4bN-op-CAa"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="0Rp-PD-lrV">
                                 <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" red="0.51372549020000002" green="0.78039215689999997" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
@@ -334,14 +349,25 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Rqx-au-epr" firstAttribute="top" secondItem="0Rp-PD-lrV" secondAttribute="bottom" id="3KN-Hz-RDW"/>
+                            <constraint firstItem="Se2-1B-AlZ" firstAttribute="top" secondItem="KhN-P3-hkM" secondAttribute="bottom" id="4Y5-kY-pWi"/>
                             <constraint firstItem="VXs-lS-8J0" firstAttribute="centerY" secondItem="e9B-FP-W5G" secondAttribute="centerY" id="HuW-en-KWt"/>
+                            <constraint firstItem="0Rp-PD-lrV" firstAttribute="top" secondItem="Se2-1B-AlZ" secondAttribute="bottom" id="IEi-US-bzK"/>
                             <constraint firstItem="0Rp-PD-lrV" firstAttribute="top" secondItem="KhN-P3-hkM" secondAttribute="bottom" id="JWD-cM-yeY"/>
                             <constraint firstAttribute="trailing" secondItem="0Rp-PD-lrV" secondAttribute="trailing" id="OnA-8Q-Oso"/>
+                            <constraint firstItem="Se2-1B-AlZ" firstAttribute="leading" secondItem="e9B-FP-W5G" secondAttribute="leading" id="VSb-zi-dlb"/>
                             <constraint firstItem="VXs-lS-8J0" firstAttribute="centerX" secondItem="e9B-FP-W5G" secondAttribute="centerX" id="Yiy-P5-GGn"/>
                             <constraint firstItem="0Rp-PD-lrV" firstAttribute="leading" secondItem="e9B-FP-W5G" secondAttribute="leading" id="cp6-SO-bvb"/>
+                            <constraint firstAttribute="trailing" secondItem="Se2-1B-AlZ" secondAttribute="trailing" id="fV0-uN-aCC"/>
+                            <constraint firstItem="Se2-1B-AlZ" firstAttribute="top" secondItem="e9B-FP-W5G" secondAttribute="top" id="pkC-9z-0Kk"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="pkC-9z-0Kk"/>
+                                <exclude reference="JWD-cM-yeY"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Album" id="SWX-j0-0yB"/>
+                    <navigationItem key="navigationItem" title="Title" id="pWd-bX-iwh"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="collectionView" destination="0Rp-PD-lrV" id="e5O-eI-ywW"/>
