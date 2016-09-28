@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import SCLAlertView
+import RealmSwift
 
 class CameraViewController: UIViewController {
     
@@ -17,6 +18,7 @@ class CameraViewController: UIViewController {
     var session: AVCaptureSession!
     var camera: AVCaptureDevice!
     var image: UIImage!
+    var albumThumbnailImage: UIImage?
     
     let screenWidth = UIScreen.mainScreen().bounds.width
     var cameraFrame: CGRect {
@@ -45,6 +47,8 @@ class CameraViewController: UIViewController {
         changeCameraPositionButton.hidden = true
         resetButton.enabled = true
         albumButton.enabled = true
+        
+        setAlbumThumbnailImage()
         
         let ud = NSUserDefaults.standardUserDefaults()
         if ud.boolForKey("firstLaunch") {
@@ -223,4 +227,26 @@ extension CameraViewController {
         alertView.showCustom("注意", subTitle: "ランを終了すると今回のランは記録されないｶﾆ。\n ランを終了するｶﾆ？", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!, closeButtonTitle: "キャンセル")
 
     }
+}
+
+
+//MARK: Album系メソッド
+
+
+extension CameraViewController {
+    
+    private func setAlbumThumbnailImage() {
+        loadPhotoFromRealm()
+        if let albumThumbnailImage = albumThumbnailImage {
+            albumButton.setBackgroundImage(albumThumbnailImage, forState: .Normal)
+        } else {
+            albumButton.setBackgroundImage(UIImage(named: "hand2.png"), forState: .Normal)
+        }
+    }
+    
+    private func loadPhotoFromRealm() {
+        guard let realm = try? Realm() else { return }
+        albumThumbnailImage = realm.objects(PhotoObject).sorted("timeStamp").last?.image
+    }
+
 }
