@@ -140,45 +140,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-Hw-euK">
-                                <rect key="frame" x="172" y="651" width="70" height="70"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hx4-hC-5IM">
+                                <rect key="frame" x="0.0" y="64" width="414" height="552"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="rOW-Hw-euK" secondAttribute="height" multiplier="1:1" id="XLM-on-uMA"/>
-                                    <constraint firstAttribute="height" constant="50" id="a9u-Hh-rsq"/>
-                                    <constraint firstAttribute="width" constant="70" id="tpL-tV-wAF"/>
+                                    <constraint firstAttribute="width" secondItem="Hx4-hC-5IM" secondAttribute="height" multiplier="3:4" id="OTo-dX-TJx"/>
                                 </constraints>
-                                <state key="normal" image="shutterBtn2.png"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="a9u-Hh-rsq"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24C-B4-UEF">
-                                <rect key="frame" x="102" y="671" width="40" height="40"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fe-8n-dhj">
+                                <rect key="frame" x="0.0" y="616" width="414" height="120"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24C-B4-UEF">
+                                        <rect key="frame" x="83.5" y="40" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="h5h-Ps-mJZ"/>
+                                            <constraint firstAttribute="width" secondItem="24C-B4-UEF" secondAttribute="height" multiplier="1:1" id="hoz-VX-faG"/>
+                                            <constraint firstAttribute="width" constant="40" id="kwq-Go-xhl"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="hand2.png"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="h5h-Ps-mJZ"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <segue destination="NXb-IT-W0E" kind="presentation" id="cLE-5u-Cwq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOW-Hw-euK">
+                                        <rect key="frame" x="172" y="25" width="70" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rOW-Hw-euK" secondAttribute="height" multiplier="1:1" id="XLM-on-uMA"/>
+                                            <constraint firstAttribute="height" constant="50" id="a9u-Hh-rsq"/>
+                                            <constraint firstAttribute="width" constant="70" id="tpL-tV-wAF"/>
+                                        </constraints>
+                                        <state key="normal" image="shutter.png"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="a9u-Hh-rsq"/>
+                                            </mask>
+                                        </variation>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="h5h-Ps-mJZ"/>
-                                    <constraint firstAttribute="width" secondItem="24C-B4-UEF" secondAttribute="height" multiplier="1:1" id="hoz-VX-faG"/>
-                                    <constraint firstAttribute="width" constant="40" id="kwq-Go-xhl"/>
+                                    <constraint firstItem="rOW-Hw-euK" firstAttribute="centerY" secondItem="5fe-8n-dhj" secondAttribute="centerY" id="GJT-E6-hZc"/>
+                                    <constraint firstItem="24C-B4-UEF" firstAttribute="centerY" secondItem="5fe-8n-dhj" secondAttribute="centerY" id="Zy1-wm-hXH"/>
+                                    <constraint firstItem="rOW-Hw-euK" firstAttribute="centerX" secondItem="5fe-8n-dhj" secondAttribute="centerX" id="vyS-rp-G2W"/>
+                                    <constraint firstItem="24C-B4-UEF" firstAttribute="centerX" secondItem="5fe-8n-dhj" secondAttribute="centerX" multiplier="0.5" id="yfX-1t-FuR"/>
                                 </constraints>
-                                <state key="normal" backgroundImage="hand2.png"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="h5h-Ps-mJZ"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <segue destination="NXb-IT-W0E" kind="presentation" id="cLE-5u-Cwq"/>
-                                </connections>
-                            </button>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="rOW-Hw-euK" firstAttribute="leading" secondItem="24C-B4-UEF" secondAttribute="trailing" constant="30" id="Env-v2-7gm"/>
-                            <constraint firstItem="rOW-Hw-euK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KWM-rP-ScM"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rOW-Hw-euK" secondAttribute="bottom" constant="15" id="WPU-fJ-5mh"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="24C-B4-UEF" secondAttribute="bottom" constant="25" id="nST-Lt-dzn"/>
+                            <constraint firstAttribute="trailing" secondItem="Hx4-hC-5IM" secondAttribute="trailing" id="2i6-MC-jcG"/>
+                            <constraint firstItem="5fe-8n-dhj" firstAttribute="top" secondItem="Hx4-hC-5IM" secondAttribute="bottom" id="8fb-xJ-U09"/>
+                            <constraint firstItem="5fe-8n-dhj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KQG-nk-3sq"/>
+                            <constraint firstAttribute="trailing" secondItem="5fe-8n-dhj" secondAttribute="trailing" id="L6v-hV-dDk"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5fe-8n-dhj" secondAttribute="bottom" id="VUN-l1-wEj"/>
+                            <constraint firstItem="Hx4-hC-5IM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="WnS-bF-dqW"/>
+                            <constraint firstAttribute="bottom" secondItem="5fe-8n-dhj" secondAttribute="bottom" id="kPc-Tu-qPU"/>
+                            <constraint firstItem="Hx4-hC-5IM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wLK-4k-it8"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VUN-l1-wEj"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="7dV-uR-Ffk">
                         <barButtonItem key="leftBarButtonItem" style="plain" id="SvK-HN-VvO">
@@ -201,6 +227,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="changeCamera2.png"/>
                             </button>
+                            <color key="tintColor" red="0.93333333330000001" green="0.37254901959999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -261,6 +288,7 @@
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="B2U-xa-v2L">
+                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="didTapActionButton" destination="gf9-ek-Kcx" id="ksS-g5-lzd"/>
                             </connections>
@@ -317,6 +345,7 @@
                                 <items>
                                     <navigationItem title="Album" id="pNZ-lJ-14t">
                                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="camera" id="EOU-TJ-HUf">
+                                            <color key="tintColor" red="0.93333333330000001" green="0.37254901959999998" blue="0.31764705879999999" alpha="1" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="didTapBackButton" destination="NXb-IT-W0E" id="4bN-op-CAa"/>
                                             </connections>
@@ -385,7 +414,7 @@
         <image name="crabs2.png" width="1013" height="231"/>
         <image name="hand2.png" width="1024" height="1024"/>
         <image name="logo.png" width="291" height="135"/>
-        <image name="shutterBtn2.png" width="1024" height="1024"/>
+        <image name="shutter.png" width="252" height="252"/>
         <image name="startBtn2.png" width="1024" height="1024"/>
     </resources>
 </document>

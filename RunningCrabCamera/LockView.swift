@@ -15,6 +15,7 @@ class LockView: UIView {
     @IBOutlet weak var distanceLabel: UILabel!
     
     func update() {
+        layoutIfNeeded()
         var run = Run.currentRun
         if run.distance == 0.0 {
             run.distance = 1.0
