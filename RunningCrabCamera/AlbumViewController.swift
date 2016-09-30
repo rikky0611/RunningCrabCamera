@@ -52,6 +52,12 @@ extension AlbumViewController: UICollectionViewDataSource, UICollectionViewDeleg
         popupView.configure(photoObjectArray[indexPath.row])
         presentPopupView(popupView)
     }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let width: CGFloat = view.frame.width / 3 - 2
+        let height: CGFloat = width
+        return CGSize(width: width, height: height)
+    }
 
 }
 

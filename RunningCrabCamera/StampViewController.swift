@@ -13,7 +13,6 @@ import GoogleMobileAds
 
 class StampViewController: UIViewController {
     var takenImage: UIImage!
-    var timeStamp: NSDate!
     let screenWidth = UIScreen.mainScreen().bounds.width
     var stampView: StampView!
     var object: PhotoObject!
@@ -53,7 +52,7 @@ class StampViewController: UIViewController {
         
         object = PhotoObject(distance: Run.currentRun.distance!,
                                  image: image,
-                                 timeStamp: timeStamp)
+                                 timeStamp: Run.currentRun.startDate!)
         do {
             try realm.write {
                 realm.add(object, update: false)

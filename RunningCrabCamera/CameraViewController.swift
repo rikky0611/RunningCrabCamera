@@ -82,7 +82,6 @@ class CameraViewController: UIViewController {
         if segue.identifier == "toNext" {
             let stampViewController = segue.destinationViewController as! StampViewController
             stampViewController.takenImage = image
-            stampViewController.timeStamp = NSDate()
         }
     }
     
