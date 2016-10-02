@@ -12,14 +12,14 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="420"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EEs-hk-ECI">
-                    <rect key="frame" x="2" y="2" width="296" height="395.5"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EEs-hk-ECI">
+                    <rect key="frame" x="4" y="4" width="292" height="390.5"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="EEs-hk-ECI" secondAttribute="height" multiplier="3:4" id="7Zd-DQ-2sP"/>
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwu-qY-hT1">
-                    <rect key="frame" x="20" y="397.5" width="260" height="22.5"/>
+                    <rect key="frame" x="20" y="394.5" width="260" height="25.5"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="d4t-Fg-dlb"/>
                     </constraints>
@@ -48,11 +48,11 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="zWK-4q-2op" secondAttribute="bottom" id="4LE-ll-Guh"/>
                 <constraint firstAttribute="bottom" secondItem="hwu-qY-hT1" secondAttribute="bottom" id="Fzy-7x-RlB"/>
-                <constraint firstAttribute="trailing" secondItem="EEs-hk-ECI" secondAttribute="trailing" constant="2" id="HZP-Dq-d9y"/>
-                <constraint firstItem="EEs-hk-ECI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="2" id="P8N-wk-dxD"/>
+                <constraint firstAttribute="trailing" secondItem="EEs-hk-ECI" secondAttribute="trailing" constant="4" id="HZP-Dq-d9y"/>
+                <constraint firstItem="EEs-hk-ECI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="P8N-wk-dxD"/>
                 <constraint firstAttribute="bottom" secondItem="EEs-hk-ECI" secondAttribute="bottom" constant="20" id="Wqi-YH-YPy"/>
                 <constraint firstAttribute="trailing" secondItem="hwu-qY-hT1" secondAttribute="trailing" constant="20" id="X5h-AJ-gP7"/>
-                <constraint firstItem="EEs-hk-ECI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="2" id="c0M-2I-FMu"/>
+                <constraint firstItem="EEs-hk-ECI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="c0M-2I-FMu"/>
                 <constraint firstAttribute="trailing" secondItem="zWK-4q-2op" secondAttribute="trailing" id="hcI-wx-Pe7"/>
                 <constraint firstItem="hwu-qY-hT1" firstAttribute="top" secondItem="EEs-hk-ECI" secondAttribute="bottom" id="ub4-d8-vpv"/>
                 <constraint firstItem="hwu-qY-hT1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="uby-xn-A3y"/>

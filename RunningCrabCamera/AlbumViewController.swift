@@ -16,12 +16,17 @@ class AlbumViewController: UIViewController {
     var photoObjectArray: [PhotoObject] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         let nib = UINib(nibName: "PhotoCell", bundle: nil)
         self.collectionView.registerNib(nib, forCellWithReuseIdentifier: "PhotoCell")
         
         loadPhoto()
+    }
+    
+    @IBAction func didTapBackButton() {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,6 +51,12 @@ extension AlbumViewController: UICollectionViewDataSource, UICollectionViewDeleg
         popupView.delegate = self
         popupView.configure(photoObjectArray[indexPath.row])
         presentPopupView(popupView)
+    }
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let width: CGFloat = view.frame.width / 3 - 2
+        let height: CGFloat = width
+        return CGSize(width: width, height: height)
     }
 
 }

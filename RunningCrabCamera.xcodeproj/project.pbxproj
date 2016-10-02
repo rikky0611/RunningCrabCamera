@@ -14,7 +14,6 @@
 		9A4D8D691D9969150023FB9F /* crabs2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D621D9969150023FB9F /* crabs2.png */; };
 		9A4D8D6A1D9969150023FB9F /* haikei2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D631D9969150023FB9F /* haikei2.jpg */; };
 		9A4D8D6B1D9969150023FB9F /* hand2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D641D9969150023FB9F /* hand2.png */; };
-		9A4D8D6C1D9969150023FB9F /* shutterBtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D651D9969150023FB9F /* shutterBtn2.png */; };
 		9A4D8D6D1D9969150023FB9F /* startBtn2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D661D9969150023FB9F /* startBtn2.png */; };
 		9A4D8D6F1D9969320023FB9F /* share2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8D6E1D9969320023FB9F /* share2.png */; };
 		9A4D8DE41D9A37710023FB9F /* CODE_Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8DE31D9A37710023FB9F /* CODE_Bold.otf */; };
@@ -31,6 +30,8 @@
 		9A4D8DFF1D9A40530023FB9F /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8DF41D9A40530023FB9F /* iTunesArtwork */; };
 		9A4D8E001D9A40530023FB9F /* iTunesArtwork@2x in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8DF51D9A40530023FB9F /* iTunesArtwork@2x */; };
 		9A4D8E011D9A40530023FB9F /* runnningCrabCameraIcon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8DF61D9A40530023FB9F /* runnningCrabCameraIcon1024.png */; };
+		9A4D8E041D9BC6480023FB9F /* shutter.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8E031D9BC6480023FB9F /* shutter.png */; };
+		9A4D8E081D9BD4490023FB9F /* Group@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A4D8E071D9BD4490023FB9F /* Group@3x.png */; };
 		9A768EDC1D8CE946007964F9 /* Health.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EDB1D8CE946007964F9 /* Health.swift */; };
 		9A768EE01D8CE961007964F9 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A768EDF1D8CE961007964F9 /* HealthKit.framework */; };
 		9A768EE31D8CEDC1007964F9 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A768EE21D8CEDC1007964F9 /* CameraViewController.swift */; };
@@ -88,7 +89,6 @@
 		9A4D8D621D9969150023FB9F /* crabs2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = crabs2.png; sourceTree = "<group>"; };
 		9A4D8D631D9969150023FB9F /* haikei2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = haikei2.jpg; sourceTree = "<group>"; };
 		9A4D8D641D9969150023FB9F /* hand2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand2.png; sourceTree = "<group>"; };
-		9A4D8D651D9969150023FB9F /* shutterBtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shutterBtn2.png; sourceTree = "<group>"; };
 		9A4D8D661D9969150023FB9F /* startBtn2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = startBtn2.png; sourceTree = "<group>"; };
 		9A4D8D6E1D9969320023FB9F /* share2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share2.png; sourceTree = "<group>"; };
 		9A4D8DE31D9A37710023FB9F /* CODE_Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = CODE_Bold.otf; sourceTree = "<group>"; };
@@ -105,6 +105,8 @@
 		9A4D8DF41D9A40530023FB9F /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		9A4D8DF51D9A40530023FB9F /* iTunesArtwork@2x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "iTunesArtwork@2x"; sourceTree = "<group>"; };
 		9A4D8DF61D9A40530023FB9F /* runnningCrabCameraIcon1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = runnningCrabCameraIcon1024.png; sourceTree = "<group>"; };
+		9A4D8E031D9BC6480023FB9F /* shutter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shutter.png; sourceTree = "<group>"; };
+		9A4D8E071D9BD4490023FB9F /* Group@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Group@3x.png"; path = "Icons/Group@3x.png"; sourceTree = "<group>"; };
 		9A768EDB1D8CE946007964F9 /* Health.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Health.swift; sourceTree = "<group>"; };
 		9A768EDE1D8CE960007964F9 /* RunningCrabCamera.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RunningCrabCamera.entitlements; sourceTree = "<group>"; };
 		9A768EDF1D8CE961007964F9 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
@@ -220,12 +222,13 @@
 				9A4D8E021D9A46EA0023FB9F /* Fonts */,
 				9A4D8DEB1D9A40530023FB9F /* Icons */,
 				9A4D8D601D9969150023FB9F /* changeCamera2.png */,
+				9A4D8E071D9BD4490023FB9F /* Group@3x.png */,
+				9A4D8E031D9BC6480023FB9F /* shutter.png */,
 				9A4D8DE91D9A3B7D0023FB9F /* bg.jpg */,
 				9A4D8D611D9969150023FB9F /* crab2.png */,
 				9A4D8D621D9969150023FB9F /* crabs2.png */,
 				9A4D8D631D9969150023FB9F /* haikei2.jpg */,
 				9A4D8D641D9969150023FB9F /* hand2.png */,
-				9A4D8D651D9969150023FB9F /* shutterBtn2.png */,
 				9A4D8D661D9969150023FB9F /* startBtn2.png */,
 				9A4D8D6E1D9969320023FB9F /* share2.png */,
 				9AA6E3E61D8F9E8D0079F6EF /* club.png */,
@@ -484,13 +487,14 @@
 				9A4D8DEA1D9A3B7D0023FB9F /* bg.jpg in Resources */,
 				9A4D8D6A1D9969150023FB9F /* haikei2.jpg in Resources */,
 				9A4D8D681D9969150023FB9F /* crab2.png in Resources */,
+				9A4D8E081D9BD4490023FB9F /* Group@3x.png in Resources */,
 				9AD81C401D8BA149008534FA /* Assets.xcassets in Resources */,
 				9A4D8D6F1D9969320023FB9F /* share2.png in Resources */,
-				9A4D8D6C1D9969150023FB9F /* shutterBtn2.png in Resources */,
 				9A4D8DF71D9A40530023FB9F /* Icon-60@2x.png in Resources */,
 				9A4D8DF91D9A40530023FB9F /* Icon-Small-40.png in Resources */,
 				9AA6E3E11D8F946B0079F6EF /* LockView.xib in Resources */,
 				9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */,
+				9A4D8E041D9BC6480023FB9F /* shutter.png in Resources */,
 				9A4D8D671D9969150023FB9F /* changeCamera2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
