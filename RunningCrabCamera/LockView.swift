@@ -17,12 +17,12 @@ class LockView: UIView {
     func update() {
         layoutIfNeeded()
         var run = Run.currentRun
-        if run.distance == 0.0 {
-            run.distance = 1.0
+        if run?.distance == 0.0 {
+            run?.distance = 1.0
         }
-        distanceGage.frame.size.width = distanceBaseGage.bounds.width * CGFloat(run.soFarDistance! / run.distance!)
-        let decimal = run.soFarDistance! * 10
-        distanceLabel.text = "\(floor(decimal) / 10) / \(run.distance!) [km]"
+        distanceGage.frame.size.width = distanceBaseGage.bounds.width * CGFloat((run?.soFarDistance!)! / (run?.distance!)!)
+        let decimal = (run?.soFarDistance!)! * 10
+        distanceLabel.text = "\(floor(decimal) / 10) / \(run?.distance!) [km]"
     }
 
 }

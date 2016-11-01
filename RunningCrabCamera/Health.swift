@@ -11,8 +11,8 @@ import HealthKit
 
 struct Health {
     
-    static func readHealthData(completion: Void -> Void) {
-        let type = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierDistanceWalkingRunning)!
+    static func readHealthData(_ completion: @escaping (Void) -> Void) {
+        let type = HKObjectType.quantityType(forIdentifier: HKQuantityTypeIdentifier.distanceWalkingRunning)!
         let healthStore = HKHealthStore()
         var distance: Double?
 
@@ -23,12 +23,12 @@ struct Health {
             }
             
             if let results = results as? [HKQuantitySample] {
-                dispatch_async(dispatch_get_main_queue()) {
+                DispatchQueue.main.async {
                     var totalDistanceSoFar = 0.0
-                    for result in results where Run.currentRun.startDate?.compare(result.startDate)  == NSComparisonResult.OrderedAscending  {
+                    for result in results where Run.currentRun.startDate?.compare(result.startDate)  == ComparisonResult.orderedAscending  {
                         print(result)
-                        let mUnit = HKUnit(fromString: "m")
-                        distance = result.quantity.doubleValueForUnit(mUnit)
+                        let mUnit = HKUnit(from: "m")
+                        distance = result.quantity.doubleValue(for: mUnit)
                         totalDistanceSoFar += distance! / 1000
                     }
                     Run.currentRun.soFarDistance = totalDistanceSoFar
@@ -38,16 +38,16 @@ struct Health {
         }
         
         //権限確認
-        let authorizedStatus = healthStore.authorizationStatusForType(type)
-        if authorizedStatus == .SharingAuthorized {
-            healthStore.executeQuery(query)
+        let authorizedStatus = healthStore.authorizationStatus(for: type)
+        if authorizedStatus == .sharingAuthorized {
+            healthStore.execute(query)
         } else {
-            healthStore.requestAuthorizationToShareTypes([type], readTypes: [type]) {
+            healthStore.requestAuthorization(toShare: [type], read: [type]) {
                 success, error in
                 guard error == nil else { return }
                 
                 if success {
-                    healthStore.executeQuery(query)
+                    healthStore.execute(query)
                 }
             }
         }

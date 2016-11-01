@@ -10,9 +10,9 @@ import UIKit
 import RealmSwift
 
 class PhotoObject: Object {
-    dynamic private var id = 1
+    dynamic fileprivate var id = 1
     dynamic var distance: Double = 0.0
-    dynamic private var _image: UIImage? = nil
+    dynamic fileprivate var _image: UIImage? = nil
     dynamic var image : UIImage? {
         set{
             self._image = newValue
@@ -31,8 +31,8 @@ class PhotoObject: Object {
             return nil
         }
     }
-    dynamic var imageData: NSData? = nil
-    dynamic var timeStamp: NSDate = NSDate()
+    dynamic var imageData: Data? = nil
+    dynamic var timeStamp: Date = Date()
     
     
     override static func ignoredProperties() -> [String] {
@@ -44,7 +44,7 @@ class PhotoObject: Object {
 //    }
 
     
-    convenience init(distance: Double, image: UIImage, timeStamp: NSDate) {
+    convenience init(distance: Double, image: UIImage, timeStamp: Date) {
         self.init()
         self.distance = distance
         self.image = image

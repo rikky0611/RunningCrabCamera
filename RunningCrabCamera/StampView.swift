@@ -13,7 +13,7 @@ class StampView: UIView {
     @IBOutlet weak var labelForComment: UILabel!
     @IBOutlet weak var labelForDate: UILabel!
     
-    func configure(image: UIImage, distance: Double, date: NSDate) {
+    func configure(_ image: UIImage, distance: Double, date: Date) {
         imageViewForTakenImage.image = image
         if distance == 0.0 {
             //すなわちチュートリアル

@@ -20,9 +20,9 @@ class CameraViewController: UIViewController {
     var image: UIImage!
     var albumThumbnailImage: UIImage?
     
-    let screenWidth = UIScreen.mainScreen().bounds.width
+    let screenWidth = UIScreen.main.bounds.width
     var cameraFrame: CGRect {
-        return CGRectMake(0.0, ViewManager.navigationBarHeight(self), screenWidth, screenWidth*4/3)
+        return CGRect(x: 0.0, y: ViewManager.navigationBarHeight(self), width: screenWidth, height: screenWidth*4/3)
     }
     
     var lockView: LockView!
@@ -32,55 +32,55 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var albumButton: UIButton!
     @IBOutlet weak var resetButton: UIBarButtonItem!
     
-    var timer: NSTimer?
+    var timer: Timer?
     var didSendNotification: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.hidden = false
+        self.navigationController?.navigationBar.isHidden = false
         
-        cameraButton.addTarget(self,action: #selector(didTapCameraButton(_:)), forControlEvents: .TouchUpInside)
-        changeCameraPositionButton.addTarget(self, action: #selector(didTapChangeCameraPositionButton(_:)), forControlEvents: .TouchUpInside)
+        cameraButton.addTarget(self,action: #selector(didTapCameraButton(_:)), for: .touchUpInside)
+        changeCameraPositionButton.addTarget(self, action: #selector(didTapChangeCameraPositionButton(_:)), for: .touchUpInside)
         
-        cameraButton.enabled = false
-        changeCameraPositionButton.hidden = true
-        resetButton.enabled = true
-        albumButton.enabled = true
+        cameraButton.isEnabled = false
+        changeCameraPositionButton.isHidden = true
+        resetButton.isEnabled = true
+        albumButton.isEnabled = true
         
         setAlbumThumbnailImage()
         
-        let ud = NSUserDefaults.standardUserDefaults()
-        if ud.boolForKey("firstLaunch") {
-            resetButton.enabled = false
-            albumButton.enabled = false
+        let ud = UserDefaults.standard
+        if ud.bool(forKey: "firstLaunch") {
+            resetButton.isEnabled = false
+            albumButton.isEnabled = false
             
             let alertView = SCLAlertView()
-            alertView.iconTintColor = UIColor.whiteColor()
+            alertView.iconTintColor = UIColor.white
             alertView.showCustom("カメラ", subTitle: "目標距離走ったらここで写真を撮るｶﾆ！\n今回は最初だから実際に走らなくて大丈夫だｶﾆ", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!,closeButtonTitle: "OK")
         }
     }
     
-    func updateHealthData(timer : NSTimer) {
+    func updateHealthData(_ timer : Timer) {
         updateRunAndLockView()
     }
     
-    override func viewWillAppear(animated: Bool) {
-        timer = NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: #selector(updateHealthData(_:)), userInfo: nil, repeats: true)
-        setupCameraWithPosition(.Back)
+    override func viewWillAppear(_ animated: Bool) {
+        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(updateHealthData(_:)), userInfo: nil, repeats: true)
+        setupCameraWithPosition(.back)
         setupLockView()
         updateRunAndLockView()
     }
     
-    override func viewDidDisappear(animated: Bool) {
+    override func viewDidDisappear(_ animated: Bool) {
         timer?.invalidate()
         timer = nil
         initializeForMemory()
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toNext" {
-            let stampViewController = segue.destinationViewController as! StampViewController
+            let stampViewController = segue.destination as! StampViewController
             stampViewController.takenImage = image
         }
     }
@@ -96,13 +96,13 @@ class CameraViewController: UIViewController {
 
 
 extension CameraViewController {
-    private func setupLockView() {
-        lockView =  UINib(nibName: "LockView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! LockView
+    fileprivate func setupLockView() {
+        lockView =  UINib(nibName: "LockView", bundle: nil).instantiate(withOwner: self, options: nil)[0] as! LockView
         lockView.frame = cameraFrame
         view.addSubview(lockView)
     }
     
-    private func updateRunAndLockView() {
+    fileprivate func updateRunAndLockView() {
         guard Run.currentRun != nil else { return }
         Run.currentRun.update() {
             self.lockView.update()
@@ -116,20 +116,20 @@ extension CameraViewController {
         }
     }
     
-    private func removeLockViewAndEnableCameraButton() {
+    fileprivate func removeLockViewAndEnableCameraButton() {
         lockView.removeFromSuperview()
-        cameraButton.enabled = true
-        changeCameraPositionButton.hidden = false
+        cameraButton.isEnabled = true
+        changeCameraPositionButton.isHidden = false
     }
     
-    private func sendNotification() {
+    fileprivate func sendNotification() {
         let notif = UILocalNotification()
-        notif.fireDate = NSDate()
-        notif.timeZone = NSTimeZone.defaultTimeZone()
+        notif.fireDate = Date()
+        notif.timeZone = TimeZone.current
         notif.alertBody = "目標距離達成ｶﾆ~\n写真を撮るｶﾆ！"
         notif.alertAction = "OK"
         notif.soundName = UILocalNotificationDefaultSoundName
-        UIApplication.sharedApplication().scheduleLocalNotification(notif)
+        UIApplication.shared.scheduleLocalNotification(notif)
     }
 
 }
@@ -139,7 +139,7 @@ extension CameraViewController {
 
 
 extension CameraViewController {
-    private func initializeForMemory() {
+    fileprivate func initializeForMemory() {
         session.stopRunning()
         for output in session.outputs {
             session.removeOutput(output as? AVCaptureOutput)
@@ -153,9 +153,9 @@ extension CameraViewController {
         view.layer.sublayers!.removeLast()
     }
     
-    private func setupCameraWithPosition(position: AVCaptureDevicePosition) {
+    fileprivate func setupCameraWithPosition(_ position: AVCaptureDevicePosition) {
         session = AVCaptureSession()
-        for caputureDevice: AnyObject in AVCaptureDevice.devices() {
+        for caputureDevice: AnyObject in AVCaptureDevice.devices() as [AnyObject] {
             // 背面or前面カメラを取得
             if caputureDevice.position == position {
                 camera = caputureDevice as? AVCaptureDevice
@@ -183,30 +183,30 @@ extension CameraViewController {
         // セッションからプレビューを表示を設定
         // previewLayerのframeはコードで指定しないと一回目のイニシャライザで正しく表示されなかった。
         let previewLayer = AVCaptureVideoPreviewLayer(session: session)
-        previewLayer.frame = cameraFrame
-        previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        previewLayer?.frame = cameraFrame
+        previewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
         
-        view.layer.addSublayer(previewLayer)
+        view.layer.addSublayer(previewLayer!)
         session.startRunning()
     }
     
-    func didTapCameraButton(sender: UIButton) {
-        if let connection:AVCaptureConnection? = output.connectionWithMediaType(AVMediaTypeVideo) {
+    func didTapCameraButton(_ sender: UIButton) {
+        if let connection:AVCaptureConnection? = output.connection(withMediaType: AVMediaTypeVideo) {
             // ビデオ出力から画像を非同期で取得
-            output.captureStillImageAsynchronouslyFromConnection(connection, completionHandler: { (imageDataBuffer, error) -> Void in
-                let imageData: NSData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
+            output.captureStillImageAsynchronously(from: connection, completionHandler: { (imageDataBuffer, error) -> Void in
+                let imageData: Data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
                 self.image = UIImage(data: imageData)!
-                self.performSegueWithIdentifier("toNext", sender: nil)
+                self.performSegue(withIdentifier: "toNext", sender: nil)
             })
         }
     }
     
-    func didTapChangeCameraPositionButton(sender: UIButton) {
-        if camera.position == .Back {
-            setupCameraWithPosition(.Front)
+    func didTapChangeCameraPositionButton(_ sender: UIButton) {
+        if camera.position == .back {
+            setupCameraWithPosition(.front)
         }
-        else if camera.position == .Front {
-            setupCameraWithPosition(.Back)
+        else if camera.position == .front {
+            setupCameraWithPosition(.back)
         }
     }
 
@@ -220,9 +220,9 @@ extension CameraViewController {
     @IBAction func didTapResetButton() {
         let alertView = SCLAlertView()
         alertView.addButton("ランを終了する") {
-            self.navigationController?.popToRootViewControllerAnimated(true)
+            self.navigationController?.popToRootViewController(animated: true)
         }
-        alertView.iconTintColor = UIColor.whiteColor()
+        alertView.iconTintColor = UIColor.white
         alertView.showCustom("注意", subTitle: "ランを終了すると今回のランは記録されないｶﾆ。\n ランを終了するｶﾆ？", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!, closeButtonTitle: "キャンセル")
 
     }
@@ -234,18 +234,18 @@ extension CameraViewController {
 
 extension CameraViewController {
     
-    private func setAlbumThumbnailImage() {
+    fileprivate func setAlbumThumbnailImage() {
         loadPhotoFromRealm()
         if let albumThumbnailImage = albumThumbnailImage {
-            albumButton.setBackgroundImage(albumThumbnailImage, forState: .Normal)
+            albumButton.setBackgroundImage(albumThumbnailImage, for: UIControlState())
         } else {
-            albumButton.setBackgroundImage(UIImage(named: "hand2.png"), forState: .Normal)
+            albumButton.setBackgroundImage(UIImage(named: "hand2.png"), for: UIControlState())
         }
     }
     
-    private func loadPhotoFromRealm() {
+    fileprivate func loadPhotoFromRealm() {
         guard let realm = try? Realm() else { return }
-        albumThumbnailImage = realm.objects(PhotoObject).sorted("timeStamp").last?.image
+        albumThumbnailImage = realm.objects(PhotoObject.self).sorted(byProperty: "timeStamp").last?.image
     }
 
 }

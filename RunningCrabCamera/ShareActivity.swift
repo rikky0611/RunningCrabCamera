@@ -10,7 +10,7 @@ import UIKit
 
 final class ShareActivityController {
     
-    class func create(object: PhotoObject) -> UIActivityViewController {
+    class func create(_ object: PhotoObject) -> UIActivityViewController {
         let image = object.image!
         let timeStamp = DateUtils.stringFromDate(object.timeStamp, format: "yyyy/MM/dd HH:mm")
         let text = "\(timeStamp)に\(object.distance)km走りました！\n#RunningCamera"
@@ -24,25 +24,18 @@ final class ShareActivityController {
             // UIActivityTypePostToWeibo,
             // UIActivityTypeMessage,
             // UIActivityTypeMail,
-            UIActivityTypePrint,
+            UIActivityType.print,
             // UIActivityTypeCopyToPasteboard,
-            UIActivityTypeAssignToContact,
+            UIActivityType.assignToContact,
             //UIActivityTypeSaveToCameraRoll,
             // UIActivityTypeAddToReadingList,
-            UIActivityTypePostToFlickr,
-            UIActivityTypePostToVimeo,
+            UIActivityType.postToFlickr,
+            UIActivityType.postToVimeo,
             // UIActivityTypePostToTencentWeibo,
             // UIActivityTypeAirDrop
         ]
         
-        activityController.completionWithItemsHandler = {
-            (activityType: String?, completed: Bool, returnedItems: [AnyObject]?, error: NSError?) -> Void in
-            if completed {
-                guard activityType != nil else {
-                    return
-                }
-            }
-        }
+        activityController.completionWithItemsHandler = nil
         return activityController
     }
 }

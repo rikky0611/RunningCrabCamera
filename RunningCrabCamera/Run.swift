@@ -7,6 +7,26 @@
 //
 
 import Foundation
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
+
+fileprivate func >= <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l >= r
+  default:
+    return !(lhs < rhs)
+  }
+}
+
 
 struct Run {
     var distance: Double?
@@ -16,18 +36,18 @@ struct Run {
         }
     }
 
-    var startDate: NSDate?
+    var startDate: Date?
     var isFinished: Bool {
         return soFarDistance >= distance
     }
     
-    init(distance: Double, soFarDistance: Double = 0.0, startDate: NSDate = NSDate()) {
+    init(distance: Double, soFarDistance: Double = 0.0, startDate: Date = Date()) {
         self.distance = distance
         self.soFarDistance = soFarDistance
         self.startDate = startDate
     }
     
-    func update(completion: Void -> Void) {
+    func update(_ completion: @escaping (Void) -> Void) {
         Health.readHealthData(completion)
     }
     

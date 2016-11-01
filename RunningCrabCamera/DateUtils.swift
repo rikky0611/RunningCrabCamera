@@ -9,15 +9,15 @@
 import UIKit
 
 final class DateUtils {
-    class func dateFromString(string: String, format: String) -> NSDate {
-        let formatter: NSDateFormatter = NSDateFormatter()
+    class func dateFromString(_ string: String, format: String) -> Date {
+        let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = format
-        return formatter.dateFromString(string)!
+        return formatter.date(from: string)!
     }
     
-    class func stringFromDate(date: NSDate, format: String) -> String {
-        let formatter: NSDateFormatter = NSDateFormatter()
+    class func stringFromDate(_ date: Date, format: String) -> String {
+        let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = format
-        return formatter.stringFromDate(date)
+        return formatter.string(from: date)
     }
 }

@@ -4,11 +4,11 @@ platform :ios, '8.0'
 use_frameworks!
 
 target 'RunningCrabCamera' do
-pod 'STZPopupView', '~> 1.0.2'
-pod 'RealmSwift', '~> 1.0.2'
+pod 'STZPopupView'
+pod 'RealmSwift', '~> 1.1.0'
 pod 'SCLAlertView'
 pod 'Google-Mobile-Ads-SDK'
-pod "SABlurImageView", '~> 2.1.0' 
+pod "SABlurImageView", '~> 3.0.0' 
 end
 
 target 'RunningCrabCameraTests' do

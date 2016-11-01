@@ -16,7 +16,7 @@ class PhotoCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func configure(image: UIImage) {
+    func configure(_ image: UIImage) {
         imageView.image = image
     }
 

@@ -10,19 +10,19 @@ import UIKit
 
 struct ViewManager {
     
-    static let rootViewController = UIApplication.sharedApplication().keyWindow?.rootViewController
+    static let rootViewController = UIApplication.shared.keyWindow?.rootViewController
     
-    static let statusBarHeight = UIApplication.sharedApplication().statusBarFrame.size.height
+    static let statusBarHeight = UIApplication.shared.statusBarFrame.size.height
     
     static var currentWindow: UIWindow? {
-        if let window = UIApplication.sharedApplication().keyWindow {
+        if let window = UIApplication.shared.keyWindow {
             return window
         } else {
-            return UIApplication.sharedApplication().windows[0]
+            return UIApplication.shared.windows[0]
         }
     }
     
-    static func navigationBarHeight(callFrom: UIViewController) -> CGFloat {
+    static func navigationBarHeight(_ callFrom: UIViewController) -> CGFloat {
         return callFrom.navigationController?.navigationBar.frame.size.height ?? 44
     }
 }

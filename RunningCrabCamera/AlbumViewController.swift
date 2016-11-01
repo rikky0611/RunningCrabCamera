@@ -20,13 +20,13 @@ class AlbumViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         let nib = UINib(nibName: "PhotoCell", bundle: nil)
-        self.collectionView.registerNib(nib, forCellWithReuseIdentifier: "PhotoCell")
+        self.collectionView.register(nib, forCellWithReuseIdentifier: "PhotoCell")
         
         loadPhoto()
     }
     
     @IBAction func didTapBackButton() {
-        self.dismissViewControllerAnimated(true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -36,24 +36,24 @@ class AlbumViewController: UIViewController {
 
 extension AlbumViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return photoObjectArray.count
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoCell
-        cell.configure(photoObjectArray[indexPath.row].image!)
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCell", for: indexPath) as! PhotoCell
+        cell.configure(photoObjectArray[(indexPath as NSIndexPath).row].image!)
         return cell
     }
     
-    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        popupView =  UINib(nibName: "PopUpPhotoView", bundle: nil).instantiateWithOwner(self, options: nil)[0] as! PopUpPhotoView
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        popupView =  UINib(nibName: "PopUpPhotoView", bundle: nil).instantiate(withOwner: self, options: nil)[0] as! PopUpPhotoView
         popupView.delegate = self
-        popupView.configure(photoObjectArray[indexPath.row])
+        popupView.configure(photoObjectArray[(indexPath as NSIndexPath).row])
         presentPopupView(popupView)
     }
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
         let width: CGFloat = view.frame.width / 3 - 2
         let height: CGFloat = width
         return CGSize(width: width, height: height)
@@ -62,14 +62,14 @@ extension AlbumViewController: UICollectionViewDataSource, UICollectionViewDeleg
 }
 
 extension AlbumViewController {
-    private func loadPhoto() {
+    fileprivate func loadPhoto() {
         guard let realm = try? Realm() else { return }
-        photoObjectArray = realm.objects(PhotoObject).sorted("timeStamp").reverse()
+        photoObjectArray = realm.objects(PhotoObject.self).sorted(byProperty: "timeStamp").reversed()
     }
 }
 
 extension AlbumViewController: PopUpPhotoViewDelegate {
-    func didTapActionButton(object: PhotoObject) {
-        self.presentViewController(ShareActivityController.create(object), animated: true, completion: nil)
+    func didTapActionButton(_ object: PhotoObject) {
+        self.present(ShareActivityController.create(object), animated: true, completion: nil)
     }
 }
