@@ -22,7 +22,7 @@ class LockView: UIView {
         }
         distanceGage.frame.size.width = distanceBaseGage.bounds.width * CGFloat((run?.soFarDistance!)! / (run?.distance!)!)
         let decimal = (run?.soFarDistance!)! * 10
-        distanceLabel.text = "\(floor(decimal) / 10) / \(run?.distance!) [km]"
+        distanceLabel.text = "\(floor(decimal) / 10) / \(run!.distance!) [km]"
     }
 
 }
