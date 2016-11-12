@@ -195,7 +195,13 @@ extension CameraViewController {
             // ビデオ出力から画像を非同期で取得
             output.captureStillImageAsynchronously(from: connection, completionHandler: { (imageDataBuffer, error) -> Void in
                 let imageData: Data = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageDataBuffer)
-                self.image = UIImage(data: imageData)!
+                
+                UIGraphicsBeginImageContext(self.cameraFrame.size)
+                let cropImageView = UIImageView(frame: self.cameraFrame)
+                cropImageView.image = UIImage(data: imageData)
+                cropImageView.layer.render(in: UIGraphicsGetCurrentContext()!)
+                self.image = UIGraphicsGetImageFromCurrentImageContext()
+                UIGraphicsEndImageContext()
                 self.performSegue(withIdentifier: "toNext", sender: nil)
             })
         }

@@ -19,6 +19,16 @@ class PopUpPhotoView: UIView {
     var currentObject: PhotoObject?
     var delegate: PopUpPhotoViewDelegate?
     
+    @IBInspectable var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = newValue > 0
+        }
+    }
+    
     func configure(_ object: PhotoObject) {
         currentObject = object
         imageView.image = object.image

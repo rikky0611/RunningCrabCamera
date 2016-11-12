@@ -26,7 +26,7 @@ class StampView: UIView {
         let timeStamp = DateUtils.stringFromDate(date, format: "yyyy/MM/dd HH:mm")
         labelForDate.text = timeStamp
         labelForDate.font = UIFont(name: "Code-Bold", size: 14)
-        
+        layoutIfNeeded()
         //labelForComment.transform = CGAffineTransformRotate(labelForComment.transform, CGFloat(-M_PI/12))
         //labelForDate.transform = CGAffineTransformRotate(labelForDate.transform, CGFloat(-M_PI/12))
     }

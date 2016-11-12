@@ -58,7 +58,7 @@ class StartViewController: UIViewController {
             alertView.iconTintColor = UIColor.white
             alertView.showCustom("Ooops", subTitle: "フルマラソンより長いｶﾆ！危険だｶﾆ！", color: UIColor.crabRed(), icon: UIImage(named: "crab2.png")!, closeButtonTitle: "OK")
         } else {
-            Run.currentRun = Run(distance: distance)
+            Run.currentRun = Run(distance: 0.0)
             let appearance = SCLAlertView.SCLAppearance(
                 showCloseButton: false
             )
