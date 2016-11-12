@@ -54,7 +54,7 @@ extension AlbumViewController: UICollectionViewDataSource, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: IndexPath) -> CGSize {
-        let width: CGFloat = view.frame.width / 3 - 2
+        let width: CGFloat = view.frame.width / 3
         let height: CGFloat = width
         return CGSize(width: width, height: height)
     }
