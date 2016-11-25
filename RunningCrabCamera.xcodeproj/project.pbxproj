@@ -60,6 +60,8 @@
 		9AD81C591D8BA149008534FA /* RunningCrabCameraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C581D8BA149008534FA /* RunningCrabCameraUITests.swift */; };
 		9AD81C671D8C2CBA008534FA /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD81C661D8C2CBA008534FA /* Run.swift */; };
 		9AE79E581D940FA4007E5F0B /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE79E571D940FA4007E5F0B /* AlbumViewController.swift */; };
+		9AF084F61DE81F61008C3560 /* flag.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AF084F51DE81F61008C3560 /* flag.png */; };
+		9AF084F81DE82058008C3560 /* bg_.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AF084F71DE82058008C3560 /* bg_.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +144,8 @@
 		9AD81C5A1D8BA14A008534FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD81C661D8C2CBA008534FA /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
 		9AE79E571D940FA4007E5F0B /* AlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		9AF084F51DE81F61008C3560 /* flag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flag.png; sourceTree = "<group>"; };
+		9AF084F71DE82058008C3560 /* bg_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg_.png; path = Icons/bg_.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 				9A4D8E021D9A46EA0023FB9F /* Fonts */,
 				9A4D8DEB1D9A40530023FB9F /* Icons */,
 				9A4D8D601D9969150023FB9F /* changeCamera2.png */,
+				9AF084F71DE82058008C3560 /* bg_.png */,
+				9AF084F51DE81F61008C3560 /* flag.png */,
 				9A4D8E071D9BD4490023FB9F /* Group@3x.png */,
 				9A4D8E031D9BC6480023FB9F /* shutter.png */,
 				9A4D8DE91D9A3B7D0023FB9F /* bg.jpg */,
@@ -473,6 +479,7 @@
 				9A4D8D6B1D9969150023FB9F /* hand2.png in Resources */,
 				9A4D8DFB1D9A40530023FB9F /* Icon-Small.png in Resources */,
 				9AA6E3E31D8F9D9E0079F6EF /* StampView.xib in Resources */,
+				9AF084F81DE82058008C3560 /* bg_.png in Resources */,
 				9A4D8DFC1D9A40530023FB9F /* Icon-Small@2x.png in Resources */,
 				9A4D8DE41D9A37710023FB9F /* CODE_Bold.otf in Resources */,
 				9A4D8D691D9969150023FB9F /* crabs2.png in Resources */,
@@ -497,6 +504,7 @@
 				9AD81C3E1D8BA149008534FA /* Main.storyboard in Resources */,
 				9A4D8E041D9BC6480023FB9F /* shutter.png in Resources */,
 				9A4D8D671D9969150023FB9F /* changeCamera2.png in Resources */,
+				9AF084F61DE81F61008C3560 /* flag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
